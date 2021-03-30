@@ -1,0 +1,212 @@
+---
+forex_shells:
+  narration:
+    no_change:
+      - הצמד $pair_verbose$ נסחר במגמה מעורבת במחזור המסחר האחרון.
+      - הצמד $pair_verbose$ נסחר ללא שינוי במחזור המסחר האחרון.
+    major_gain:
+      - הצמד $pair_verbose$ הגיב בעליות שערים חזקות של  $period_change$% במחזור המסחר האחרון.
+      - הצמד  $pair_verbose$ מראה עליות חזקות של  $period_change$% במחזור המסחר האחרון.
+    simple_gain:
+      - הצמד $pair_verbose$ הוסיף $period_change$% לערכו במחזור המסחר האחרון.
+      - הצמד  $pair_verbose$ עלה ב- $period_change$% במחזור המסחר האחרון.
+      - ה$base_verbose$ עלה ב- $period_change$% ביחס ל- $quote_verbose$ במחזור המסחר האחרון.
+      - ה$base_verbose$ הוסיף לערכו $period_change$% ביחס ל$quote_verbose$ במחזור המסחר האחרון.
+      - מחזור המסחר האחרון שלח את ה$base_verbose$ לעליה של $period_change$% אל מול ה$quote_verbose$.
+      - מחזור המסחר האחרון הוסיף לערכו של ה- $base_verbose$ עליה של $period_change$% אל מול ה- $quote_verbose$.
+    minor_gain:
+      - הצמד $pair_verbose$ חווה דחיפה במחיר במחזור המסחר האחרון והוסיף לערכו $period_change$%.
+      - הצמד $pair_verbose$ הוסיף לערכו במחזור המסחר האחרון ועלה ב- $period_change$%.
+      - הצמד $base_verbose$ התחזק מעט ב- $period_change$% לעומת ה- $quote_verbose$ במחזור המסחר האחרון.
+      - הצמד  $pair_verbose$ עלה בשיעור של $period_change$% במחזור המסחר האחרון.
+    gain_with_low:
+      - הצמד $pair_verbose$ הוסיף לערכו $period_change$% במחזור המסחר האחרון. זאת לאחר שהגיע לשפל של $period_low$% במהלך המסחר.
+      - הצמד $pair_verbose$ עלה ב- $period_change$% במחזור המסחר האחרון. זאת לאחר שנגע בנקודת שפל של $period_low$% במהלך המסחר.
+      - לאחר צלילה בשיעור $period_low$% במחזור המסחר האחרון, נסגר הצמד $pair_verbose$ בעליה של  $period_change$%.
+      - לאחר ירידה בשיעור של $period_low$% במחזור המסחר האחרון, נסחר הצמד $pair_verbose$ בעליות שערים של $period_change$%.
+    gain_with_high:
+      - הצמד $pair_verbose$ הוסיף לערכו $period_change$% במחזור המסחר האחרון לאחר עליה של $period_high$% במהלך המסחר.
+      - שערו של הצמד $pair_verbose$ נסגר ב- $period_change$% במחזור המסחר האחרון, זאת לאחר שעלה ב- $period_high$% במהלך יום המסחר.
+    major_fall:
+      - הצמד $pair_verbose$ צלל במחזור המסחר האחרון, תוך שהוא צונח ומאבד - $period_change$% מערכו.
+      - הצמד $pair_verbose$ נסחר בירידות שערים במחזור המסחר האחרון תוך שהוא משיל מערכו  $period_change$%.
+    simple_fall:
+      - הצמד $pair_verbose$ צנח ב- $period_change$% במחזור המסחר האחרון.
+      - הצמד $pair_verbose$ נופל ב- $period_change$% במחזור המסחר האחרון.
+      - ה- $base_verbose$ נופל ב- $period_change$% אל מול ה- $quote_verbose$ במחזור המסחר האחרון.
+      - ה- $base_verbose$ נחלש ב- $period_change$% אל מול ה- $quote_verbose$ במחזור המסחר האחרון.
+      - יום המסחר האחרון ראה את ה- $base_verbose$ נופל ב- $period_change$% אל מול ה- $quote_verbose$.
+      - ה- $base_verbose$ נחלש ב- $period_change$% אל מול ה- $quote_verbose$ ביום המסחר האחרון.
+    minor_fall:
+      - שערו של הצמד $pair_verbose$ נטה כלפי מטה ביום המסחר האחרון. תוך שהוא מאבד מערכו $period_change$%.
+      - שערו של הצמד $pair_verbose$ ביצע תיקון קטן כלפי מטה ביום המסחר האחרון. תוך שהוא מאבד מערכו $period_change$%.
+      - שערו של ה- $base_verbose$ נחלש ב- $period_change$% לעומת ה- $quote_verbose$.
+      - הצמד $pair_verbose$ חווה ירידה קלה בשיעור של $period_change$% במחזור המסחר האחרון.
+    fall_with_low:
+      - הצמד $pair_verbose$ נחלש ב- $period_change$% במחזור המסחר האחרון, לאחר שהגיע לשפל של $period_low$ במהלך יום המסחר.
+      - הצמד $pair_verbose$ צונח ב- $period_change$% לאחר שפל של $period_low$% במסחר התוך יומי.
+      - על רקע שפל של $period_low$% במהלך יום המסחר, נסגר מחירו של הצמד $pair_verbose$ בירידה של $period_change$%.
+      - על רקע צלילה של $period_low$% במהלך מחזור המסחר האחרון, שערו של הצמד $pair_verbose$ נצבע באדום.
+    fall_with_high:
+      - הצמד $pair_verbose$ נפל ב- $period_change$% במחזור המסחר האחרון לאחר שהגיע לשפל של $period_high$% במהלך המסחר.
+      - הצמד $pair_verbose$ נחלש ב- $period_change$% במחזור המסחר האחרון תוך שהוא מאבד מערכו $period_high$%.
+  lower_line: # Shorter sentences for the lower line
+    no_change:
+      - $base_symbol$/$quote_symbol$ נסחרו במגמה מעורבת ביום המסחר האחרון.
+      - $base_symbol$/$quote_symbol$ נותרו בעיקר ללא שינוי ביום המסחר האחרון.
+    major_gain:
+      - $base_symbol$/$quote_symbol$ עלו בחדות $period_change$% ביום המסחר האחרון.
+      - $base_symbol$/$quote_symbol$ הרקיעו שחקים $period_change$% ביום המסחר האחרון.
+    simple_gain:
+      - $base_symbol$/$quote_symbol$ הוסיפה $period_change$% ביום המסחר האחרון.
+      - ה$base_symbol$/$quote_symbol$ מתחזק ב-$period_change$% ביום המסחר האחרון.
+    minor_gain:
+      - $base_symbol$/$quote_symbol$ עלה קלות והוסיף  $period_change$% לערכו מוקדם יותר במסחר
+      - $pair_verbose$ התווספו באופן מתון והוסיפו $period_change$% לערכן ביום המסחר האחרון.
+    major_fall:
+      - $base_symbol$/$quote_symbol$ צנחו באופן דרסטי וירדו ב- $period_change$% ביום המסחר האחרון.
+      - $base_symbol$/$quote_symbol$ צלל ב-$period_change$% ביום המסחר האחרון.
+    simple_fall:
+      - $base_symbol$/$quote_symbol$ צנחו ב- $period_change$% ביום המסחר האחרון.
+      - $base_symbol$/$quote_symbol$ נחלשו ב- $period_change$% ביום המסחר האחרון.
+      - ה-$base_symbol$ רשמו החלשות של - $period_change$% אל מול $quote_symbol$ ביום הסחר האחרון.
+      - ה- $base_symbol$ הראו צניחה של- $period_change$% אל מול ה- $quote_symbol$ ביום המסחר האחרון.
+      - יום המסחר האחרון הראה כי $base_symbol$ חוו נפילה של- $period_change$% אל מול ה- $quote_symbol$.
+      - יום המסחר האחרון הראה כי ה- $base_symbol$ חווה צניחה של $period_change$% אל מול ה- $quote_symbol$.
+    minor_fall:
+      - $base_symbol$/$quote_symbol$ תיקן כלפי מטה ורשם החלשות קלה ביום המסחר האחרון $period_change$%.
+      - $base_symbol$/$quote_symbol$ חוו נפילה מסויימת ביום המסחר האחרון, ירידה של $period_change$%.
+      - $base_symbol$/$quote_symbol$ הראו צלילה מסויימת מטה $period_change$% ביום המסחר האחרון.
+#--------------------------------------------------------------------------------------------------------------------------------------------#
+stock_shells:
+  narration:
+    no_change:
+      - מניות חברת $company_name$ נסחרו במגמה מעורבת במחזור המסחר האחרון.
+      - מניית $company_name$ נסחרו ללא שינוי ניכר ביום המסחר האחרון.
+    major_gain:
+      - מניות חברת $company_name$ עלו בחדות והוסיפו לערכן $period_change$%.
+      - חברת $company_name$ המריאה במסחר היום. מניות החברה הוסיפו לערכן $period_change$%.
+      - מניית $company_name$ התפוצצה במסחר היום, הוסיפה לערכה $period_change$%.
+      - מניות חברת $company_name$ המריאו במסחר היום תוך שהן מוסיפות $period_change$% לערכן.
+    simple_gain:
+      - $company_name$ עלתה ב- $period_change$% במחזור המסחר האחרון.
+      - מניית $company_name$ עלתה ב- $period_change$% במחזור המסחר האחרון.
+      - מחזור המסחר האחרון בישר עליה של $period_change$% במניות חברת $company_name$.
+      - מחזור המסחר האחרון הוסיף $period_change$% לערכן של מניות חברת $company_name$.
+      - מניות חברת $company_name$ הוסיפו $period_change$% לערכן במחזור המסחר האחרון.
+      - מניות חברת $company_name$ עלו ב- $period_change$% במחזור המסחר האחרון.
+      - מניות חברת $company_name$ הוסיפו $period_change$% לערכן במחזור המסחר האחרון.
+      - מניות חברת $company_name$ נסחרו בעליות שערים. הוסיפו לערכן $period_change$% במחזור המסחר האחרון.
+    minor_gain:
+      - מניית $company_name$ ביצעה תיקון קל כלפי מעלה ביום המסחר האחרון. תוך שהיא מוסיפה לערכה $period_change$%.
+      - מניית $company_name$ קיבלה רוח גבית במסחר היום. הוסיפה לערכה $period_change$%.
+      - מניית $company_name$ עלתה קלות והוסיפה לערכה $period_change$% ביום המסחר האחרוןביצעה תיקון קל כלפי מעלה ביום המסחר האחרון. תוך שהיא מוסיפה לערכה $period_change$%.
+      - $company_name$ חוותה עליה קלה בשער המניה במחזור המסחר האחרון. הוסיפה לערכה $period_change$%.
+      - מניות חברת $company_name$ עלו קלות ביום המסחר האחרון. הוסיפו לערכן $period_change$%.
+      - מניות חברת $company_name$ עלו באופן מתון במסחר היום. הוסיפו לערכן $period_change$%.
+    gain_with_low:
+      - מניות $company_name$ נסגרו בעליה של $period_change$%. לאחר שהגיעו לשפל של $period_low$% במהלך יום המסחר.
+      - שער מניית $company_name$ נסגר בעליות שערים של $period_change$%. למרות שפל של  $period_low$% בשער במהלך יום המסחר.
+      - מניות $company_name$ נסחרו במגמה מעורבת אך נסגרו בעליה של $period_change$%. זאת לאחר שהגיעו לשפל של $period_low$% במהלך יום המסחר.
+      - מניית $company_name$ נסחרה במגמה מעורבת היום ונסגרה בעליה של $period_change$%. לאחר שהגיעה לשפל של $period_low$% במהלך יום המסחר.
+    gain_with_high:
+      - מנית $company_name$ הוסיפה $period_change$% לערכה במהלך מחזור המסחר האחרון. זאת לאחר שיא של $period_high$% במהלך המסחר עצמו.
+      - מנית $company_name$ עלתה ב-$period_change$% במהלך מחזור המסחר האחרון. זאת לאחר שנגעה בשיא של $period_high$% במהלך המסחר עצמו..
+    major_fall:
+      - מניית $company_name$ צנחה בחדות במהלך יום המסחר האחרון ואיבדה מערכה $period_change$%.
+      - מניית $company_name$ צוללת. מאבדת מערכה $period_change$% במחזור המסחר האחרון.
+      - מניות חברת $company_name$ התרסקו במהלך המסחר מוקדם יותר היום. תוך שמאבדות מערכן $period_change$%.
+      - מניות חברת $company_name$ צללו בחדות מוקדם יותר היום ואיבדו $period_change$%.
+    simple_fall:
+      - מניית $company_name$ נפלה ב- $period_change$% במחזור המסחר האחרון.
+      - מניית $company_name$ צנחה ב- $period_change$% במחזור המסחר האחרון.
+      - מחזור המסחר האחרון הוביל את מניית $company_name$ לירידות של $period_change$% בשער המניה.
+      - מחזור המסחר האחרון הוביל את מניית $company_name$ לצניחה של $period_change$% בשער המניה .
+      - מניות חברת $company_name$ נפלו ב- $period_change$% במחזור המסחר האחרון.
+      - שער המניה של חברת $company_name$ נפל במחזור המסחר האחרון. איבדה מערכה - $period_change$%.
+      - שער המניה של חברת $company_name$ ירד ב- $period_change$% במחזור המסחר האחרון..
+      - מניית $company_name$ נפלה ב- $period_change$% במחזור המסחר האחרון.
+    minor_fall:
+      - מניות חברת $company_name$ ביצעו ירידה קלה במהלך מחזור המסחר האחרון. מחירן נסגר בירידה של $period_change$%.
+      - מניות $company_name$ חוו ירידה קלה בשערן מוקדם יותר היום. ואיבדו מערכן $period_change$%.
+      - מניות חברת $company_name$ ירדו קלות במהלך יום המסחר. נסגרו בירידה של $period_change$%.
+      - מניות חברת $company_name$ ירדו קלות במהלך מחזור המסחר האחרון. מחירן נסגר בירידה של $period_change$%.
+      - מניות חברת $company_name$ ירדו ביום המסחר האחרון והשילו $period_change$% מערכן.
+      - מניות חברת $company_name$ ירדו קלות ביום המסחר האחרון ונסגרו בירידה של $period_change$%.
+    fall_with_low:
+      - מניית $company_name$ נפלה ב- $period_change$% במחזור המסחר האחרון לאחר שפל של $period_low$% במהלך יום המסחר.
+      - מניית $company_name$ נסגרה בירידות שערים במחזור המחסר האחרון. לאחר שפל של $period_low$% במהלך יום המסחר.
+      - $company_name$ ירדה ב- $period_change$% במחזור המסחר האחרון לאחר שפל של $period_low$% במהלך יום המסחר.
+      - מניות $company_name$ ירדו ב- $period_change$% אתמול לאחר שפל של $period_low$% במהלך יום המסחר.
+    fall_with_high:
+      - $company_name$ ירדה ב- $period_change$% במהלך מחזור המסחר האחרון. לאחר שרשמה שיא של $period_high$% במהלך במסחר.
+      - $company_name$ נחתכה ב- $period_change$%. זאת לאחר שרשמה שיא של $period_high$% במהלך במסחר.
+  lower_line:
+    no_change:
+      - נסחרה במגמה מעורבת ביום המסחר האחרון $company_name$מניית 
+      - נותרה ללא שינוי ביום המסחר האחרון $company_name$ מניית 
+    major_gain:
+      - $company_name$ מניית $period_change$%"התפוצצה" ביום המסחר האחרון.
+      - $company_name$ מניית$period_change$%  הרקיעה שחקים ביום המסחר האחרון
+      - $company_name$ מניות ההנפקה של$period_change$%" "התפוצצו" ביום המסחר האחרון 
+      - $company_name$ מניות ההנפקה של $period_change$% הרקיעו שחקים ביום המסחר האחרון.
+    simple_gain:
+      - ביום המסחר האחרון.$company_name$  מניית$period_change$% הוסיפה לערכה   
+      - $company_name$ מניית $period_change$% עלתה ביום המסחר האחרון
+      - הוסיפו  $company_name$   מניות ההנפקה $period_change$% ביום המסחר האחרון.
+      - עלו  $company_name$   מניות ההנפקה $period_change$%  ביום המסחר האחרון.
+    minor_gain:
+      - $company_name$מניית $period_change$% הראתה עלייה מועטה ביום המסחר האחרון
+      - $company_name$ מניות ההנפקה של $period_change$%  הראו עלייה מועטה ביום המסחר ההאחרון
+    major_fall:
+      - צנחה בחדות ביום המסחר האחרון$company_name$מניית $period_change$%
+      - $company_name$מניית $period_change$% צללה ביום המסחר האחרון
+      - $company_name$ מניית$period_change$% התרסקה ביום המסחר האחרון
+      - $company_name$ מניית $period_change$% התרסקה ביום המסחר האחרון
+    simple_fall:
+      - $company_name$מניית $period_change$% צנחה ביום המסחר האחרון
+      - $company_name$מניית  $period_change$% נפלה ביום המסחר האחרון
+      - $company_name$ביום המסחר האחרון נראתה מניית$period_change$% כשהיא בנפילה.
+      - $company_name$ביום המסחר האחרון מניית $period_change$% נראתה כשהיא בצניחה
+      - $company_name$   מניות ההנפקה של $period_change$% צנחו ביום המסחר האחרון 
+      - $company_name$  מניות ההנפקה של$period_change$% הראו נפילה ביום המסחר האחרון
+      - $company_name$ ביום המסחר האחרון מניות ההנפקה של $period_change$%.צנחו
+      - $company_name$ ביום המסחר האחרון מניות ההנפקה של$period_change$% הראו נפילה
+    minor_fall:
+      - הראתה ירידה קלה ביום המסחר האחרון$company_name$מניית$period_change$% 
+      - הראתה צניחה קלה ביום המסחר האחרון .$company_name$מניית $period_change$% 
+#--------------------------------------------------------------------------------------------------------------------------------------------#
+indicator_shells:
+  narration:
+    neutral_signal:
+      - ה-$indicator$ מספק איתות נייטרלי.
+    simple_signal:
+      - ה- $indicator$ מאותת על $signal$.
+      - ה- $indicator$ מאותת על הזדמנות $signal$.
+    market_status: # $indicator$ is overbought or oversold
+      - ה-$indicator$ מאותת על שוק $signal$.
+      - על פי ה- $indicator$, אנו נמצאים בשוק $signal$.
+    align_signal:
+      - ה- $signal$ של ה- $indicator$ נמצא בשורה אחת עם תחזיות האנליסטים.
+      - ה- $indicator$ מספק איתות $signal$, אשר תואם את מסקנות הניתוח הטכני.
+    adverse_signal:
+      - ה $indicator$'s $signal$ מאותת על סתירה של התחזית הטכנית הכוללת שלנו.
+      - ה$indicator$ is giving a $signal$ מאותת על מהלך כנגד התחזית הטכנית הכוללת שלנו.
+    align_market_status:
+      - שוק ה $indicator$ indicates an $signal$ מאשר את $overall_summary$ האות הניתן מהתחזיות הטכניות שלנו.
+      - על פי שוק ה$indicator$,אנו נמצאים ב $signal$ התומך בתחזיות הטכניות $overall_summary$ כך לפי הסימן של.
+  lower_line:
+    neutral_signal:
+      - סימן ניטרלי
+      - מדד $indicator$ מספק איתות ניטרלי
+      - מדד $indicator$ אינו החלטי 
+      - מדד $indicator$ אינו חד משמעי 
+      - מדד $indicaotr$ נמצא באיזור הניטרלי
+    simple_signal:
+      - מדד $indicator$ נותן סימון $signal$
+      - מדד $indicator$ נמצא נכון לכרגע באיזור ה$signal$ 
+      - מדד $indicator$ נמצא נכון לכרגע באיזור ה$signal$ 
+    market_status:
+      - מדד $indicator$ מעיד על שוק $signal$ 
+      - על פי מדד $indicator$ אנו נמצאים בשוק $signal$ 
+

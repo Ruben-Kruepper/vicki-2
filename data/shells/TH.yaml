@@ -1,0 +1,210 @@
+---
+forex_shells:
+  narration:
+    no_change:
+      - หุ้น $pair_verbose$ สองรายการซื้อขายในทิศทางคงที่ในรอบการซื้อขายล่าสุด
+      - ราคา $pair_verbose$ ส่วนใหญ่ยังคงไม่เปลี่ยนแปลงในรอบการซื้อขายล่าสุด
+    major_gain:
+      - หุ้น $pair_verbose$ สองรายการดีดตัวขึ้น $period_change$% ในรอบการซื้อขายล่าสุด
+      - หุ้น $pair_verbose$ สองรายการพุ่งสูงขึ้น $period_change$% ในรอบการซื้อขายล่าสุด
+    simple_gain:
+      - หุ้น $pair_verbose$ สองรายการเพิ่มค่า $period_change$% ในรอบการซื้อขายล่าสุด
+      - หุ้น $pair_verbose$ สองรายการสูงขึ้น $period_change$% ในรอบการซื้อขายล่าสุด
+      - $base_verbose$ สูงขึ้น $period_change$% เทียบกับ $quote_verbose$ ในรอบการซื้อขายล่าสุด
+      - $base_verbose$ เพิ่มค่า $period_change$% เทียบกับ $quote_verbose$ ในรอบการซื้อขายล่าสุด
+      - รอบการซื้อขายล่าสุดเห็นได้ว่า $base_verbose$ เพิ่มขึ้น $period_change$% เทียบกับ $quote_verbose$
+      - รอบการซื้อขายล่าสุดเห็นได้ว่า $base_verbose$ เพิ่มค่า $period_change$% เทียบกับ $quote_verbose$
+    minor_gain:
+      - หุ้น $pair_verbose$ สองรายการเพิ่มขึ้นเล็กน้อย ผลักให้ในรอบการซื้อขายล่าสุดมีการเพิ่มค่า $period_change$%
+      - หุ้น $pair_verbose$ สองรายการเพิ่มขึ้นเล็กน้อย ผลักให้ในรอบการซื้อขายล่าสุดขึ้น $period_change$%
+      - $base_verbose$ รับผลกระทบจาก $period_change$% เล็กน้อยเทียบกับ $quote_verbose$ ในรอบการซื้อขายล่าสุด
+      - หุ้น $pair_verbose$ สองรายการเห็นได้ว่าเพิ่มขึ้นเล็กน้อยในรอบการซื้อขายล่าสุด
+    gain_with_low:
+      - หุ้น $pair_verbose$ สองรายการเพิ่มค่า $period_change$% ในรอบการซื้อขายล่าสุด หลังจากลดลงระหว่างรอบการซื้อขายที่ $period_low$%
+      - หุ้น $pair_verbose$ สูงขึ้น $period_change$% จากการลดลงระหว่างรอบการซื้อขายที่ $period_low$%
+      - หลังจากลดลง $period_low$% ในรอบการซื้อขายล่าสุด หุ้น $pair_verbose$ สองรายการปิดลงด้วยการเพิ่มค่า $period_change$%
+      - หลังจากลดลง $period_low$% ในรอบการซื้อขายล่าสุด หุ้น $pair_verbose$ สองรายการปิดลงอย่างปลอดภัยที่ $period_change$%
+    gain_with_high:
+      - หุ้น $pair_verbose$ สองรายการเพิ่มค่า $period_change$% ในรอบการซื้อขายล่าสุด หลังจากขึ้นมากถึง $period_high$% ระหว่างรอบการซื้อขายดังกล่าว
+      - หุ้น $pair_verbose$ สองรายการเพิ่มขึ้น $period_change$% ในรอบการซื้อขายล่าสุด หลังจากเพิ่มขึ้นสูงถึง $period_high$% ระหว่างรอบการซื้อขายดังกล่าว
+    major_fall:
+      - หุ้น $pair_verbose$ สองรายการลดฮวบ $period_change$% ในรอบการซื้อขายล่าสุด
+      - หุ้น $pair_verbose$ สองรายการดิ่งลง $period_change$% ในรอบการซื้อขายล่าสุด
+    simple_fall:
+      - หุ้น $pair_verbose$ สองรายการลดลง $period_change$% ในรอบการซื้อขายล่าสุด
+      - หุ้น $pair_verbose$ สองรายการร่วง $period_change$% ในรอบการซื้อขายล่าสุด
+      - $base_verbose$ ร่วง $period_change$% เทียบกับ $quote_verbose$ ในรอบการซื้อขายล่าสุด
+      - $base_verbose$ ลดลง $period_change$% เทียบกับ $quote_verbose$ ในรอบการซื้อขายล่าสุด
+      - ในรอบการซื้อขายล่าสุด เห็นได้ว่า $base_verbose$ ร่วง $period_change$% เทียบกับ $quote_verbose$
+      - ในรอบการซื้อขายล่าสุด เห็นได้ว่า $base_verbose$ ลดลง $period_change$% เทียบกับ $quote_verbose$
+    minor_fall:
+      - หุ้น $pair_verbose$ สองรายการขยับลงในรอบการซื้อขายล่าสุด โดยร่วงลง $period_change$%
+      - หุ้น $pair_verbose$ สองรายการลดลงเล็กน้อยในรอบการซื้อขายล่าสุด โดยค่าลดลง $period_change$%
+      - $base_verbose$ ลดลงเล็กน้อย $period_change$% เทียบกับ $quote_verbose$ ในรอบการซื้อขายล่าสุด
+      - หุ้น $pair_verbose$ สองรายการเห็นได้ว่า $period_change$% ลดลงเล็กน้อยในรอบการซื้อขายล่าสุด
+    fall_with_low:
+      - หุ้น $pair_verbose$ สองรายการร่วง $period_change$% ในรอบการซื้อขายล่าสุด หลังจากการลดลงระหว่างรอบการซื้อขายที่ $period_low$%
+      - หุ้น $pair_verbose$ สองรายการร่วง $period_change$% จากการลดลงระหว่างรอบการซื้อขายที่ $period_low$%
+      - หลังจากการลดลง $period_low$% ในระหว่างรอบการซื้อขายล่าสุด หุ้น $pair_verbose$ สองรายการปิดลงด้วยการเสียค่า $period_change$%
+      - หลังจากการลดลง $period_low$% ในระหว่างรอบการซื้อขายล่าสุด หุ้น $pair_verbose$ สองรายการปิดลงโดยกลายเป็นหุ้นมีความเสี่ยง $period_change$%
+    fall_with_high:
+      - หุ้น $pair_verbose$ สองรายการร่วง $period_change$% ในรอบการซื้อขายล่าสุด หลังจากลดลงมากถึง $period_high$% ระหว่างรอบการซื้อขายดังกล่าว
+      - หุ้น $pair_verbose$ สองรายการลดลง $period_change$% ในรอบการซื้อขายล่าสุด หลังจากร่วงลงมากถึง $period_high$% ระหว่างรอบการซื้อขายดังกล่าว
+  lower_line: # Shorter sentences for the lower line
+    no_change:
+      - $base_symbol$/$quote_symbol$ การซื้อขายที่ผันผวนในรอบการซื้อขายล่าสุด
+      - $base_symbol$/$quote_symbol$ ส่วนใหญ่ยังคงไม่เปลี่ยนแปลงในรอบการซื้อขายล่าสุด.
+    major_gain:
+      - $base_symbol$/$quote_symbol$ ปะทุ $period_change$%ในรอบการซื้อขายล่าสุด.
+      - $base_symbol$/$quote_symbol$ พุ่งทะยานขึ้น$period_change$% ในรอบการซื้อขายล่าสุด.
+    simple_gain:
+      - $base_symbol$/$quote_symbol$ เพิ่มขึ้น $period_change$% ในรอบการซื้อขายล่าสุด.
+      - $base_symbol$/$quote_symbol$ พุ่งขึ้น $period_change$% ในรอบการซื้อขายล่าสุด.
+    minor_gain:
+      - $base_symbol$/$quote_symbol$ มีการเพิ่มขึ้นเล็กน้อย$period_change$% ในรอบการซื้อขายล่าสุด.
+      - หุ้น$pair_verbose$ เพิ่มขึ้นเป็นกลาง $period_change$% ในรอบการซื้อขายล่าสุด.
+    major_fall:
+      - $base_symbol$/$quote_symbol$ดิ่งลง $period_change$% ในรอบการซื้อขายล่าสุด.
+      - $base_symbol$/$quote_symbol$ ดิ่ง$period_change$% ในรอบการซื้อขายล่าสุด.
+    simple_fall:
+      - $base_symbol$/$quote_symbol$ ลดลง $period_change$% ในรอบการซื้อขายล่าสุด.
+      - $base_symbol$/$quote_symbol$ ร่วงลง$period_change$%ในรอบการซื้อขายล่าสุด.
+      - $base_symbol$ fell $period_change$% ตรงกันข้ามกับ $quote_symbol$ ในรอบการซื้อขายล่าสุด.
+      - $base_symbol$ ร่วงลง $period_change$% ตรงกันข้ามกับ $quote_symbol$ ในรอบการซื้อขายล่าสุด.
+      - ในรอบการซื้อขายล่าสุดแสดงให้เห็นว่า $base_symbol$ ร่วงลง $period_change$% ตรงกันข้ามกับ $quote_symbol$.
+      - ในรอบการซื้อขายล่าสุดแสดงให้เห็นว่า  $base_symbol$ ลดลง $period_change$% ตรงกันข้ามกับ $quote_symbol$.
+    minor_fall:
+      - $base_symbol$/$quote_symbol$ ถูกแก้ไขในรอบการซื้อขายล่าสุด, กำลังร่วงลง $period_change$%.
+      - $base_symbol$/$quote_symbol$ มีการแก้ไขเล็กน้อยในรอบการซื้อขายล่าสุด, ลดลง $period_change$%.
+      - $base_symbol$/$quote_symbol$เห็นการลดลงเล็กน้อยของ $period_change$%ในรอบการซื้อขายล่าสุด.
+#--------------------------------------------------------------------------------------------------------------------------------------------#
+stock_shells:
+  narration:
+    no_change:
+      - หุ้นทุนของบริษัท $company_name$ ซื้อขายในช่วงทิศทางคงที่ในรอบการซื้อขายล่าสุด
+      - หุ้นทุนของบริษัท $company_name$ ส่วนใหญ่ยังคงไม่เปลี่ยนแปลงในรอบการซื้อขายล่าสุด
+    major_gain:
+      - หุ้นทุนของบริษัท $company_name$ ดีดตัวขึ้น $period_change$% ในรอบการซื้อขายล่าสุด
+      - หุ้นทุนของบริษัท $company_name$ พุ่งสูงขึ้น $period_change$% ในรอบการซื้อขายล่าสุด
+      - หุ้นของบริษัท $company_name$ ดีดตัวขึ้น $period_change$% ในรอบการซื้อขายล่าสุด
+      - หุ้นของบริษัท $company_name$ พุ่งสูงขึ้น $period_change$% ในรอบการซื้อขายล่าสุด
+    simple_gain:
+      - หุ้นทุนของบริษัท $company_name$ เพิ่มค่า $period_change$% ในรอบการซื้อขายล่าสุด
+      - หุ้นทุนของบริษัท $company_name$ สูงขึ้น $period_change$% ในรอบการซื้อขายล่าสุด
+      - ในรอบการซื้อขายล่าสุด เห็นได้ว่าหุ้นทุนของบริษัท $company_name$ เพิ่มขึ้น $period_change$%
+      - ในรอบการซื้อขายล่าสุด เห็นได้ว่าหุ้นทุนของบริษัท $company_name$ เพิ่มค่า $period_change$%
+      - หุ้นบริษัท $company_name$ เพิ่มค่า $period_change$% ในรอบการซื้อขายล่าสุด
+      - หุ้นบริษัท $company_name$ สูงขึ้น $period_change$% ในรอบการซื้อขายล่าสุด
+      - ในรอบการซื้อขายล่าสุด เห็นได้ว่าหุ้นบริษัท $company_name$ เพิ่มขึ้น $period_change$%
+      - ในรอบการซื้อขายล่าสุด เห็นได้ว่าหุ้นบริษัท $company_name$ เพิ่มค่า $period_change$%
+    minor_gain:
+      - หุ้นทุนของบริษัท $company_name$ ขึ้นเล็กน้อย ผลักให้ในรอบการซื้อขายล่าสุดมีการเพิ่มค่า $period_change$%
+      - หุ้นทุนของบริษัท $company_name$ เพิ่มขึ้นเล็กน้อย ผลักให้ในรอบการซื้อขายล่าสุดขึ้น $period_change$%
+      - หุ้นทุนของบริษัท $company_name$ เห็นได้ถึงการเพิ่มขึ้นเล็กน้อย $period_change$% ในรอบการซื้อขายล่าสุด
+      - หุ้นบริษัท $company_name$ ขึ้นเล็กน้อย ผลักให้ในรอบการซื้อขายล่าสุดมีการเพิ่มค่า $period_change$%
+      - หุ้นบริษัท $company_name$ ขึ้นเล็กน้อย ผลักให้ในรอบการซื้อขายล่าสุดขึ้น $period_change$%.
+      - หุ้นบริษัท $company_name$ เห็นได้ถึงการเพิ่มขึ้นเล็กน้อย $period_change$% ในรอบการซื้อขายล่าสุด
+    gain_with_low:
+      - หุ้นทุนของบริษัท $company_name$ เพิ่มค่า $period_change$% ในรอบการซื้อขายล่าสุด หลังจากลดลงระหว่างรอบการซื้อขายที่ $period_low$%
+      - หุ้นทุนของบริษัท $company_name$ สูงขึ้น $period_change$% จากการลดลงระหว่างรอบการซื้อขายที่ $period_low$%
+      - หลังจากลดลง $period_low$% ในรอบการซื้อขาย หุ้นบริษัท $company_name$ ปิดลงด้วยการเพิ่มค่า $period_change$%
+      - หลังจากลดลง $period_low$% ในรอบการซื้อขายล่าสุด หุ้นบริษัท $company_name$ ปิดลงในระดับที่ปลอดภัย $period_change$%
+    gain_with_high:
+      - หุ้นทุนของบริษัท $company_name$ เพิ่มค่า $period_change$% ในรอบการซื้อขายล่าสุด หลังจากเพิ่มขึ้นมากถึง $period_high$% ระหว่างรอบการซื้อขายดังกล่าว
+      - หุ้นทุนของบริษัท $company_name$ ขึ้น $period_change$% ในรอบการซื้อขายล่าสุดหลังจากเพิ่มค่ามากถึง $period_high$% ระหว่างรอบการซื้อขายดังกล่าว
+    major_fall:
+      - หุ้นทุนของบริษัท $company_name$ ลดฮวบ $period_change$% ในรอบการซื้อขายล่าสุด
+      - หุ้นทุนของบริษัท $company_name$ ดิ่งลง $period_change$% ในรอบการซื้อขายล่าสุด
+      - หุ้นของบริษัท $company_name$ ลดลงฮวบฮาบ $period_change$% ในรอบการซื้อขายล่าสุด
+      - หุ้นของบริษัท $company_name$ ลดฮวบ $period_change$% ในรอบการซื้อขายล่าสุด
+    simple_fall:
+      - หุ้นทุนของบริษัท $company_name$ ลดลง $period_change$% ในรอบการซื้อขายล่าสุด
+      - หุ้นทุนของบริษัท $company_name$ ร่วง $period_change$% ในรอบการซื้อขายล่าสุด
+      - ในรอบการซื้อขายล่าสุด เห็นได้ว่าหุ้นทุนของบริษัท $company_name$ ร่วง $period_change$%
+      - ในรอบการซื้อขายล่าสุด เห็นได้ว่าหุ้นทุนของบริษัท $company_name$ ลดลง $period_change$%
+      - หุ้นบริษัท $company_name$ ลดลง $period_change$% ในรอบการซื้อขายล่าสุด
+      - หุ้นบริษัท $company_name$ ร่วง $period_change$% ในรอบการซื้อขายล่าสุด
+      - ในรอบการซื้อขายล่าสุด เห็นได้ว่าหุ้นบริษัท $company_name$ ลดลง $period_change$%
+      - ในรอบการซื้อขายล่าสุด เห็นได้ว่าหุ้นบริษัท $company_name$ ร่วง $period_change$%
+    minor_fall:
+      - หุ้นทุนของบริษัท $company_name$ ลดลงเล็กน้อยในรอบการซื้อขายล่าสุด โดยร่วงลง $period_change$%
+      - หุ้นทุนของบริษัท $company_name$ ลดลงเล็กน้อยในรอบการซื้อขายล่าสุด โดยลดลง $period_change$%
+      - หุ้นทุนของบริษัท $company_name$ เห็นได้ว่าร่วงลงเล็กน้อยจาก $period_change$% ในรอบการซื้อขายล่าสุด
+      - หุ้นบริษัท $company_name$ ลดลงเล็กน้อยในรอบการซื้อขายล่าสุด โดยร่วงลง $period_change$%
+      - หุ้นบริษัท $company_name$ ลดลงเล็กน้อยในรอบการซื้อขายล่าสุด โดยลดลง $period_change$%
+      - หุ้นบริษัท $company_name$ เห็นได้ว่าลดลงเล็กน้อยจาก $period_change$% ในรอบการซื้อขายล่าสุด
+    fall_with_low:
+      - หุ้นทุนของบริษัท $company_name$ ร่วง $period_change$% ในรอบการซื้อขายล่าสุด หลังจากการลดลงระหว่างรอบการซื้อขายที่ $period_low$%
+      - หุ้นทุนของบริษัท $company_name$ ลดลง $period_change$% จากการลดลงระหว่างรอบการซื้อขายที่ $period_low$%
+      - หลังจากการลดลง $period_low$% ในรอบการซื้อขายล่าสุด หุ้น $company_name$ ปิดลงด้วยการขาดทุน $period_change$%
+      - หลังจากการลดลง $period_low$% ในรอบการซื้อขายล่าสุด หุ้น $company_name$ ปิดลงโดยกลายเป็นหุ้นที่มีความเสี่ยง $period_change$%
+    fall_with_high:
+      - หุ้นทุนของบริษัท $company_name$ ร่วง $period_change$% ในรอบการซื้อขายล่าสุด หลังจากขึ้นสูงมากถึง $period_high$% ระหว่างรอบการซื้อขายดังกล่าว
+      - หุ้นทุนของบริษัท $company_name$ ลดลง $period_change$% ในรอบการซื้อขายล่าสุด หลังจากเพิ่มค่าสูงถึง $period_high$% ระหว่างรอบการซื้อขายดังกล่าว
+  lower_line:
+    no_change:
+      - $company_name$'s หุ้นซื้อขายผันผวนในรอบการซื้อขายล่าสุด.
+      - $company_name$'sหุ้นซื้อขายยังไม่เปลี่ยนแปลงในรอบการซื้อขายล่าสุด.
+    major_gain:
+      - $company_name$'s หุ้นปะทุ $period_change$%ในรอบการซื้อขายล่าสุด.
+      - $company_name$'s หุ้นพุ่งทะยานขึ้น $period_change$%ในรอบการซื้อขายล่าสุด.
+      - หุ้นของ $company_name$ ปะทุ $period_change$% ในรอบการซื้อขายล่าสุด.
+      - หุ้นของ $company_name$พุ่งทะยานขึ้น $period_change$% ในรอบการซื้อขายล่าสุด.
+    simple_gain:
+      - $company_name$'s หุ้นได้เพิ่ม$period_change$%ในรอบการซื้อขายล่าสุด.
+      - $company_name$'s หุ้นพุ่งขึ้น $period_change$%ในรอบการซื้อขายล่าสุด.
+      - $company_name$ หุ้นบริษัทได้เพิ่ม $period_change$%ในรอบการซื้อขายล่าสุด.
+      - $company_name$ หุ้นบริษัทพุ่งขึ้น $period_change$% ในรอบการซื้อขายล่าสุด.
+      - $company_name$'s เห็นได้ว่าหุ้นพุ่งขึ้นเล็กน้อย $period_change$% ในรอบการซื้อขายล่าสุด.
+    minor_gain:
+      - $company_name$ เห็นได้ว่าหุ้นพุ่งขึ้นเล็กน้อย $period_change$%ในรอบการซื้อขายล่าสุด.
+    major_fall:
+      - $company_name$'s หุ้นลดฮวบ $period_change$% ในรอบการซื้อขายล่าสุด.
+      - $company_name$'s หุ้นดิ่งลง $period_change$% ในรอบการซื้อขายล่าสุด.
+      - หุ้นของบริษัท$company_name$ ลดลงฮวบฮาบ $period_change$% ในรอบการซื้อขายล่าสุด.
+      - หุ้นของบริษัท$company_name$ ลดฮวบ $period_change$%ในรอบการซื้อขายล่าสุด.
+    simple_fall:
+      - $company_name$'s หุ้นลดลง$period_change$%ในรอบการซื้อขายล่าสุด.
+      - $company_name$'s หุ้นร่วงลง$period_change$%ในรอบการซื้อขายล่าสุด.
+      - ในรอบการซื้อขายล่าสุดเห็นได้ว่า $company_name$'s หุ้นร่วงลง $period_change$%.
+      - ในรอบการซื้อขายล่าสุดเห็นได้ว่า $company_name$'s หุ้นลดลง $period_change$%.
+      - $company_name$ หุ้นลดลง $period_change$% ในรอบการซื้อขายล่าสุด.
+      - $company_name$ หุ้นร่วงลง $period_change$% ในรอบการซื้อขายล่าสุด.
+      
+      - ในรอบการซื้อขายล่าสุดเห็นได้ว่า$company_name$หุ้นร่วงลง$period_change$%.
+    minor_fall:
+      - $company_name$'s เห็นได้ว่าหุ้นมีการร่วงลงเล็กน้อย $period_change$%ในรอบการซื้อขายล่าสุด.
+      - $company_name$ เห็นได้ว่าหุ้นมีการลดลงเล็กน้อย $period_change$% ในรอบการซื้อขายล่าสุด.
+#--------------------------------------------------------------------------------------------------------------------------------------------#
+indicator_shells:
+  narration:
+    neutral_signal:
+      - $indicator$ กำลังส่งสัญญาณกลาง ๆ
+    simple_signal:
+      - $indicator$ กำลังส่งสัญญาณ $signal$ 
+      - $indicator$ บ่งชี้โอกาสที่ $signal$
+    market_status: # $indicator$ is overbought or oversold
+      - $indicator$ บ่งชี้ตลาด $signal$
+      - ตาม $indicator$ เราอยู่ในตลาด $signal$
+    align_signal:
+      - สัญญาณ $signal$ ของ $indicator$ สอดคล้องกับการวิเคราะห์ทางเทคนิคโดยรวม
+      - $indicator$ ให้สัญญาณ $signal$ ซึ่งตรงกับการวิเคราะห์ทางเทคนิคโดยรวมของเรา
+    adverse_signal:
+      - สัญญาณ $indicator$'s $signal$ขัดแย้งกับการวิเคราะห์ทางเทคนิคโดยรวมของเรา.
+      - สัญญาณ $indicator$ ให้สัญญาณ$signal$ ซึ่งขัดกับการวิเคราะห์ทางเทคนิคโดยรวมของเรา.
+    align_market_status:
+      - สัญญาณ$indicator$ บ่งชี้ว่า$signal$ ซึ่งในตลาดได้ยืนยันว่า $overall_summary$สัญญาณจากการวิเคราะห์ทางเทคนิคของเรา.
+      - ตามที่$indicator$, เราอยู่ในตลาด$signal$ ซึ่งสัญญาณได้สนับสนุนการวิเคราะห์ทางเทคนิค' $overall_summary$ .
+  lower_line:
+    neutral_signal:
+      - $indicator$ กำลังส่งสัญญาณกลาง ๆ
+      -  $indicator$ ไม่แน่นอน
+      - $indicator$ อย่างลังเล
+      - $indicaotr$ อยู่ในโซนกลาง.
+    simple_signal:
+      - $indicator$ กำลังส่งสัญญาณ$signal$ .
+      - $indicator$ ซึ่งปัจจุบันอยู่ในพื้นที่ $signal$ 
+      - $indicator$ ซึ่งปัจจุบันอยู่ในโซน $signal$ .
+    market_status:
+      - $indicator$ บ่งชี้ตลาด $signal$ market.
+      - ตามที่ $indicator$, เราอยู่ในตลาด $signal$ .

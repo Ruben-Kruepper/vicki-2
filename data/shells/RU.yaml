@@ -1,0 +1,210 @@
+---
+forex_shells:
+  narration:
+    no_change:
+      - Валютная пара $pair_verbose$ на последней сессии торговалась в боковом коридоре.
+      - Валютная пара $pair_verbose$ на последней сессии практически не изменилась.
+    major_gain:
+      - Валютная пара $pair_verbose$ на последней сессии резко выросла на $period_change$%.
+      - Валютная пара $pair_verbose$ на последней сессии резко выросла на $period_change$%.
+    simple_gain:
+      - Валютная пара $pair_verbose$ на последней сессии выросла на $period_change$%.
+      - Валютная пара $pair_verbose$ на последней сессии выросла на $period_change$%.
+      - На последней торговой сессии $base_verbose$ вырос(ла) на $period_change$% по отношению к валюте $quote_verbose$.
+      - На последней сессии $base_verbose$ вырос(ла) на $period_change$% по отношению к валюте $quote_verbose$.
+      - На последней сессии $base_verbose$ вырос(ла) на $period_change$% по отношению к валюте $quote_verbose$.
+      - На последней сессии $base_verbose$ вырос(ла) на $period_change$% по отношению к валюте $quote_verbose$.
+    minor_gain:
+      - Валютная пара $pair_verbose$ на последней сессии незначительно выросла на $period_change$%.
+      - Валютная пара $pair_verbose$ на последней сессии незначительно выросла на $period_change$%.
+      - На последней сессии $base_verbose$ незначительно вырос(ла) на $period_change$% по отношению к валюте $quote_verbose$.
+      - На последней сессии валютная пара $pair_verbose$ незначительно выросла на $period_change$%.
+    gain_with_low:
+      - На последней сессии валютная пара $pair_verbose$ выросла на $period_change$% после внутрисессионного падения на $period_low$%.
+      - Валютная пара $pair_verbose$ выросла на $period_change$% вслед за внутрисессионным падением на $period_low$%.
+      - Вслед за $period_low$%-ным падением во время последней сессии, валютная пара $pair_verbose$ закрылась ростом на $period_change$%.
+      - Вслед за $period_low$%-ным падением во время последней сессии, валютная пара $pair_verbose$ закрылась ростом на $period_change$%.
+    gain_with_high:
+      - На последней сессии валютная пара $pair_verbose$ выросла на $period_change$% после того, как на протяжении сессии она повысилась на $period_high$%.
+      - На последней сессии валютная пара $pair_verbose$ выросла на $period_change$% после того, как на протяжении сессии она повысилась на $period_high$%.
+    major_fall:
+      - На последней сессии валютная пара $pair_verbose$ резко упала на $period_change$%.
+      - На последней сессии валютная пара $pair_verbose$ резко упала на $period_change$%.
+    simple_fall:
+      - На последней сессии валютная пара $pair_verbose$ упала на $period_change$%.
+      - На последней сессии валютная пара $pair_verbose$ упала на $period_change$%.
+      - На последней торговой сессии $base_verbose$ снизился(ась) на $period_change$% по отношению к валюте $quote_verbose$.
+      - На последней сессии $base_verbose$ снизился(ась) на $period_change$% по отношению к валюте $quote_verbose$.
+      - На последней сессии $base_verbose$ снизился(ась) на $period_change$% по отношению к валюте $quote_verbose$.
+      - На последней сессии $base_verbose$ снизился(ась) на $period_change$% по отношению к валюте $quote_verbose$.
+    minor_fall:
+      - На последней сессии валютная пара $pair_verbose$ немного упала на $period_change$%.
+      - На последней сессии валютная пара $pair_verbose$ немного упала на $period_change$%.
+      - На последней сессии $base_verbose$ немного снизился(ась) на $period_change$% по отношению к валюте $quote_verbose$.
+      - На последней сессии валютная пара $pair_verbose$ немного снизилась на $period_change$%.
+    fall_with_low:
+      - На последней сессии валютная пара $pair_verbose$ упала на $period_change$% после внутрисессионного снижения на $period_low$%.
+      - На последней сессии валютная пара $pair_verbose$ упала на $period_change$% вслед за внутрисессионным снижением на $period_low$%.
+      - После внутрисессионного снижения на $period_low$% на последней сессии, валютная пара $pair_verbose$ закрылась падением на $period_change$%.
+      - После внутрисессионного падения на $period_low$% на последней сессии, валютная пара $pair_verbose$ снизилась на $period_change$%.
+    fall_with_high:
+      - На последней сессии валютная пара $pair_verbose$ упала на $period_change$% после того, как на протяжении сессии она снизилась на $period_high$%.
+      - На последней сессии валютная пара $pair_verbose$ упала на $period_change$% после того, как на протяжении сессии она снизилась на $period_high$%.
+  lower_line: # Shorter sentences for the lower line
+    no_change:
+      - $base_symbol$/$quote_symbol$ на последней сессии торговалась в боковом коридоре.
+      - $base_symbol$/$quote_symbol$ практически не изменилась на последней сессии.
+    major_gain:
+      - $base_symbol$/$quote_symbol$ на последней сессии резко выросла на $period_change$%.
+      - $base_symbol$/$quote_symbol$ на последней сессии резко выросла на $period_change$%.
+    simple_gain:
+      - $base_symbol$/$quote_symbol$ на последней сессии выросла на $period_change$%.
+      - $base_symbol$/$quote_symbol$ на последней сессии выросла на $period_change$%.
+    minor_gain:
+      - $base_symbol$/$quote_symbol$ на последней сессии немного выросла на $period_change$%.
+      - На последней сессии валютная пара $pair_verbose$ немного выросла на $period_change$%.
+    major_fall:
+      - $base_symbol$/$quote_symbol$ на последней сессии резко упала на $period_change$%.
+      - $base_symbol$/$quote_symbol$ на последней сессии резко упала на $period_change$%.
+    simple_fall:
+      - $base_symbol$/$quote_symbol$ на последней сессии упала на $period_change$%.
+      - $base_symbol$/$quote_symbol$ на последней сессии упала на $period_change$%.
+      - На последней сессии $base_symbol$ упал(а) на $period_change$% по отношению к $quote_symbol$.
+      - На последней сессии $base_symbol$ упал(а) на $period_change$% по отношению к $quote_symbol$.
+      - На последней сессии $base_symbol$ упал(а) на $period_change$% по отношению к $quote_symbol$.
+      - На последней сессии $base_symbol$ упал(а) на $period_change$% по отношению к $quote_symbol$.
+    minor_fall:
+      - На последней сессии $base_symbol$/$quote_symbol$ немного упала на $period_change$%.
+      - На последней сессии $base_symbol$/$quote_symbol$ немного упала на $period_change$%.
+      - На последней сессии $base_symbol$/$quote_symbol$ немного упала на $period_change$%.
+#--------------------------------------------------------------------------------------------------------------------------------------------#
+stock_shells:
+  narration:
+    no_change:
+      - Акции $company_name$ на последней сессии торговались в боковом коридоре.
+      - Акции $company_name$ на последней сессии практически не изменились.
+    major_gain:
+      - На последней сессии акции $company_name$ резко выросли на $period_change$%.
+      - На последней сессии акции $company_name$ резко выросли на $period_change$%.
+      - На последней сессии акции $company_name$ резко выросли на $period_change$%.
+      - На последней сессии акции $company_name$ резко выросли на $period_change$%.
+    simple_gain:
+      - На последней сессии акции $company_name$ выросли на $period_change$%.
+      - На последней сессии акции $company_name$ выросли на $period_change$%.
+      - На последней сессии акции $company_name$ выросли на $period_change$%.
+      - На последней сессии акции $company_name$ выросли на $period_change$%.
+      - На последней сессии акции $company_name$ выросли на $period_change$%.
+      - На последней сессии акции $company_name$ выросли на $period_change$%.
+      - На последней сессии акции $company_name$ выросли на $period_change$%.
+      - На последней сессии акции $company_name$ выросли на $period_change$%.
+    minor_gain:
+      - На последней сессии акции $company_name$ незначительно выросли на $period_change$%.
+      - На последней сессии акции $company_name$ незначительно выросли на $period_change$%.
+      - На последней сессии акции $company_name$ незначительно выросли на $period_change$%.
+      - На последней сессии акции $company_name$ незначительно выросли на $period_change$%.
+      - На последней сессии акции $company_name$ незначительно выросли на $period_change$%.
+      - На последней сессии акции $company_name$ незначительно выросли на $period_change$%.
+    gain_with_low:
+      - На последней сессии акции $company_name$ выросли на $period_change$% после внутрисессионного падения на $period_low$%.
+      - Акции $company_name$ выросли на $period_change$% вслед за внутрисессионным падением на $period_low$%.
+      - После снижения на $period_low$% на протяжении последней сессии, акции $company_name$ закрылись ростом на $period_change$%.
+      - После снижения на $period_low$% на протяжении последней сессии, акции $company_name$ выросли на $period_change$%.
+    gain_with_high:
+      - На последней сессии акции $company_name$ выросли на $period_change$% после увеличения на протяжении сессии на $period_high$%.
+      - На последней сессии акции $company_name$ выросли на $period_change$% после увеличения на протяжении сессии на $period_high$%.
+    major_fall:
+      - На последней сессии акции $company_name$ резко упали на $period_change$%.
+      - На последней сессии акции $company_name$ резко упали на $period_change$%.
+      - На последней сессии акции $company_name$ резко упали на $period_change$%.
+      - На последней сессии акции $company_name$ резко упали на $period_change$%.
+    simple_fall:
+      - На последней сессии акции $company_name$ упали на $period_change$%.
+      - На последней сессии акции $company_name$ упали на $period_change$%.
+      - На последней сессии акции $company_name$ упали на $period_change$%.
+      - На последней сессии акции $company_name$ упали на $period_change$%.
+      - На последней сессии акции $company_name$ упали на $period_change$%.
+      - На последней сессии акции $company_name$ упали на $period_change$%.
+      - На последней сессии акции $company_name$ упали на $period_change$%.
+      - На последней сессии акции $company_name$ упали на $period_change$%.
+    minor_fall:
+      - На последней сессии акции $company_name$ незначительно упали на $period_change$%.
+      - На последней сессии акции $company_name$ незначительно упали на $period_change$%.
+      - На последней сессии акции $company_name$ незначительно упали на $period_change$%.
+      - На последней сессии акции $company_name$ незначительно упали на $period_change$%.
+      - На последней сессии акции $company_name$ незначительно упали на $period_change$%.
+      - На последней сессии акции $company_name$ незначительно упали на $period_change$%.
+    fall_with_low:
+      - На последней сессии акции $company_name$ упали на $period_change$% после внутрисессионного снижения на $period_low$%.
+      - На последней сессии акции $company_name$ упали на $period_change$% после внутрисессионного снижения на $period_low$%.
+      - После снижения на последней сессии на $period_low$%, акции $company_name$ закрылись падением на $period_change$%.
+      - После снижения на последней сессии на $period_low$%, акции $company_name$ закрылись падением на $period_change$%.
+    fall_with_high:
+      - На последней сессии акции $company_name$ упали на $period_change$% после роста на протяжении сессии на $period_high$%.
+      - На последней сессии акции $company_name$ упали на $period_change$% вслед за ростом на протяжении сессии на $period_high$%.
+  lower_line:
+    no_change:
+      - На последней сессии акции $company_name$ торговались в боковом коридоре.
+      - Акции $company_name$ не изменились на последней торговой сессии.
+    major_gain:
+      - На последней сессии акции $company_name$ резко выросли на $period_change$%.
+      - На последней сессии акции $company_name$ резко выросли на $period_change$%.
+      - На последней сессии акции $company_name$ резко выросли на $period_change$%.
+      - На последней сессии акции $company_name$ резко выросли на $period_change$%.
+    simple_gain:
+      - На последней сессии акции $company_name$ выросли на $period_change$%.
+      - На последней сессии акции $company_name$ выросли на $period_change$%.
+      - На последней сессии акции $company_name$ выросли на $period_change$%.
+      - На последней сессии акции $company_name$ выросли на $period_change$%.
+    minor_gain:
+      - На последней сессии акции $company_name$ немного выросли на $period_change$%.
+      - На последней сессии акции $company_name$ немного выросли на $period_change$%.
+    major_fall:
+      - На последней сессии акции $company_name$ резко упали на $period_change$%.
+      - На последней сессии акции $company_name$ резко упали на $period_change$%.
+      - На последней сессии акции $company_name$ резко упали на $period_change$%.
+      - На последней сессии акции $company_name$ резко упали на $period_change$%.
+    simple_fall:
+      - На последней сессии акции $company_name$ упали на $period_change$%.
+      - На последней сессии акции $company_name$ упали на $period_change$%.
+      - На последней сессии акции $company_name$ упали на $period_change$%.
+      - На последней сессии акции $company_name$ упали на $period_change$%.
+      - На последней сессии акции $company_name$ упали на $period_change$%.
+      - На последней сессии акции $company_name$ упали на $period_change$%.
+      - На последней сессии акции $company_name$ упали на $period_change$%.
+      - На последней сессии акции $company_name$ упали на $period_change$%.
+    minor_fall:
+      - На последней сессии акции $company_name$ незначительно упали на $period_change$%.
+      - На последней сессии акции $company_name$ незначительно упали на $period_change$%.
+#--------------------------------------------------------------------------------------------------------------------------------------------#
+indicator_shells:
+  narration:
+    neutral_signal:
+      - $indicator$ находится на нейтральной территории.
+    simple_signal:
+      - $indicator$ сигнализирует о $signal$.
+      - $indicator$ сигнализирует о $signal$.
+    market_status: # $indicator$ is overbought or oversold
+      - $indicator$ сигнализирует о $signal$.
+      - $indicator$ сигнализирует о $signal$.
+    align_signal:
+      - $indicator$ сигнализирует о $signal$, тем самым соответствуя общему техническому анализу.
+      - $indicator$ сигнализирует о $signal$, тем самым соответствуя общему техническому анализу.
+    adverse_signal:
+      - $indicator$ сигнализирует о $signal$, тем самым противоречя общему техническому анализу.
+      - $indicator$ сигнализирует о $signal$, тем самым противоречя общему техническому анализу.
+    align_market_status:
+      - $indicator$ говорит о $signal$, тем самым соответствуя сигналу $overall_summary$ нашего технического анализа.
+      - $indicator$ говорит о $signal$, тем самым соответствуя сигналу $overall_summary$ нашего технического анализа.
+  lower_line:
+    neutral_signal:
+      - $indicator$ находится на нейтральной территории.
+      - $indicator$ остаётся нестабильным.
+      - $indicator$ остаётся нестабильным.
+      - $indicator$ находится на нейтральной территории.
+    simple_signal:
+      - $indicator$ сигнализирует о $signal$.
+      - $indicator$ находится в зоне $signal$.
+      - $indicator$ находится в зоне $signal$.
+    market_status:
+      - $indicator$ сигнализирует о $signal$.
+      - $indicator$ сигнализирует о $signal$.

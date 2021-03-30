@@ -1,0 +1,210 @@
+---
+forex_shells:
+  narration:
+    no_change:
+      - $pair_verbose$のペアは、前日比で横ばいでした。
+      - $pair_verbose$のペアは、前日比で変化はありません。
+    major_gain:
+      - $pair_verbose$のペアは、前日比で$period_change$%高騰しました。
+      - $pair_verbose$のペアは、前日比で$period_change$%急騰しました。
+    simple_gain:
+      - $pair_verbose$のペアは、前日比で$period_change$%上昇しました。
+      - $pair_verbose$のペアは、前日比で$period_change$%上昇しました。
+      - $base_verbose$は前日比で、$quote_verbose$に対し$period_change$%上昇しました。
+      - $base_verbose$は前日比で、$quote_verbose$に対し$period_change$%上昇しました。
+      - $base_verbose$は前日比で、$quote_verbose$に対し$period_change$%上昇しました。
+      - $base_verbose$は前日比で、$quote_verbose$に対し$period_change$%上昇しました。
+    minor_gain:
+      - $pair_verbose$のペアは、前日比で小幅な上値追いを行い、$period_change$%上昇しました。
+      - $pair_verbose$ペアは、前日比で小幅な上値追いを行い、$period_change$%上昇しました。
+      - $base_verbose$は前日比で、$quote_verbose$に対して$period_change$%小幅に上昇しました。
+      - $pair_verbose$のペアは、前日比で$period_change$%小幅に上昇しました。
+    gain_with_low:
+      - $pair_verbose$のペアは、前日比で$period_low$%下落した後、$period_change$%上昇しました。
+      - $pair_verbose$のペアは、前日比で$period_low$%下落した後、$period_change$%上昇しました。
+      - 前日に$period_low$%下落した後、$pair_verbose$のペアは、$period_change$%上昇しました。
+      - 前日に$period_low$%下落した後、$pair_verbose$のペアは、$period_change$%上昇しました。
+    gain_with_high:
+      - $pair_verbose$ペアは、$period_high$%まで上昇した後、前日比で$period_change$%上昇しました。
+      - $pair_verbose$ペアは、$period_high$%まで上昇した後、前日比で$period_change$%上昇しました。
+    major_fall:
+      - $pair_verbose$ペアは、前日比で$period_change$%急落しました。
+      - $pair_verbose$ペアは、前日比で$period_change$%急激に下落しました。
+    simple_fall:
+      - $pair_verbose$のペアは、前日比で$period_change$%下落しました。
+      - $pair_verbose$のペアは、前日比で$period_change$%下落しました。
+      - $base_verbose$は前日比で、$quote_verbose$に対して$period_change$%下落しました。
+      - $base_verbose$は前日比で、$quote_verbose$に対して$period_change$%下落しました。
+      - $base_verbose$は前日比で、$quote_verbose$に対して$period_change$%下落しました。
+      - $base_verbose$は前日比で、$quote_verbose$に対して$period_change$%下落しました。
+    minor_fall:
+      - $pair_verbose$ペアは、前日比で小幅に値下がりし、$period_change$%下落しました。
+      - $pair_verbose$ペアは、前日比で小幅に値下がりし、$period_change$%下落しました。
+      - $base_verbose$は$quote_verbose$に対して小幅に値下がりし、$period_change$%下落しました。
+      - $pair_verbose$ペアは、前日比で$period_change$%小幅に下落しました。
+    fall_with_low:
+      - $pair_verbose$のペアは、$period_low$%急落した後、前日比で$period_change$%下落しました。
+      - $pair_verbose$のペアは、$period_low$%急落した後、$period_change$%下落しました。
+      - 前日に$period_low$%急落した後、$pair_verbose$のペアは、$period_change$%の下落でクローズしました。
+      - 前日に$period_low$%急落した後、$pair_verbose$のペアは、$period_change$%の下落でクローズしました。
+    fall_with_high:
+      - $pair_verbose$ペアは、$period_high$%まで下落した後、前日比で$period_change$%下落しました。
+      - $pair_verbose$ペアは、$period_high$%まで下落した後、前日比で$period_change$%下落しました。
+  lower_line: # Shorter sentences for the lower line
+    no_change:
+      - $base_symbol$/$quote_symbol$のペアは、前日比で横ばい。
+      - $base_symbol$/$quote_symbol$のペアは、前日比で変化なし。
+    major_gain:
+      - $base_symbol$/$quote_symbol$のペアは、前日比で$period_change$%高騰した。
+      - $base_symbol$/$quote_symbol$のペアは、前日比で$period_change$%急騰した。
+    simple_gain:
+      - $base_symbol$/$quote_symbol$のペアは、前日比で$period_change$%上昇した。
+      - $base_symbol$/$quote_symbol$のペアは、前日比で$period_change$%上昇した。
+    minor_gain:
+      - $base_symbol$/$quote_symbol$のペアは、前日比で小幅な上値追いを行い、$period_change$%上昇した。
+      - $base_symbol$/$quote_symbol$は前日比で、$period_change$%小幅に上昇した。
+    major_fall:
+      - $base_symbol$/$quote_symbol$のペアは、前日比で$period_change$%急落した。
+      - $base_symbol$/$quote_symbol$のペアは、前日比で$period_change$%急激に下落した。
+    simple_fall:
+      - $base_symbol$/$quote_symbol$のペアは、前日比で$period_change$%下落した。
+      - $base_symbol$/$quote_symbol$のペアは、前日比で$period_change$%下落した。
+      - $base_symbol$は前日比で、$quote_symbol$に対して$period_change$%下落した。
+      - $base_symbol$は前日比で、$quote_symbol$に対して$period_change$%下落した。
+      - $base_symbol$は前日比で、$quote_symbol$に対して$period_change$%下落した。
+      - $base_symbol$は前日比で、$quote_symbol$に対して$period_change$%下落した。
+    minor_fall:
+      - $base_symbol$/$quote_symbol$のペアは、前日比で小幅に値下がりし、$period_change$%下落した。
+      - $base_symbol$/$quote_symbol$のペアは、前日比で小幅に値下がりし、$period_change$%下落した。
+      - $base_symbol$/$quote_symbol$のペアは、前日比で小幅に値下がりし、$period_change$%下落した。
+#--------------------------------------------------------------------------------------------------------------------------------------------#
+stock_shells:
+  narration:
+    no_change:
+      - $company_name$の株価は、前日比で横ばいでした。
+      - $company_name$の株価は、前日比で変化はありません。
+    major_gain:
+      - $company_name$の株価は、前日比で$period_change$%大幅に上昇しました。
+      - $company_name$の株価は、前日比で$period_change$%急騰しました。
+      - $company_name$の株価は、前日比で$period_change$%大幅に上昇しました。
+      - $company_name$の株価は、前日比で$period_change$%急騰しました。
+    simple_gain:
+      - $company_name$の株価は、前日比で$period_change$%上昇しました。
+      - $company_name$の株価は、前日比で$period_change$%上昇しました。
+      - $company_name$の株価は、前日比で$period_change$%上昇しました。
+      - $company_name$の株価は、前日比で$period_change$%上昇しました。
+      - $company_name$の株価は、前日比で$period_change$%上昇しました。
+      - $company_name$の株価は、前日比で$period_change$%上昇しました。
+      - $company_name$の株価は、前日比で$period_change$%上昇しました。
+      - $company_name$の株価は、前日比で$period_change$%上昇しました。
+    minor_gain:
+      - $company_name$の株価は、前日比で小幅に推移し、$period_change$%上昇しました。
+      - $company_name$の株価は、前日比で小幅に推移し、$period_change$%上昇しました。
+      - $company_name$の株価は、前日比で$period_change$%小幅に上昇しました。
+      - $company_name$の株価は、前日比で$period_change$%小幅に上昇しました。
+      - $company_name$の株価は、前日比で$period_change$%小幅に上昇しました。
+      - $company_name$の株価は、前日比で$period_change$%小幅に上昇しました。
+    gain_with_low:
+      - $company_name$の株価は、$period_low$%下落した後、前日比で$period_change$%上昇しました。
+      - $company_name$の株価は、$period_low$%下落した後、$period_change$%上昇しました。
+      - 前日に$period_low$%下落した後、$company_name$の株価は、$period_change$%上昇しました。
+      - 前日に$period_low$%下落した後、$company_name$の株価は、$period_change$%上昇しました。
+    gain_with_high:
+      - $company_name$の株価は、$period_high$%上昇した後、前日比で$period_change$%上昇しました。
+      - $company_name$の株価は、$period_high$%上昇した後、前日比で$period_change$%上昇しました。
+    major_fall:
+      - $company_name$の株価は、前日比で$period_change$%急落しました。
+      - $company_name$の株価は、前日比で$period_change$%大幅に下落しました。
+      - $company_name$株価は、前日比で$period_change$%急落しました。
+      - $company_name$株価は、前日比で$period_change$%大幅に下落しました。
+    simple_fall:
+      - $company_name$の株価は、前日比で$period_change$%下落しました。
+      - $company_name$の株価は、前日比で$period_change$%下落しました。
+      - $company_name$の株価は、前日比で$period_change$%下落しました。
+      - $company_name$の株価は、前日比で$period_change$%下落しました。
+      - $company_name$の株価は、前日比で$period_change$%下落しました。
+      - $company_name$の株価は、前日比で$period_change$%下落しました。
+      - $company_name$の株価は、前日比で$period_change$%の下落を見せました。
+      - $company_name$の株価は、前日比で$period_change$%の下落を見せました。
+    minor_fall:
+      - $company_name$の株価は、前日比で小幅に推移し、$period_change$%下落しました。
+      - $company_name$の株価は、前日比で小幅に推移し、$period_change$%下落しました。
+      - $company_name$の株価は、前日比で小幅に推移し、$period_change$%下落しました。
+      - $company_name$の株価は、前日比で小幅に推移し、$period_change$%の下落を見せました。
+      - $company_name$の株価は、前日比で小幅に推移し、$period_change$%の下落を見せました。
+      - $company_name$の株価は、前日比で小幅に推移し、$period_change$%の下落を見せました。
+    fall_with_low:
+      - $company_name$の株価は、$period_low$%急落した後、前日比で$period_change$%下落しました。
+      - $company_name$の株価は、$period_low$%急落した後、前日比で$period_change$%下落しました。
+      - $company_name$の株価は、$period_low$%大幅に下落した後、前日比で$period_change$%下落しました。
+      - $company_name$の株価は、$period_low$%大幅に下落した後、前日比で$period_change$%下落しました。
+    fall_with_high:
+      - $company_name$の株価は、$period_high$%上昇した後、前日比で$period_change$%下落しました。
+      - $company_name$の株価は、$period_high$%上昇した後、前日比で$period_change$%下落しました。
+  lower_line:
+    no_change:
+      - $company_name$の株価は、前日比で横ばい。
+      - $company_name$の株価は、前日比で変化なし。
+    major_gain:
+      - $company_name$の株価は、前日比で$period_change$%大幅に上昇した。
+      - $company_name$の株価は、前日比で$period_change$%急騰した。
+      - $company_name$の株価は、前日比で$period_change$%大幅に上昇した。
+      - $company_name$の株価は、前日比で$period_change$%急騰した。
+    simple_gain:
+      - $company_name$の株価は、前日比で$period_change$%上昇した。
+      - $company_name$の株価は、前日比で$period_change$%上昇した。
+      - $company_name$の株価は、前日比で$period_change$%上昇した。
+      - $company_name$の株価は、前日比で$period_change$%上昇した。
+    minor_gain:
+      - $company_name$の株価は、前日比で$period_change$%小幅に上昇した。
+      - $company_name$の株価は、前日比で$period_change$%小幅に上昇した。
+    major_fall:
+      - $company_name$の株価は、前日比で$period_change$%急落した。
+      - $company_name$の株価は、前日比で$period_change$%大幅に下落した。
+      - $company_name$株価は、前日比で$period_change$%急落した。
+      - $company_name$株価は、前日比で$period_change$%大幅に下落した。
+    simple_fall:
+      - $company_name$の株価は、前日比で$period_change$%下落した。
+      - $company_name$の株価は、前日比で$period_change$%下落した。
+      - $company_name$の株価は、前日比で$period_change$%下落した。
+      - $company_name$の株価は、前日比で$period_change$%下落した。
+      - $company_name$の株価は、前日比で$period_change$%下落した。
+      - $company_name$の株価は、前日比で$period_change$%下落した。
+      - $company_name$の株価は、前日比で$period_change$%の下落を見せた。
+      - $company_name$の株価は、前日比で$period_change$%の下落を見せた。
+    minor_fall:
+      - $company_name$の株価は、前日比で小幅に推移し、$period_change$%下落した。
+      - $company_name$の株価は、前日比で小幅に推移し、$period_change$%下落した。
+#--------------------------------------------------------------------------------------------------------------------------------------------#
+indicator_shells:
+  narration:
+    neutral_signal:
+      - $indicator$は中立を示しています。
+    simple_signal:
+      - $indicator$は$signal$を示しています。
+      - $indicator$は$signal$を示しています。
+    market_status: # $indicator$ is overbought or oversold
+      - $indicator$は$signal$を示しています。
+      - $indicator$は、現在$signal$相場を示しています。
+    align_signal:
+      - $indicator$の$signal$シグナルはテクニカル分析と概ね一致しています。
+      - $indicator$は$signal$シグナルを示し、テクニカル分析と概ね一致しています。
+    adverse_signal:
+      - $indicator$の$signal$シグナルはテクニカル分析と反対方向を示しています。
+      - $indicator$の$signal$シグナルはテクニカル分析と反対方向を示しています。
+    align_market_status:
+      - $indicator$は$signal$相場を示し、テクニカル分析の$overall_summary$シグナルと一致しています。
+      - $indicator$は$signal$相場にあり、テクニカル分析の$overall_summary$シグナルをサポートしています。
+  lower_line:
+    neutral_signal:
+      - $indicator$は中立を示す。
+      - $indicator$は曖昧な方向性を示す。
+      - $indicator$は曖昧な方向性を示す。
+      - $indicator$は中立を示す。
+    simple_signal:
+      - $indicator$は$signal$を示す。
+      - $indicator$は$signal$を示す。
+      - $indicator$は$signal$を示す。
+    market_status:
+      - $indicator$は$signal$を示す。
+      - $indicator$は$signal$を示す。

@@ -1,0 +1,210 @@
+---
+forex_shells:
+  narration:
+    no_change:
+      - $pair_verbose$ pár nem változott a legutóbbi kereskedési időszakban.
+      - $pair_verbose$ ára változatlan maradt a legutóbbi kereskedési időszakban.
+    major_gain:
+      - $pair_verbose$ pár $period_change$%-kal tört ki a legutóbbi kereskedési időszakban.
+      - $pair_verbose$ pár $period_change$%-kal ugrott meg a legutóbbi kereskedési időszakban.
+    simple_gain:
+      - $pair_verbose$ pár $period_change$%-kal emelkedett a legutóbbi kereskedési időszakban.
+      - $pair_verbose$ pár $period_change$%-kal növekedett a legutóbbi kereskedési időszakban.
+      - $base_verbose$ $period_change$%-kal emelkedett $quote_verbose$ értékével szemben a legutóbbi kereskedési időszakban.
+      - $base_verbose$ $period_change$%-kal növekedett $quote_verbose$ értékével szemben a legutóbbi kereskedési időszakban.
+      - A legutóbbi kereskedési időszakban $base_verbose$ $period_change$%-kal emelkedett a $quote_verbose$ értékével szemben.
+      - A legutóbbi kereskedési időszakban $base_verbose$ $period_change$%-kal növekedett a $quote_verbose$ értékével szemben.
+    minor_gain:
+      - $pair_verbose$ pár kissé felfelé mozdult a legutóbbi kereskedési időszakban, $period_change$% nyereséggel.
+      - $pair_verbose$ pár kissé felfelé mozdult a legutóbbi kereskedési időszakban, $period_change$% emelkedéssel.
+      - $base_verbose$ enyhén $period_change$%-kal növekedett $quote_verbose$ értékével szemben a legutóbbi kereskedési időszakban.
+      - $pair_verbose$ pár enyhén $period_change$%-kal növekedett a legutóbbi kereskedési időszakban.
+    gain_with_low:
+      - $pair_verbose$ pár $period_change$%-kal emelkedett a legutóbbi kereskedési időszakban, $period_low$%-os süllyedés után.
+      - $pair_verbose$ pár $period_change$%-kal növekedett a legutóbbi kereskedési időszakban, $period_low$%-os süllyedés után.
+      - $period_low$%-os süllyedés után, $pair_verbose$ pár $period_change$%-os nyereséggel zárult.
+      - $period_low$%-os süllyedés után, $pair_verbose$ pár $period_change$%-kal a zöld zónában zárult.
+    gain_with_high:
+      - $pair_verbose$ pár $period_change$%-kal emelkedett a legutóbbi kereskedési időszakban, miután $period_high$%-al növekedett az időszak során.
+      - $pair_verbose$ pár $period_change$%-kal növekedett a legutóbbi kereskedési időszakban, miután $period_high$%-al emelkedett az időszak során.
+    major_fall:
+      - $pair_verbose$ pár $period_change$%-kal zuhant a legutóbbi kereskedési időszakban.
+      - $pair_verbose$ pár $period_change$%-kal süllyedt a legutóbbi kereskedési időszakban.
+    simple_fall:
+      - $pair_verbose$ pár $period_change$%-kal csökkent a legutóbbi kereskedési időszakban.
+      - $pair_verbose$ pár $period_change$%-kal esett a legutóbbi kereskedési időszakban.
+      - $base_verbose$ $period_change$%-kal esett $quote_verbose$ értékével szemben a legutóbbi kereskedési időszakban.
+      - $base_verbose$ $period_change$%-kal csökkent $quote_verbose$ értékével szemben a legutóbbi kereskedési időszakban.
+      - A legutóbbi kereskedési időszakban $base_verbose$ $period_change$%-kal esett $quote_verbose$ értékével szemben.
+      - A legutóbbi kereskedési időszakban $base_verbose$ $period_change$%-kal csökkent $quote_verbose$ értékével szemben.
+    minor_fall:
+      - $pair_verbose$ pár süllyedt a legutóbbi kereskedési időszakban, $period_change$%-kal csökkenve.
+      - $pair_verbose$ pár kissé lefelé mozdult a legutóbbi kereskedési időszakban, $period_change$%-kal süllyedve.
+      - $base_verbose$ enyhén $period_change$%-kal csökkent $quote_verbose$ értékével szemben a legutóbbi kereskedési időszakban.
+      - $pair_verbose$ pár kissé $period_change$%-kal süllyedt a legutóbbi kereskedési időszakban.
+    fall_with_low:
+      - $pair_verbose$ pár $period_change$%-kal csökkent a legutóbbi kereskedési időszakban, $period_low$%-os süllyedés után.
+      - $pair_verbose$ pár $period_change$%-kal esett a legutóbbi kereskedési időszakban, $period_low$%-os süllyedés után.
+      - $period_low$%-os süllyedés után, $pair_verbose$ pár $period_change$%-os eséssel zárult.
+      - $period_low$%-os süllyedés után, $pair_verbose$ pár $period_change$%-kal a piros zónában zárult.
+    fall_with_high:
+      - $pair_verbose$ pár $period_change$%-kal esett a legutóbbi kereskedési időszakban, miután $period_high$%-al süllyedt az időszak során.
+      - $pair_verbose$ pár $period_change$%-kal csökkent a legutóbbi kereskedési időszakban, miután $period_high$%-al esett az időszak során.
+  lower_line: # Shorter sentences for the lower line
+    no_change:
+      - $base_symbol$/$quote_symbol$ nem változott a legutóbbi kereskedési időszakban.
+      - $base_symbol$/$quote_symbol$ változatlan maradt a legutóbbi kereskedési időszakban.
+    major_gain:
+      - $base_symbol$/$quote_symbol$ $period_change$%-kal tört ki a legutóbbi kereskedési időszakban.
+      - $base_symbol$/$quote_symbol$ $period_change$%-kal ugrott meg a legutóbbi kereskedési időszakban.
+    simple_gain:
+      - $base_symbol$/$quote_symbol$ $period_change$%-kal emelkedett a legutóbbi kereskedési időszakban.
+      - $base_symbol$/$quote_symbol$ $period_change$%-kal növekedett a legutóbbi kereskedési időszakban.
+    minor_gain:
+      - $base_symbol$/$quote_symbol$ kissé felfelé mozdult $period_change$%-kal a legutóbbi kereskedési időszakban.
+      - $base_symbol$/$quote_symbol$ mérsékelten felfelé mozdult $period_change$%-kal a legutóbbi kereskedési időszakban.
+    major_fall:
+      - $base_symbol$/$quote_symbol$ $period_change$%-kal zuhant a legutóbbi kereskedési időszakban.
+      - $base_symbol$/$quote_symbol$ $period_change$%-kal merült el a legutóbbi kereskedési időszakban.
+    simple_fall:
+      - $base_symbol$/$quote_symbol$ $period_change$%-kal csökkent a legutóbbi kereskedési időszakban.
+      - $base_symbol$/$quote_symbol$ $period_change$%-kal esett a legutóbbi kereskedési időszakban.
+      - $base_symbol$ $period_change$%-kal esett $quote_symbol$ értékével szemben a legutóbbi kereskedési időszakban.
+      - $base_symbol$ $period_change$%-kal csökkent $quote_symbol$ értékével szemben a legutóbbi kereskedési időszakban.
+      - A legutóbbi kereskedési időszakban $base_symbol$ $period_change$%-kal esett $quote_symbol$ értékével szemben.
+      - A legutóbbi kereskedési időszakban $base_symbol$ $period_change$%-kal csökkent $quote_symbol$ értékével szemben.
+    minor_fall:
+      - $base_symbol$/$quote_symbol$ lefelé került korrigálásra a legutóbbi kereskedési időszakban, $period_change$%-kal csökkenve.
+      - $base_symbol$/$quote_symbol$ enyhe lefelé korrekciót végzett a legutóbbi kereskedési időszakban, $period_change$%-kal süllyedve.
+      - $base_symbol$/$quote_symbol$ kissé $period_change$%-kal süllyedt a legutóbbi kereskedési időszakban.
+#--------------------------------------------------------------------------------------------------------------------------------------------#
+stock_shells:
+  narration:
+    no_change:
+      - $company_name$ részvényei nem változtak a legutóbbi kereskedési időszakban.
+      - $company_name$ részvényeinek ára változatlan maradt a legutóbbi kereskedési időszakban.
+    major_gain:
+      - $company_name$ $period_change$%-kal tört ki a legutóbbi kereskedési időszakban.
+      - $company_name$ $period_change$%-kal ugrott meg a legutóbbi kereskedési időszakban.
+      - $company_name$ részvényei $period_change$%-kal törtek ki a legutóbbi kereskedési időszakban.
+      - $company_name$ részvényei $period_change$%-kal ugrottak meg a legutóbbi kereskedési időszakban.
+    simple_gain:
+      - $company_name$ $period_change$%-kal emelkedett a legutóbbi kereskedési időszakban.
+      - $company_name$ $period_change$%-kal növekedett a legutóbbi kereskedési időszakban.
+      - A legutóbbi kereskedési időszakban $company_name$ $period_change$%-kal emelkedett.
+      - A legutóbbi kereskedési időszakban $company_name$ $period_change$%-kal növekedett.
+      - $company_name$ részvényei $period_change$%-kal emelkedtek a legutóbbi kereskedési időszakban.
+      - $company_name$ részvényei $period_change$%-kal növekedtek a legutóbbi kereskedési időszakban.
+      - A legutóbbi kereskedési időszakban $company_name$ részvényei $period_change$%-kal emelkedtek.
+      - A legutóbbi kereskedési időszakban $company_name$ részvényei $period_change$%-kal növekedtek.
+    minor_gain:
+      - $company_name$ $period_change$%-kal kissé felfelé mozdult a legutóbbi kereskedési időszakban.
+      - $company_name$ kissé felfelé mozdult a legutóbbi kereskedési időszakban, $period_change$% emelkedéssel.
+      - $company_name$ enyhén $period_change$%-kal növekedett a legutóbbi kereskedési időszakban.
+      - $company_name$ részvényei $period_change$%-kal kissé felfelé mozdultak a legutóbbi kereskedési időszakban.
+      - $company_name$ részvényei  $period_change$%-kal kissé felfelé mozdultak a legutóbbi kereskedési időszakban.
+      - $company_name$ részvényei enyhén $period_change$%-kal növekedtek a legutóbbi kereskedési időszakban.
+    gain_with_low:
+      - $company_name$ $period_change$%-kal emelkedett a legutóbbi kereskedési időszakban, $period_low$%-os süllyedés után.
+      - $company_name$ $period_change$%-kal növekedett a legutóbbi kereskedési időszakban, $period_low$%-os süllyedés után.
+      - $period_low$%-os süllyedés után, $company_name$ részvényei$period_change$%-os nyereséggel zárultak.
+      - $period_low$%-os süllyedés után, $company_name$ részvényei$period_change$%-kal a zöld zónában zárultak.
+    gain_with_high:
+      - $company_name$ $period_change$%-kal emelkedett a legutóbbi kereskedési időszakban, $period_high$%-os értékkel.
+      - $company_name$ $period_change$%-kal növekedett a legutóbbi kereskedési időszakban, $period_high$%-os értékkel.
+    major_fall:
+      - $company_name$ $period_change$%-kal zuhant a legutóbbi kereskedési időszakban.
+      - $company_name$ $period_change$%-kal merült el a legutóbbi kereskedési időszakban.
+      - $company_name$ részvényei $period_change$%-kal zuhantak a legutóbbi kereskedési időszakban.
+      - $company_name$ részvényei $period_change$%-kal merültek el a legutóbbi kereskedési időszakban.
+    simple_fall:
+      - $company_name$ $period_change$%-kal csökkent a legutóbbi kereskedési időszakban.
+      - $company_name$ $period_change$%-kal esett a legutóbbi kereskedési időszakban.
+      - A legutóbbi kereskedési időszakban $company_name$ $period_change$%-kal esett.
+      - A legutóbbi kereskedési időszakban $company_name$ $period_change$%-kal csökkent.
+      - $company_name$ részvényei $period_change$%-kal csökkentek a legutóbbi kereskedési időszakban.
+      - $company_name$ részvényei $period_change$%-kal estek a legutóbbi kereskedési időszakban.
+      - A legutóbbi kereskedési időszakban $company_name$ részvényei $period_change$%-kal estek
+      - A legutóbbi kereskedési időszakban $company_name$ részvényei $period_change$%-kal csökkentek.
+    minor_fall:
+      - $company_name$ kissé lefelé mozdult a legutóbbi kereskedési időszakban, $period_change$%-kal csökkenve.
+      - $company_name$ kissé lefelé mozdult a legutóbbi kereskedési időszakban, $period_change$%-kal süllyedve.
+      - $company_name$ enyhén $period_change$%-kal csökkent a legutóbbi kereskedési időszakban.
+      - $company_name$ részvényei kissé lefelé mozdultak a legutóbbi kereskedési időszakban, $period_change$%-kal csökkenve.
+      - $company_name$ részvényei kissé lefelé mozdultak a legutóbbi kereskedési időszakban, $period_change$%-kal süllyedve.
+      - $company_name$ részvényei kissé $period_change$%-kal süllyedtek a legutóbbi kereskedési időszakban.
+    fall_with_low:
+      - $company_name$ $period_change$%-kal csökkent a legutóbbi kereskedési időszakban, $period_low$%-os süllyedés után.
+      - $company_name$ $period_change$%-kal esett a legutóbbi kereskedési időszakban, $period_low$%-os süllyedés után.
+      - $period_low$%-os süllyedés után, $company_name$ részvényei$period_change$%-os eséssel zárultak.
+      - $period_low$%-os süllyedés után, $company_name$ részvényei$period_change$%-kal a pirosban zárultak.
+    fall_with_high:
+      - $company_name$ $period_change$%-kal esett a legutóbbi kereskedési időszakban, $period_high$%-os értékkel.
+      - $company_name$ $period_change$%-kal csökkent a legutóbbi kereskedési időszakban, $period_high$%-os értékkel.
+  lower_line:
+    no_change:
+      - $company_name$ nem változott a legutóbbi kereskedési időszakban.
+      - $company_name$ változatlan maradt a legutóbbi kereskedési időszakban.
+    major_gain:
+      - $company_name$ $period_change$%-kal tört ki a legutóbbi kereskedési időszakban.
+      - $company_name$ $period_change$%-kal ugrott meg a legutóbbi kereskedési időszakban.
+      - $company_name$ részvényei $period_change$%-kal törtek ki a legutóbbi kereskedési időszakban.
+      - $company_name$ részvényei $period_change$%-kal ugrottak meg a legutóbbi kereskedési időszakban.
+    simple_gain:
+      - $company_name$ $period_change$%-kal emelkedett a legutóbbi kereskedési időszakban.
+      - $company_name$ $period_change$%-kal növekedett a legutóbbi kereskedési időszakban.
+      - $company_name$ részvényei $period_change$%-kal emelkedtek a legutóbbi kereskedési időszakban.
+      - $company_name$ részvényei $period_change$%-kal növekedtek a legutóbbi kereskedési időszakban.
+    minor_gain:
+      - $company_name$ enyhén $period_change$%-kal növekedett a legutóbbi kereskedési időszakban.
+      - $company_name$ részvényei enyhén $period_change$%-kal növekedtek a legutóbbi kereskedési időszakban.
+    major_fall:
+      - $company_name$ $period_change$%-kal zuhant a legutóbbi kereskedési időszakban.
+      - $company_name$ $period_change$%-kal merült el a legutóbbi kereskedési időszakban.
+      - $company_name$ részvényei $period_change$%-kal zuhantak a legutóbbi kereskedési időszakban.
+      - $company_name$ részvényei $period_change$%-kal merültek el a legutóbbi kereskedési időszakban.
+    simple_fall:
+      - $company_name$ $period_change$%-kal csökkent a legutóbbi kereskedési időszakban.
+      - $company_name$ $period_change$%-kal esett a legutóbbi kereskedési időszakban.
+      - A legutóbbi kereskedési időszakban $company_name$ $period_change$%-kal esett.
+      - A legutóbbi kereskedési időszakban $company_name$ $period_change$%-kal csökkent.
+      - $company_name$ részvényei $period_change$%-kal csökkentek a legutóbbi kereskedési időszakban.
+      - $company_name$ részvényei $period_change$%-kal estek a legutóbbi kereskedési időszakban.
+      - A legutóbbi kereskedési időszakban $company_name$ részvényei $period_change$%-kal estek
+      - A legutóbbi kereskedési időszakban $company_name$ részvényei $period_change$%-kal csökkentek.
+    minor_fall:
+      - $company_name$ enyhén $period_change$%-kal csökkent a legutóbbi kereskedési időszakban.
+      - $company_name$ részvényei kissé $period_change$%-kal süllyedtek a legutóbbi kereskedési időszakban.
+#--------------------------------------------------------------------------------------------------------------------------------------------#
+indicator_shells:
+  narration:
+    neutral_signal:
+      - $indicator$ semleges jelet ad.
+    simple_signal:
+      - $indicator$ $signal$ jelet ad.
+      - $indicator$ $signal$ lehetőséget jelez.
+    market_status: # $indicator$ is overbought or oversold
+      - $indicator$ egy $signal$ piacot jelez.
+      - $indicator$ szerint, jelenleg $signal$ piacon vagyunk.
+    align_signal:
+      - $indicator$ $signal$ jele összhangban áll a technikai analízissel.
+      - $indicator$ $signal$ jelet ad, a technikai analízisünknek megfelelően.
+    adverse_signal:
+      - $indicator$ $signal$ jele ellentmond technikai analízisünkkel.
+      - $indicator$ $signal$ jelet ad, ellentétben technikai analízisünkkel.
+    align_market_status:
+      - $indicator$ $signal$ piacot jelez, megerősítve technikai analízisünk $overall_summary$ jelét.
+      - $indicator$ szerint, jelenleg $signal$ piacon vagyunk, alátámasztva technikai analízisünk $overall_summary$ jelét.
+  lower_line:
+    neutral_signal:
+      - $indicator$ semleges jelet ad.
+      - $indicator$ is határozatlan.
+      - $indicator$ is eldöntetlen.
+      - $indicator$ semleges zónában van.
+    simple_signal:
+      - $indicator$ $signal$ jelet ad.
+      - $indicator$ jelenleg a $signal$ területen van.
+      - $indicator$ jelenleg a $signal$ zónában van.
+    market_status:
+      - $indicator$ $signal$ piacot jelez.
+      - $indicator$ szerint $signal$ piacon vagyunk.

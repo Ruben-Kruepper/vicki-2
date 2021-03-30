@@ -1,0 +1,210 @@
+---
+forex_shells:
+  narration:
+    no_change:
+      - Pasangan $pair_verbose$ didagangkan tidak berubah dalam sesi terakhir.
+      - Harga $pair_verbose$ kekal tidak berubah secara umumnya dalam sesi terakhir.
+    major_gain:
+      - Pasangan $pair_verbose$ meletus $period_change$% dalam sesi terakhir.
+      - Pasangan $pair_verbose$ melonjak naik $period_change$% dalam sesi terakhir.
+    simple_gain:
+      - Pasangan $pair_verbose$ memperoleh $period_change$% dalam sesi terakhir.
+      - Pasangan $pair_verbose$ naik $period_change$% dalam sesi terakhir.
+      - $base_verbose$ naik $period_change$% berbanding $quote_verbose$ dalam sesi terakhir.
+      - $base_verbose$ memperoleh $period_change$% berbanding $quote_verbose$ dalam sesi terakhir.
+      - Sesi terakhir menyaksikan $base_verbose$ naik $period_change$% berbanding $quote_verbose$.
+      - Sesi terakhir menyaksikan $base_verbose$ memperoleh $period_change$% berbanding $quote_verbose$.
+    minor_gain:
+      - Pasangan $pair_verbose$ melakukan lonjakan naik kecil-kecilan dalam sesi terakhir, memperoleh $period_change$%.
+      - Pasangan $pair_verbose$ telah melakukan lonjakan naik kecil-kecilan dalam sesi terakhir, meningkat $period_change$%.
+      - $base_verbose$ telah mengalami kejatuhan kecil $period_change$% berbanding $quote_verbose$ dalam sesi terakhir.
+      - Pasangan $pair_verbose$ menyaksikan kenaikan sebanyak $period_change$% dalam sesi terakhir.
+    gain_with_low:
+      - Pasangan $pair_verbose$ memperoleh $period_change$% dalam sesi terakhir selepas kejatuhan intra-sesi sebanyak $period_low$%.
+      - Pasangan $pair_verbose$ meningkat $period_change$% berikutan kejatuhan intra-sesi sebanyak $period_low$%.
+      - Selepas kejatuhan $period_low$% ketika sesi terakhir, pasangan $pair_verbose$ ditutup dengan perolehan $period_change$%.
+      - Selepas kejatuhan $period_low$% ketika sesi terakhir, pasangan $pair_verbose$ ditutup dengan keuntungan $period_change$%.
+    gain_with_high:
+      - Pasangan $pair_verbose$ memperoleh $period_change$% dalam sesi terakhir selepas meningkat sebanyak $period_high$% ketika sesi berlangsung.
+      - Pasangan $pair_verbose$ meningkat $period_change$% dalam sesi terakhir selepas memperoleh sebanyak $period_high$% ketika sesi berlangsung.
+    major_fall:
+      - Pasangan $pair_verbose$ jatuh mendadak $period_change$% dalam sesi terakhir.
+      - Pasangan $pair_verbose$ menjunam $period_change$% dalam sesi terakhir.
+    simple_fall:
+      - Pasangan $pair_verbose$ jatuh sebanyak $period_change$% dalam sesi terakhir.
+      - Pasangan $pair_verbose$ jatuh $period_change$% dalam sesi terakhir.
+      - $base_verbose$ jatuh $period_change$% berbanding $quote_verbose$ dalam sesi dagangan terakhir.
+      - $base_verbose$ jatuh $period_change$% berbanding $quote_verbose$ dalam sesi terakhir.
+      - Sesi terakhir menyaksikan $base_verbose$ jatuh $period_change$% berbanding $quote_verbose$.
+      - Sesi terakhir menyaksikan $base_verbose$ jatuh $period_change$% berbanding $quote_verbose$.
+    minor_fall:
+      - Pasangan $pair_verbose$ menjunam dalam sesi terakhir, jatuh sebanyak $period_change$%.
+      - Pasangan $pair_verbose$ melakukan junaman kecil-kecilan dalam sesi terakhir, menjunam $period_change$%.
+      - $base_verbose$ jatuh sedikit iaitu $period_change$% berbanding $quote_verbose$ dalam sesi terakhir.
+      - Pasangan $pair_verbose$ menyaksikan kejatuhan kecil sebanyak $period_change$% dalam sesi terakhir.
+    fall_with_low:
+      - Pasangan $pair_verbose$ jatuh $period_change$% dalam sesi terakhir selepas kejatuhan intra-sesi sebanyak $period_low$%.
+      - Pasangan $pair_verbose$ jatuh $period_change$% berikutan kejatuhan intra-sesi sebanyak $period_low$%.
+      - Selepas kejatuhan $period_low$% ketika sesi terakhir, pasangan $pair_verbose$ ditutup dengan kejatuhan $period_change$%.
+      - Selepas kejatuhan $period_low$% ketika sesi terakhir, pasangan $pair_verbose$ ditutup dengan kerugian $period_change$%.
+    fall_with_high:
+      - Pasangan $pair_verbose$ jatuh $period_change$% dalam sesi terakhir selepas jatuh sebanyak $period_high$% ketika sesi berlangsung.
+      - Pasangan $pair_verbose$ jatuh $period_change$% dalam sesi terakhir selepas menjunam sebanyak $period_high$% ketika sesi berlangsung.
+  lower_line: # Shorter sentences for the lower line
+    no_change:
+      - $base_symbol$/$quote_symbol$ didagangkan tidak berubah dalam sesi terakhir.
+      - $base_symbol$/$quote_symbol$ kekal tidak berubah secara umumnya dalam sesi terakhir.
+    major_gain:
+      - $base_symbol$/$quote_symbol$ meletus $period_change$% dalam sesi terakhir.
+      - $base_symbol$/$quote_symbol$ melonjak naik $period_change$% dalam sesi terakhir.
+    simple_gain:
+      - $base_symbol$/$quote_symbol$ menambah $period_change$% dalam sesi terakhir.
+      - $base_symbol$/$quote_symbol$ menaik $period_change$% dalam sesi terakhir.
+    minor_gain:
+      - $base_symbol$/$quote_symbol$ menyaksikan kenaikan sebanyak $period_change$% dalam sesi terakhir.
+      - $pair_verbose$ memperoleh tahap sederhana $period_change$% dalam sesi terakhir.
+    major_fall:
+      - $base_symbol$/$quote_symbol$ jatuh mendadak $period_change$% dalam sesi terakhir.
+      - $base_symbol$/$quote_symbol$ menjunam $period_change$% dalam sesi terakhir.
+    simple_fall:
+      - $base_symbol$/$quote_symbol$ jatuh sebanyak $period_change$% dalam sesi terakhir.
+      - $base_symbol$/$quote_symbol$ jatuh $period_change$% dalam sesi terakhir.
+      - $base_symbol$ jatuh $period_change$% berbanding $quote_symbol$ dalam sesi dagangan akhir.
+      - $base_symbol$ jatuh $period_change$% berbanding $quote_symbol$ dalam sesi teakhir.
+      - Sesi terakhir menyaksikan $base_symbol$ jatuh $period_change$% berbanding $quote_symbol$.
+      - Sesi terakhir menyaksikan $base_symbol$ jatuh $period_change$% berbanding $quote_symbol$.
+    minor_fall:
+      - $base_symbol$/$quote_symbol$ diperbetulkan secara menurun dalam sesi terakhir, menjatuhkan $period_change$%.
+      - $base_symbol$/$quote_symbol$ melakukan junaman kecil-kecilan dalam sesi terakhir, menjatuhkan $period_change$%.
+      - $base_symbol$/$quote_symbol$ menyaksikan kejatuhan kecil sebanyak $period_change$% dalam sesi terakhir.
+#--------------------------------------------------------------------------------------------------------------------------------------------#
+stock_shells:
+  narration:
+    no_change:
+      - Saham $company_name$ didagangkan tidak berubah dalam sesi terakhir.
+      - Harga saham $company_name$ kekal tidak berubah secara umumnya dalam sesi terakhir.
+    major_gain:
+      - Saham $company_name$ meledak sebanyak $period_change$% dalam sesi terakhir.
+      - Saham $company_name$ melonjak $period_change$% dalam sesi terakhir.
+      - Saham $company_name$ meletus $period_change$% dalam sesi terakhir.
+      - Saham $company_name$ melonjak $period_change$% dalam sesi terakhir.
+    simple_gain:
+      - Saham $company_name$ naik $period_change$% dalam sesi terakhir.
+      - Saham $company_name$ naik $period_change$% dalam sesi terakhir.
+      - Sesi terakhir menyaksikan saham $company_name$ naik $period_change$%.
+      - Sesi terakhir menyaksikan saham $company_name$ naik $period_change$%.
+      - Saham $company_name$ naik $period_change$% dalam sesi terakhir.
+      - Saham $company_name$ naik $period_change$% dalam sesi terakhir.
+      - Sesi terakhir menyaksikan saham $company_name$ naik $period_change$%.
+      - Sesi terakhir menyaksikan saham $company_name$ memperoleh $period_change$%.
+    minor_gain:
+      - Saham $company_name$ melakukan lonjakan kecil-kecilan dalam sesi terakhir, memperoleh $period_change$%.
+      - Saham $company_name$ melakukan lonjakan kecil-kecilan dalam sesi terakhir, naik sebanyak $period_change$%.
+      - Saham $company_name$ menyaksikan kenaikan kecil-kecilan sebanyak $period_change$% dalam sesi terakhir.
+      - Saham $company_name$ melakukan lonjakan kecil-kecilan dalam sesi terakhir, memperoleh $period_change$%.
+      - Saham $company_name$ telah melakukan lonjakan kecil-kecilan dalam sesi terakhir, naik sebanyak $period_change$%.
+      - Saham $company_name$ menyaksikan kenaikan kecil-kecilan sebanyak $period_change$% dalam sesi terakhir.
+    gain_with_low:
+      - Saham $company_name$ memperoleh $period_change$% dalam sesi terakhir selepas kejatuhan intra-sesi sebanyak $period_low$%.
+      - Saham $company_name$ naik sebanyak $period_change$% berikutan kejatuhan intra-sesi sebanyak $period_low$%.
+      - Selepas kejatuhan $period_low$% ketika sesi terakhir, saham $company_name$ ditutup dengan keuntungan $period_change$%.
+      - Selepas kejatuhan $period_low$% ketika sesi terakhir, saham $company_name$ ditutup dengan keuntungan $period_change$%.
+    gain_with_high:
+      - Saham $company_name$ memperoleh $period_change$% dalam sesi terakhir selepas naik sebanyak $period_high$% ketika sesi berlangsung.
+      - Saham $company_name$ naik $period_change$% dalam sesi terakhir selepas memperoleh sebanyak $period_high$% ketika sesi berlangsung.
+    major_fall:
+      - Saham $company_name$ menjunam $period_change$% dalam sesi terakhir.
+      - Saham $company_name$ menjunam $period_change$% dalam sesi terakhir.
+      - Saham $company_name$ jatuh $period_change$% dalam sesi terakhir.
+      - Saham $company_name$ menjunam $period_change$% dalam sesi terakhir.
+    simple_fall:
+      - Saham $company_name$ jatuh $period_change$% dalam sesi terakhir.
+      - Saham $company_name$ jatuh $period_change$% dalam sesi terakhir.
+      - Sesi terakhir menyaksikan saham $company_name$ jatuh $period_change$%.
+      - Sesi terakhir menyaksikan saham $company_name$ jatuh $period_change$%.
+      - Saham $company_name$ jatuh $period_change$% dalam sesi terakhir.
+      - Saham $company_name$ jatuh $period_change$% dalam sesi terakhir.
+      - Sesi terakhir menyaksikan saham $company_name$ jatuh $period_change$%.
+      - Sesi terakhir menyaksikan saham $company_name$ jatuh $period_change$%.
+    minor_fall:
+      - Saham $company_name$ jatuh kecil-kecilan dalam sesi terakhir, iaitu $period_change$%.
+      - Saham $company_name$ melakukan junaman kecil-kecilan dalam sesi terakhir, jatuh sebanyak $period_change$%.
+      - Saham $company_name$ menyaksikan kejatuhan kecil-kecilan sebanyak $period_change$% dalam sesi terakhir.
+      - Saham $company_name$ jatuh kecil-kecilan dalam sesi terakhir, iaitu $period_change$%.
+      - Saham $company_name$ jatuh kecil-kecilan dalam sesi terakhir, iaitu $period_change$%.
+      - Saham $company_name$ menyaksikan kejatuhan kecil-kecilan sebanyak $period_change$% dalam sesi terakhir.
+    fall_with_low:
+      - Saham $company_name$ jatuh $period_change$% dalam sesi terakhir selepas kejatuhan intra-sesi sebanyak $period_low$%.
+      - Saham $company_name$ jatuh $period_change$% berikutan kejatuhan intra-sesi sebanyak $period_low$%.
+      - Selepas kejatuhan $period_low$% ketika sesi terakhir, saham $company_name$ ditutup dengan kerugian $period_change$%.
+      - Selepas kejatuhan $period_low$% ketika sesi terakhir, saham $company_name$ ditutup dengan kerugian $period_change$%.
+    fall_with_high:
+      - Saham $company_name$ jatuh $period_change$% dalam sesi terakhir selepas melonjak sebanyak $period_high$% ketika sesi berlangsung.
+      - Saham $company_name$ jatuh $period_change$% dalam sesi terakhir selepas memperoleh sebanyak $period_high$% ketika sesi berlangsung.
+  lower_line:
+    no_change:
+      - Stok $company_name$ didagangkan tidak berubah dalam sesi terakhir.
+      - Stok $company_name$ kekal tidak berubah secara umumnya dalam sesi terakhir.
+    major_gain:
+      - Stok $company_name$ meletus $period_change$% dalam sesi terakhir.
+      - Stok $company_name$ melonjak naik $period_change$% dalam sesi terakhir.
+      - Saham $company_name$ meletus $period_change$% dalam sesi terakhir.
+      - Saham $company_name$ melonjak naik $period_change$% dalam sesi terakhir.
+    simple_gain:
+      - Stok $company_name$ menambah $period_change$% dalam sesi terakhir.
+      - Stok $company_name$ menaik $period_change$% dalam sesi terakhir.
+      - Saham $company_name$ menambah $period_change$% dalam sesi terakhir.
+      - Saham $company_name$ menaik $period_change$% dalam sesi terakhir.
+    minor_gain:
+      - Stok $company_name$'s menyaksikan kenaikan sebanyak $period_change$% dalam sesi terakhir.
+      - Saham $company_name$'s menyaksikan kenaikan sebanyak $period_change$% dalam sesi terakhir.
+    major_fall:
+      - Stok $company_name$'s jatuh mendadak $period_change$% dalam sesi terakhir.
+      - Stok $company_name$'s jatuh menjunam $period_change$% dalam sesi terakhir.
+      - Saham $company_name$'s terhempas $period_change$% dalam sesi terakhir.
+      - Saham $company_name$'s menjunam $period_change$% dalam sesi terakhir.
+    simple_fall:
+      - Stok $company_name$'s jatuh $period_change$% dalam sesi terakhir.
+      - Stok $company_name$'s jatuh $period_change$% dalam sesi terakhir.
+      - Sesi terakhir menunjukkan stok $company_name$'s jatuh $period_change$%.
+      - Sesi terakhir menunjukkan stok $company_name$'s jatuh $period_change$%.
+      - Saham $company_name$'s jatuh $period_change$% dalam sesi terakhir.
+      - Saham $company_name$'s jatuh $period_change$% dalam sesi terakhir.
+      - Sesi terakhir menunjukkan saham $company_name$'s jatuh $period_change$%.
+      - Sesi terakhir menunjukkan saham $company_name$'s jatuh $period_change$%.
+    minor_fall:
+      - Stok $company_name$'s menyaksikan kejatuhan kecil $period_change$% dalam sesi terakhir.
+      - Saham $company_name$'s menyaksikan penurunan kecil $period_change$% dalam sesi terakhir.
+#--------------------------------------------------------------------------------------------------------------------------------------------#
+indicator_shells:
+  narration:
+    neutral_signal:
+      - $indicator$ sedang memberikan isyarat neutral.
+    simple_signal:
+      - $indicator$ sedang memberikan isyarat $signal$.
+      - $indicator$ menunjukkan peluang untuk $signal$.
+    market_status: # $indicator$ is overbought or oversold
+      - $indicator$ menunjukkan pasaran $signal$.
+      - Mengikut $indicator$, kita berada dalam pasaran $signal$.
+    align_signal:
+      - Isyarat $signal$ $indicator$ adalah sejajar dengan analisis teknikal keseluruhan.
+      - $indicator$ sedang memberikan isyarat $signal$, yang berpadanan dengan analisis teknikal keseluruhan kami.
+    adverse_signal:
+      - Isyarat $indicator$ $signal$ bertentangan dengan keseluruhan analisis teknikal kami.
+      - $indicator$ menunjukkan isyarat $signal$, bertentangan dengan keseluruhan analisis teknikal kami.
+    align_market_status:
+      - $indicator$ menunjukkan bahawa pasaran $signal$, menegaskan semula isyarat $overall_summary$ dari analisis teknikal kami. 
+      - Menurut pada $indicator$, kita berada dalam pasaran $signal$, menyokong analisis teknikal isyarat $overall_summary$.
+  lower_line:
+    neutral_signal:
+      - $indicator$ memberi isyarat neutral.
+      - $indicator$ tidak tetap.
+      - $indicator$ tidak ditetapkan.
+      - $indicator$ dalam zon neutral.
+    simple_signal:
+      - $indicator$ memberi isyarat $signal$.
+      - $indicator$ berada dalam kawasan $signal$.
+      - $indicator$ berada dalam zon $signal$.
+    market_status:
+      - $indicator$ menunjukkan sebuah pasaran $signal$.
+      - Menurut pada $indicator$, kita berada dalam pasaran $signal$.

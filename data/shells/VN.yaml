@@ -1,0 +1,210 @@
+---
+forex_shells:
+  narration:
+    no_change:
+      - Cặp $pair_verbose$ đã đi ngang trong phiên vừa qua.
+      - Giá của $pair_verbose$ đã gần như không thay đổi trong phiên vừa qua.
+    major_gain:
+      - Cặp $pair_verbose$ đã bùng nổ $period_change$% trong phiên vừa qua.
+      - Cặp $pair_verbose$ đã tăng vọt $period_change$% trong phiên vừa qua.
+    simple_gain:
+      - Cặp $pair_verbose$ đã tăng giá $period_change$% trong phiên vừa qua.
+      - Cặp $pair_verbose$ đã tăng $period_change$% trong phiên vừa qua.
+      - $base_verbose$ đã tăng $period_change$% so với $quote_verbose$ trong phiên giao dịch vừa qua.
+      - $base_verbose$ đã tăng giá $period_change$% so với $quote_verbose$ trong phiên vừa qua.
+      - Phiên vừa qua đã chứng kiến $base_verbose$ tăng $period_change$% so với $quote_verbose$.
+      - Phiên vừa qua đã chứng kiến $base_verbose$ tăng giá $period_change$% so với $quote_verbose$.
+    minor_gain:
+      - Cặp $pair_verbose$ đã có xu hướng tăng nhẹ trong phiên vừa qua, tăng $period_change$%.
+      - Cặp $pair_verbose$ đã có xu hướng tăng nhẹ $period_change$% trong phiên vừa qua.
+      - $base_verbose$ đã hơi tăng giá $period_change$% so với $quote_verbose$ trong phiên vừa qua.
+      - Cặp $pair_verbose$ chứng kiến mức tăng không đáng kể $period_change$% trong phiên vừa qua.
+    gain_with_low:
+      - Cặp $pair_verbose$ đã tăng giá $period_change$% trong phiên vừa qua sau một đợt điều chỉnh $period_low$% trong phiên.
+      - Cặp $pair_verbose$ đã tăng $period_change$% sau một đợt điều chỉnh $period_low$% trong phiên.
+      - Sau một đợt điều chỉnh $period_low$% trong phiên vừa qua, cặp $pair_verbose$ đã đóng cửa với mức tăng giá $period_change$%.
+      - Sau một đợt điều chỉnh $period_low$% trong phiên vừa qua, cặp $pair_verbose$ đã đóng cửa trong sắc xanh với $period_change$%.
+    gain_with_high:
+      - Cặp $pair_verbose$ đã tăng giá $period_change$% trong phiên vừa qua sau khi tăng đến $period_high$% trong phiên.
+      - Cặp $pair_verbose$ đã tăng $period_change$% trong phiên vừa qua sau khi tăng đến $period_high$% trong phiên.
+    major_fall:
+      - Cặp $pair_verbose$ đã rơi tự do $period_change$% trong phiên vừa qua.
+      - Cặp $pair_verbose$ đã giảm mạnh $period_change$% trong phiên vừa qua.
+    simple_fall:
+      - Cặp $pair_verbose$ đã sụt $period_change$% trong phiên vừa qua.
+      - Cặp $pair_verbose$ đã giảm $period_change$% trong phiên vừa qua.
+      - $base_verbose$ đã giảm $period_change$% so với $quote_verbose$ trong phiên giao dịch vừa qua.
+      - $base_verbose$ đã sụt $period_change$% so với $quote_verbose$ trong phiên vừa qua.
+      - Phiên vừa qua đã chứng kiến $base_verbose$ giảm $period_change$% so với $quote_verbose$.
+      - Phiên vừa qua đã chứng kiến $base_verbose$ sụt $period_change$% so với $quote_verbose$.
+    minor_fall:
+      - Cặp $pair_verbose$ đã có xu hướng giảm nhẹ trong phiên vừa qua, giảm $period_change$%.
+      - Cặp $pair_verbose$ đã có xu hướng giảm nhẹ $period_change$% trong phiên vừa qua.
+      - $base_verbose$ đã sụt nhẹ $period_change$% so với $quote_verbose$ trong phiên vừa qua.
+      - Cặp $pair_verbose$ chứng kiến mức giảm không đáng kể $period_change$% trong phiên vừa qua.
+    fall_with_low:
+      - Cặp $pair_verbose$ đã giảm $period_change$% trong phiên vừa qua sau một đợt điều chỉnh $period_low$% trong phiên.
+      - Cặp $pair_verbose$ đã giảm $period_change$% sau một đợt điều chỉnh $period_low$% trong phiên.
+      - Sau một đợt điều chỉnh $period_low$% trong phiên vừa qua, cặp $pair_verbose$ đã đóng cửa với mức giảm giá $period_change$%.
+      - Sau một đợt điều chỉnh $period_low$% trong phiên vừa qua, cặp $pair_verbose$ đã đóng cửa trong sắc đỏ với $period_change$%.
+    fall_with_high:
+      - Cặp $pair_verbose$ đã giảm $period_change$% trong phiên vừa qua sau khi giảm đến $period_high$% trong phiên.
+      - Cặp $pair_verbose$ đã giảm $period_change$% trong phiên vừa qua sau khi sụt đến $period_high$% trong phiên.
+  lower_line: # Shorter sentences for the lower line
+    no_change:
+      - $base_symbol$/$quote_symbol$ gần nhứ không thay đổi trong phiên gần nhất.
+      - $base_symbol$/$quote_symbol$ đã giao dịch đi ngang trong phiên gần nhất.
+    major_gain:
+      - $base_symbol$/$quote_symbol$ tăng mạnh $period_change$% trong phiên gần nhất.
+      - $base_symbol$/$quote_symbol$ tăng phi mã $period_change$% trong phiên gần nhất.
+    simple_gain:
+      - $base_symbol$/$quote_symbol$ đã tăng $period_change$% trong phiên gần nhất.
+      - $base_symbol$/$quote_symbol$ đã tăng $period_change$% trong phiên gần nhất.
+    minor_gain:
+      - $base_symbol$/$quote_symbol$ tăng nhẹ $period_change$% trong phiên gần nhất.
+      - Cặp $pair_verbose$ đã tăng nhẹ $period_change$% trong phiên gần nhất.
+    major_fall:
+      - $base_symbol$/$quote_symbol$ giảm mạnh $period_change$% trong phiên gần nhất.
+      - $base_symbol$/$quote_symbol$ lao dốc, giảm $period_change$% trong phiên gần nhất.
+    simple_fall:
+      - $base_symbol$/$quote_symbol$ đã giảm $period_change$% trong phiên gần nhất.
+      - $base_symbol$/$quote_symbol$ đã sụt giảm $period_change$% trong phiên gần nhất.
+      - $base_symbol$ giảm $period_change$% với với $quote_symbol$ trong phiên giao dịch gần nhất.
+      - $base_symbol$ giảm $period_change$% só với $quote_symbol$ trong phiên gần nhất.
+      - Phiên gần nhất đã chứng kiến việc ​​$base_symbol$ giảm $period_change$% so với $quote_symbol$.
+      - Phiên gần nhất đã chứng kiến việc ​​$base_symbol$ giảm sút $period_change$% so với $quote_symbol$.
+    minor_fall:
+      - $base_symbol$/$quote_symbol$ đã điều chỉnh, giảm nhẹ trong phiên gần nhất, giảm $period_change$%.
+      - $base_symbol$/$quote_symbol$ đã có một sự điều chỉnh nhẹ trong phiên gần nhất, giảm $period_change$%.
+      - $base_symbol$/$quote_symbol$ đã giảm nhẹ $period_change$% trong phiên gần nhất.
+#--------------------------------------------------------------------------------------------------------------------------------------------#
+stock_shells:
+  narration:
+    no_change:
+      - Cổ phiếu của $company_name$ đã đi ngang trong phiên vừa qua.
+      - Giá cổ phiếu $company_name$ đã gần như không thay đổi trong phiên vừa qua.
+    major_gain:
+      - Cổ phiếu của $company_name$ đã bùng nổ $period_change$% trong phiên vừa qua.
+      - Cổ phiếu của $company_name$ đã tăng vọt $period_change$% trong phiên vừa qua.
+      - Cổ phần của $company_name$ đã bùng nổ $period_change$% trong phiên vừa qua.
+      - Cổ phần của $company_name$ đã tăng vọt $period_change$% trong phiên vừa qua.
+    simple_gain:
+      - Cổ phiếu $company_name$ đã tăng giá $period_change$% trong phiên vừa qua.
+      - Cổ phiếu $company_name$ đã tăng $period_change$% trong phiên vừa qua.
+      - Phiên vừa qua đã chứng kiến cổ phiếu $company_name$ tăng $period_change$%.
+      - Phiên vừa qua đã chứng kiến cổ phiếu $company_name$ tăng giá $period_change$%.
+      - Cổ phần của $company_name$ đã tăng giá $period_change$% trong phiên vừa qua.
+      - Cổ phần của $company_name$ đã tăng $period_change$% trong phiên vừa qua.
+      - Phiên vừa qua đã chứng kiến cổ phần của $company_name$ tăng $period_change$%.
+      - Phiên vừa qua đã chứng kiến cổ phần của $company_name$ tăng giá $period_change$%.
+    minor_gain:
+      - Cổ phiếu $company_name$ đã có xu hướng tăng nhẹ trong phiên vừa qua, tăng $period_change$%.
+      - Cổ phiếu $company_name$ đã có xu hướng tăng nhẹ trong phiên vừa qua, tăng giá $period_change$%.
+      - Cổ phiếu $company_name$ chứng kiến mức tăng không đáng kể $period_change$% trong phiên vừa qua.
+      - Cổ phần của $company_name$ đã có xu hướng tăng nhẹ trong phiên vừa qua, tăng $period_change$%.
+      - Cổ phần của $company_name$ đã có xu hướng tăng nhẹ trong phiên vừa qua, tăng giá $period_change$%.
+      - Cổ phần của $company_name$ chứng kiến mức tăng không đáng kể $period_change$% trong phiên vừa qua.
+    gain_with_low:
+      - Cổ phiếu $company_name$ đã tăng giá $period_change$% trong phiên vừa qua sau một đợt điều chỉnh $period_low$% trong phiên.
+      - Cổ phiếu $company_name$ đã tăng $period_change$% sau một đợt điều chỉnh $period_low$% trong phiên.
+      - Sau một đợt điều chỉnh $period_low$% trong phiên vừa qua, cổ phần của $company_name$ đã đóng cửa với mức tăng giá $period_change$%.
+      - Sau một đợt điều chỉnh $period_low$% trong phiên vừa qua, cổ phần của $company_name$ đã đóng cửa trong sắc xanh với $period_change$%.
+    gain_with_high:
+      - Cổ phiếu $company_name$ đã tăng giá $period_change$% trong phiên vừa qua sau khi tăng đến $period_high$% trong phiên.
+      - Cổ phiếu $company_name$ đã tăng $period_change$% trong phiên vừa qua sau khi tăng đến $period_high$% trong phiên.
+    major_fall:
+      - Cổ phiếu $company_name$ đã rơi tự do $period_change$% trong phiên vừa qua.
+      - Cổ phiếu $company_name$ đã giảm mạnh $period_change$% trong phiên vừa qua.
+      - Cổ phần của $company_name$ đã rớt $period_change$% trong phiên vừa qua.
+      - Cổ phần của $company_name$ đã rơi tự do $period_change$% trong phiên vừa qua.
+    simple_fall:
+      - Cổ phiếu $company_name$ đã giảm $period_change$% trong phiên vừa qua.
+      - Cổ phiếu $company_name$ đã sụt $period_change$% trong phiên vừa qua.
+      - Phiên vừa qua đã chứng kiến cổ phiếu $company_name$ giảm $period_change$%.
+      - Phiên vừa qua đã chứng kiến cổ phiếu $company_name$ sụt $period_change$%.
+      - Cổ phần của $company_name$ đã sụt $period_change$% trong phiên vừa qua.
+      - Cổ phần của $company_name$ đã giảm $period_change$% trong phiên vừa qua.
+      - Phiên vừa qua đã chứng kiến cổ phần của $company_name$ sụt $period_change$%.
+      - Phiên vừa qua đã chứng kiến cổ phần của $company_name$ giảm $period_change$%.
+    minor_fall:
+      - Cổ phiếu $company_name$ đã có xu hướng giảm nhẹ trong phiên vừa qua, giảm $period_change$%.
+      - Cổ phiếu $company_name$ đã có xu hướng giảm nhẹ trong phiên vừa qua, sụt $period_change$%.
+      - Cổ phiếu $company_name$ chứng kiến mức giảm không đáng kể $period_change$% trong phiên vừa qua.
+      - Cổ phần của $company_name$ đã có xu hướng giảm nhẹ trong phiên vừa qua, giảm $period_change$%.
+      - Cổ phần của $company_name$ đã có xu hướng giảm nhẹ trong phiên vừa qua, sụt $period_change$%.
+      - Cổ phần của $company_name$ chứng kiến mức sụt giảm không đáng kể $period_change$% trong phiên vừa qua.
+    fall_with_low:
+      - Cổ phiếu $company_name$ đã giảm giá $period_change$% trong phiên vừa qua sau một đợt điều chỉnh $period_low$% trong phiên.
+      - Cổ phiếu $company_name$ đã sụt giảm $period_change$% sau một đợt điều chỉnh $period_low$% trong phiên.
+      - Sau một đợt điều chỉnh $period_low$% trong phiên vừa qua, cổ phần của $company_name$ đã đóng cửa với mức giảm giá $period_change$%.
+      - Sau một đợt điều chỉnh $period_low$% trong phiên vừa qua, cổ phần của $company_name$ đã đóng cửa trong sắc đỏ với $period_change$%.
+    fall_with_high:
+      - Cổ phiếu $company_name$ đã giảm giá $period_change$% trong phiên vừa qua sau khi tăng đến $period_high$% trong phiên.
+      - Cổ phiếu $company_name$ đã sụt $period_change$% trong phiên vừa qua sau khi tăng đến $period_high$% trong phiên.
+  lower_line:
+    no_change:
+      - Cổ phiếu của $company_name$ giao dịch đi ngang trong phiên gần nhất.
+      - Cổ phiếu của $company_name$ không thay đổi trong phiên gần nhất.
+    major_gain:
+      - Cổ phiếu của $company_name$ đã tăng mạnh $period_change$% trong phiên gần nhất.
+      - Cổ phiếu của $company_name$ đã tăng vọt $period_change$% trong phiên gần nhất.
+      - Cổ phiếu $company_name$ đã tăng mạnh $period_change$% trong phiên gần nhất.
+      - Cổ phiếu $company_name$ đã tăng vọt $period_change$% trong phiên gần nhất.
+    simple_gain:
+      - Cổ phiếu của $company_name$ đã tăng $period_change$% trong phiên gần nhất.
+      - Cổ phiếu của $company_name$ đã tăng $period_change$% trong phiên gần nhất.
+      - Cổ phiếu $company_name$ tăng $period_change$% trong phiên gần nhất.
+      - Cổ phiếu $company_name$ tăng $period_change$% trong phiên gần nhất.
+    minor_gain:
+      - Cổ phiếu của $company_name$ đã tăng nhẹ $period_change$% trong phiên gần nhất.
+      - Cổ phiếu $company_name$ đã tăng nhẹ $period_change$% trong phiên gần nhất.
+    major_fall:
+      - Cổ phiếu của $company_name$ đã giảm mạnh $period_change$% trong phiên gần nhất.
+      - Cổ phiếu của $company_name$ lao dốc $period_change$% trong phiên gần nhất.
+      - Cổ phiếu của $company_name$ đã giảm mạnh $period_change$% trong phiên gần nhất.
+      - Cổ phiếu của $company_name$ sụt giảm mạnh $period_change$% trong phiên gần nhất.
+    simple_fall:
+      - Cổ phiếu của $company_name$ đã giảm $period_change$% trong phiên gần nhất.
+      - Cổ phiếu của $company_name$ đã giảm $period_change$% trong phiên gần nhất.
+      - Phiên giao dịch gần nhất chứng kiến ​​cổ phiếu của $company_name$ giảm $period_change$%.
+      - Phiên gần nhất chứng kiến ​​cổ phiếu của $company_name$ giảm $period_change$%.
+      - Cổ phiếu $company_name$ đã giảm $period_change$% trong phiên gần nhất.
+      - Cổ phiếu $company_name$ đã giảm $period_change$% trong phiên gần nhất.
+      - Phiên giao dịch gần nhất đã chứng kiến cổ phiếu ​​$company_name$ giảm $period_change$%.
+      - Phiên giao dịch gần nhất chứng kiến cổ phiếu ​​$company_name$ giảm $period_change$%.
+    minor_fall:
+      - Cổ phiếu của $company_name$ đã giảm nhẹ $period_change$% trong phiên gần nhất.
+      - Cổ phiếu $company_name$ đã giảm nhẹ $period_change$% trong phiên gần nhất.
+#--------------------------------------------------------------------------------------------------------------------------------------------#
+indicator_shells:
+  narration:
+    neutral_signal:
+      - $indicator$ đang cho tín hiệu trung lập.
+    simple_signal:
+      - $indicator$ đang cho tín hiệu $signal$.
+      - $indicator$ chỉ báo một cơ hội $signal$.
+    market_status: # $indicator$ is overbought or oversold
+      - $indicator$ chỉ báo một thị trường $signal$.
+      - Theo $indicator$, chúng ta đang ở trong một thị trường $signal$.
+    align_signal:
+      - Tín hiệu $signal$ của $indicator$ khớp với phân tích kỹ thuật tổng quát.
+      - $indicator$ đang cho tín hiệu $signal$ khớp với phân tích kỹ thuật tổng quát của chúng tôi.
+    adverse_signal:
+      - Chỉ báo $indicator$ $signal$ cho tín hiệu trái ngược với phân tích kỹ thuật tổng thể của chúng tôi.
+      - Chỉ báo $indicator$ đang cho tín hiệu $signal$, trái ngược với phân tích kỹ thuật tổng thể của chúng tôi.
+    align_market_status:
+      - Chỉ báo $indicator$ báo hiệu thị trường $signal$, khẳng định lại tín hiệu $total_summary$ từ phân tích kỹ thuật của chúng tôi.
+      - Theo chỉ báo $indicator$, chúng ta đang ở trong thị trường $signal$, khẳng định lại tín hiệu $total_summary$ của phân tích kỹ thuật.
+  lower_line:
+    neutral_signal:
+      - Chỉ báo $indicator$ đang cho tín hiệu trung lập.
+      - Chỉ báo $indicator$ chưa rõ ràng.
+      - Chỉ báo $indicator$ chưa thể hiện rõ ràng.
+      - $indicaotr$ nằm trong vùng trung lập.
+    simple_signal:
+      - Chỉ báo $indicator$ đang cho tín hiệu $signal$.
+      - Chỉ báo $indicator$ hiện đang trong khu vực $signal$.
+      - Chỉ báo $indicator$ hiện đang ở trong khu vực $signal$.
+    market_status:
+      - Chỉ báo $indicator$ cho thấy thị trường $signal$.
+      - Theo chỉ báo $indicator$, chúng ta đang ở trong một thị trường $signal$.

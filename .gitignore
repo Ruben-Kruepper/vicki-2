@@ -1,0 +1,7 @@
+venv
+config.py
+__pycache__
+.ipynb_checkpoints
+vicki_credits.json
+charts
+drivers
