@@ -15,7 +15,7 @@ API_KWARGS = {
     'fcsapi'    : fcsapi(cfg.FSCAPI_TOKEN),
     'fxsc'      : FxstreetCalendar(),
     'ans'       : AzureNewsService(cfg.AZURE_KEY),
-    'cg'        : ChartGrabber(cfg.TRADINGVIEW_URL, cfg.TRADINGVIEW_USERNAME, cfg.TRADINGVIEW_PASSWORD, cfg.CHART_PATH)
+    'cg'        : ChartGrabber(cfg.TRADINGVIEW_URL, cfg.TRADINGVIEW_USERNAME, cfg.TRADINGVIEW_PASSWORD, cfg.EVENING_EDITION_CHART_PATH)
 }
 
 en_author = EnglishAuthor('Vicki Master - EN - Evening Edition', **API_KWARGS)
