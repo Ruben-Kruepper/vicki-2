@@ -11,7 +11,7 @@ import shutil
 import time
 
 
-if not dt.datetime.today().weeekday() in (4,5):
+if not dt.datetime.today().weekday() in (4,5):
     API_KWARGS = {
         'fcsapi'    : fcsapi(cfg.FSCAPI_TOKEN),
         'fxsc'      : FxstreetCalendar(),

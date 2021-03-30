@@ -1,1 +1,0 @@
-C:\Users\NF6\Documents\Vicki\vicki_2_0\venv\Scripts\activate.bat && python C:\Users\NF6\Documents\Vicki\vicki_2_0\daily_demo.py 
