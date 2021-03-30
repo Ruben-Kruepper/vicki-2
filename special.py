@@ -9,7 +9,6 @@ import config as cfg
 import datetime as dt
 import shutil
 
-# shutil.rmtree(cfg.CHART_PATH, ignore_errors=True)
 # 
 # API_KWARGS = {
 #     'fcsapi'    : fcsapi(cfg.FSCAPI_TOKEN),
@@ -26,5 +25,6 @@ import shutil
 #     author.write_forex_sentences()
 
 # API_KWARGS['cg'].driver.close()
-while True:
-    print(fcsapi(cfg.FSCAPI_TOKEN).query_fx_pair('EUR/USD'))
+cg = ChartGrabber(cfg.TRADINGVIEW_URL, cfg.TRADINGVIEW_USERNAME, cfg.TRADINGVIEW_PASSWORD, './test')
+cg.make_chart('AUD/USD')
+cg.driver.close()

@@ -4,6 +4,8 @@ from selenium.webdriver.support.ui  import WebDriverWait
 from selenium.webdriver.common.by   import By
 from selenium.webdriver.common.keys import Keys
 
+import datetime
+
 from PIL import Image
 
 from os.path import dirname, abspath, join
@@ -19,7 +21,7 @@ def chart_name(symbol):
 class ChartGrabber:
 
     def __init__(self, url, username, password, save_path=ROOT):
-        self.save_path = save_path
+        self.save_path = save_path + '/' + datetime.datetime.today().strftime('%d%m%y')
         os.makedirs(self.save_path, exist_ok=True)
 
         self.driver = webdriver.Edge(executable_path=join(ROOT, 'data', 'drivers', 'msedgedriver.exe'))
@@ -69,6 +71,7 @@ class ChartGrabber:
         chart = WebDriverWait(self.driver, 30).until(EC.presence_of_element_located((By.CLASS_NAME, 'chart-markup-table')))
         image = Image.open(io.BytesIO(chart.screenshot_as_png))
         width, height = image.size
+        
         image = image.crop((width-1730, height-730, width, height))
 
         with open(join(self.save_path, name), 'wb+') as f:
