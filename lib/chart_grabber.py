@@ -21,7 +21,7 @@ def chart_name(symbol):
 class ChartGrabber:
 
     def __init__(self, url, username, password, save_path=ROOT):
-        self.save_path = save_path + '/' + datetime.datetime.today().strftime('%d%m%y')
+        self.save_path = save_path + '/' + (datetime.datetime.today() + datetime.timedelta(days=1)).strftime('%d%m%y')
         os.makedirs(self.save_path, exist_ok=True)
 
         self.driver = webdriver.Edge(executable_path=join(ROOT, 'data', 'drivers', 'msedgedriver.exe'))
@@ -36,7 +36,6 @@ class ChartGrabber:
         password_input.send_keys(password)
         password_input.send_keys(Keys.ENTER)
         WebDriverWait(self.driver, 30).until(EC.presence_of_element_located((By.CLASS_NAME, 'chart-markup-table')))
-        # WebDriverWait(self.driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, "widgetbar-hider"))).click()
         try:
             WebDriverWait(self.driver, 10).until(EC.presence_of_element_located((By.XPATH, '//span[text()="Accept"]'))).find_element_by_xpath('./..').click()
         except:
