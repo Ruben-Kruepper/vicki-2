@@ -22,7 +22,7 @@ class ChartGrabber:
         self.save_path = save_path
         os.makedirs(self.save_path, exist_ok=True)
 
-        self.driver = webdriver.Edge(executable_path=join(ROOT, 'drivers', 'msedgedriver.exe'))
+        self.driver = webdriver.Edge(executable_path=join(ROOT, 'data', 'drivers', 'msedgedriver.exe'))
         self.driver.set_window_size(1920, 1080)
 
         self.driver.get(url)
