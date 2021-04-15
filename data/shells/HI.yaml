@@ -1,0 +1,208 @@
+---
+forex_shells:
+  narration:
+    no_change:
+      - $pair_verbose$ की जोड़ी पिछले सत्र में साइडवेज़ में कारोबार करती है.
+      - $pair_verbose$ का मूल्य पिछले सत्र में काफी हद तक अपरिवर्तित रहा.
+    major_gain:
+      - $pair_verbose$ जोड़ी ने पिछले सत्र में $period_change$% उत्सादित हुआ.
+      - $pair_verbose$ जोड़ी ने पिछले सत्र में $period_change$% आसमान छू लिया.
+    simple_gain:
+      - $pair_verbose$ की जोड़ी ने पिछले सत्र में $period_change$% परिवर्तन प्राप्त किया.
+      - $pair_verbose$ पिछले सत्र में $period_change$% यह जोड़ी बढ़ी.
+      - $base_verbose $ बढ़ा  $period_change$%  पिछले कारोबारी सत्र में बढ़त दर्ज की गई.
+      - $base_verbose$ प्राप्त किया $period_change$% पिछले सत्र  $quote_verbose$ के मुकाबले में.
+      - पिछले सत्र में $base_verbose$ बढ़ा $period_change$% $quote_verbose$ के मुकाबले में. 
+      - पिछले सत्र में $base_verbose$ $period_change$% लाभ के  $quote_verbose$ मुकाबले देखा गया.
+    minor_gain:
+      - $pair_verbose$ जोड़ी ने पिछले सत्र में एक मामूली बढ़त हासिल की $period_change$%.
+      - $pair_verbose$ जोड़ी ने पिछले सत्र में एक मामूली ऊपर की ओर जोर दिया, जिससे $period_change$% बदल गया
+      - $base_verbose$ को पिछले सत्र में $quot_verbose$ के मुकाबले $period_change$% की मामूली टक्कर मिली.
+      - $pair_verbose$ इस जोड़ी ने पिछले सत्र में  $period_change$% में मामूली वृद्धि देखी
+    gain_with_low:
+      - $pair_verbose$ पिछले सत्र में $period_change$% इंट्रा सेशन डुबकी के बाद $period_low$% प्राप्त की.
+      - $pair_verbose$ इंट्रा सेशन डिप के बाद $period_change$% यह जोड़ी बढ़ी $period_low$%.
+      - पिछले सत्र के दौरान एक $period_low$% एक डुबकी के बाद $pair_verbose$ $period_change$% जोड़ी लाभ के साथ बंद हुई.
+      - पिछले सत्र के दौरान एक $period_low$% एक डुबकी के बाद इस जोड़ी ने $pair_verbose$ जोड़ी हरे रंग में $period_change$% बंद हो गई.
+    gain_with_high:
+      - $pair_verbose$ ये जोड़ी  $period_change$% इस सत्र के दौरान $period_high$% उतनी ही बढ़ी जितनी पिछले सत्र के दौरान.
+      - $pair_verbose$ पिछले सत्र में  $period_change$% उतनी ही बढ़ी $period_high$% जितनी सत्र के दौरान रही.
+    major_fall:
+      - $pair_verbose$ पिछले सत्र में $period_change$% जोड़ी टूट गई.
+      - $pair_verbose$ की जोड़ी ने अंतिम सत्र में  $period_change$% विभाजन किया.
+    simple_fall:
+      - $pair_verbose$ अंतिम सत्र में $period_change$% यह जोड़ी गिर गई.
+      - $pair_verbose$ अंतिम सत्र में $period_change$% यह जोड़ी गिर गई.
+      - $base_verbose$ पिछले $period_change$% कारोबारी सत्र में $quote_verbose$ गिरावट आई थी.
+      - $base_verbose$ पिछले सत्र $period_change$% के मुकाबले में $quote_verbose$  गिरावट.
+      - पिछले सत्र में $base_verbose$ $period_change$% के मुकाबले $quote_verbose$ गिरावट देखी गई.
+      - पिछले सत्र में $base_verbose$ के मुकाबले  $quote_verbose$ गिरावट देखी गई.
+    minor_fall:
+      - $pair_verbose$ पिछले सत्र में  यह जोड़ी नीचे की ओर गिरी $period_change$%. 
+      - $pair_verbose$ इस जोड़ी ने पिछले सत्र में मामूली बदलाव किया $period_change$% जिससे वह गिर गई.
+      - $base_verbose$ पिछले सत्र में $period_change$% के मुकाबले $quote_verbose$ थोड़ा डूबा. 
+      - $pair_verbose$ इस जोड़ी ने पिछले सत्र में $period_change$% मामूली गिरावट देखी.
+    fall_with_low:
+      - $pair_verbose$ पिछले सत्र में डुबकी लगाने के बाद $period_low$% यह जोड़ी गिर गई.
+      - $pair_verbose$ यह जोड़ी $period_change$% अंतर-सत्र डुबकी के बाद $period_low$% गिर गई.
+      - एक डुबकी के बाद $period_low$% अंतिम सत्र के दौरान $pair_verbose$ जोड़ी गिरावट के साथ $period_change$% बंद हो गई.
+      - एक डुबकी के बाद $period_low$% अंतिम सत्र के दौरान $pair_verbose$ जोड़ी ने $period_change$% लाल रंग में बंद हो गई.
+    fall_with_high:
+      - $pair_verbose$ यह जोड़ी सत्र के दौरान $period_change$% उतनी ही घटती गई जितना  $period_high$% पिछले सत्र में घटती जा रही थी. .
+      - $pair_verbose$ यह जोड़ी  $period_change$% पिछले सत्र में उतना ही गिरी  $period_high$% जितना इस सत्र में.
+  lower_line: # Shorter sentences for the lower line
+    no_change:
+      - $base_symbol$/$quote_symbol$ पिछले सत्र में साईडवेस में कारोबार किया.
+      - $base_symbol$/$quote_symbol$ पिछले सत्र में काफी हद तक अपरिवर्तित रहा.
+    major_gain:
+      - $base_ symbol$/$quote_symbol$ अंतिम सत्र में  $period_change$% उत्सादित हुआ . 
+      - $base_symbol$/$quote_symbol$ अंतिम सत्र में  $period_change$% आसमान छू रही थी. 
+    simple_gain:
+      - $base_symbol$/$quote_symbol$ अंतिम सत्र में $period_change$% लाभ प्राप्त किया.
+      - $base_symbol$/$quote_symbol$ अंतिम सत्र में $period_change$% वृद्धि हुई. 
+    minor_gain:
+      - $base_symbol$/$quote_symbol$ अंतिम सत्र में $period_change$% की मामूली वृद्धि देखी गई.
+      - $pair_verbose$ पिछले सत्र में $period_change$% मध्यम लाभ प्राप्त किया.
+    major_fall:
+      - $base_symbol$/$quote_symbol$ $period_change$% अंतिम सत्र में गिरावट हुई.
+      - $base_symbol$/$quote_symbol$ अंतिम सत्र में $period_change$% डुबकी लगाईं. 
+    simple_fall:
+      - $base_symbol$/$quote_symbol$ अंतिम सत्र में $period_change$% घटने लगा.
+      - $base_symbol$/$quote_symbol$ अंतिम सत्र में  $period_change$% गिर गया.
+      - $base_symbol$ पिछले कारोबारी सत्र  $period_change$% के मुकाबले में $quote_symbol$ गिर गया. 
+      - $base_symbol$ पिछले कारोबारी सत्र $period_change$% के मुकाबले में  $quote_symbol$ घट गया. 
+      - पिछले सत्र में  $base_symbol$ गिरावट देखी गई $period_change$% के मुकाबले में.
+      - पिछले सत्र में $base_symbol$ घटोत्तरी $period_change$% देखी गयी $quote_symbol$ के मुकाबले में. 
+    minor_fall:
+      - $base_symbol$/$quote_symbol पिछले सत्र में नीचे की ओर गिरते हुए $period_change$%.
+      - $base_symbol$/$quote_symbol$ पिछले सत्र में एक छोटे से नीचे की ओर सुधार किया गया, जिसे छोड़ दिया गया $period_change$%.
+      - $base_symbol$/$quote_symbol$ अंतिम सत्र में $period_change$% का मामूली डिप देखा. 
+#--------------------------------------------------------------------------------------------------------------------------------------------#
+stock_shells:
+  narration:
+    no_change:
+      - $company_name$ के शेयर ने पिछले सत्र में साइडवेज़ में कारोबार किया
+      - $company_name$ के शेयर की कीमत पिछले सत्र में काफी हद तक अपरिवर्तित रही. 
+    major_gain:
+      - $company_name$ के शेयर उत्सादित हुए $period_change$% अंतिम सत्र में. 
+      - $company_name$ के स्टॉक ने पिछले सत्र में $period_change$% आसमान छू लिया. 
+      - $company_name$ के शेयरों में पिछले सत्र में $period_change$% विस्फोट हुआ.
+      - $company_name$ के शेयर पिछले सत्र में  $period_change$% आसमान छू गए. 
+    simple_gain:
+      - $company_name$ का स्टॉक पिछले सत्र में $period_change$% बढ़ा. 
+      - $company_name$ के स्टॉक में  पिछले सत्र में $period_change$% वृद्धि हुई. 
+      - पिछले सत्र में  $company_name$ के स्टॉक में $period_change$% बढ़ोत्तरी देखी गई. 
+      - पिछले सत्र में $company_name$ के स्टॉक में लाभ देखा गया $period_change$%.
+      - $company_name$ के शेयर ने पिछले सत्र में  $period_change$% लाभ प्राप्त किया. 
+      - $company_name$ के शेयर अंतिम सत्र में $period_change$% ऊपर उठे. 
+      - अंतिम सत्र में $company_name$ के शेयर ऊपर उछले  $period_change$%. 
+      - अंतिम सत्र में $company_name$ के शेयरों ने लाभ प्राप्त किया  $period_change$%. 
+    minor_gain:
+      - $company_name$ के स्टॉक ने पिछले सत्र में मामूली रूप से बढ़त हासिल की $period_change$%.
+      - $company_name$ के शेयर ने पिछले सत्र में मामूली वृद्धि की है  $period_change$%. 
+      - $company_name$ के स्टॉक में पिछले सत्र में $period_change$% मामूली बढ़त देखी गई. 
+      - $company_name$ शेयरों ने पिछले सत्र में एक मामूली ऊपर की ओर जोर दिया $period_change$%.
+      - $company_name$ शेयरों ने पिछले सत्र में मामूली वृद्धि की, जो तेजी से बढ़ा $period_change$%.
+    gain_with_low:
+      - $company_name$ के शेयर का $period_change$% पिछले सत्र में $period_low$% इंट्रा सेशन डिप के बाद स्टॉक बढ़ा. 
+      - $company_name$ का शेयर $period_change$% एक $period_low$% इंट्रा सेशन डिप के बाद बढ़ा.
+      - अंतिम सत्र के दौरान एक $period_low$% एक गिरावट के बाद $company_name$ शेयर एक लाभ के साथ बंद हुआ $period_change$%.
+      - पिछले सत्र के दौरान एक $period_low$% एक गिरावट के बाद $company_name$ के शेयर  $period_change$% हरे रंग में बंद हुए.
+    gain_with_high:
+      - $company_name$ के शेयर ने पिछले सत्र में $period_change$% उतनी ही वृद्धि हुई  $period_high$% जितनी सत्र के दौरान. 
+      - $company_name$ के शेयर बढे $period_change$% पिछले सत्र में उतने ही लाभ के बाद स्टॉक में तेजी आई $period_high$%  जितनी सत्र के दौरान
+    major_fall:
+      - पिछले सत्र में $company_name$ का स्टॉक $period_change$% लुढ़क गया. 
+      - पिछले सत्र में $company_name$ के स्टॉक ने  $period_change$% डुबकी लगाई. 
+      - पिछले सत्र में $company_name$ के शेयर $period_change$% ध्वस्त हो गए. 
+      - पिछले सत्र में $company_name$ के शेयर में $period_change$% गिरावट दर्ज की गई. 
+    simple_fall:
+      - $company_name$ का स्टॉक पिछले सत्र में $period_change$% लुढ़क गया. 
+      - $company_name$ का स्टॉक पिछले सत्र में $period_change$% गिर गया. 
+      - $company_name$ के स्टॉक को पिछले सत्र में गिरते देखा गया $period_change$%.
+      - $company_name$ के स्टॉक को अंतिम सत्र में लुढ़कते देखा गया $period_change$%.
+      - $company_name$ के शेयर पिछले सत्र में $period_change$% लुढ़क गए. 
+      - $company_name$ के शेयर पिछले सत्र में $period_change$% गिर गए. 
+      - $company_name$ के शेयर को पिछले सत्र में $company_name$ के शेयर को गिरते देखा गया $period_change$%.
+    minor_fall:
+      - $company_name$ के स्टॉक ने पिछले सत्र में मामूली घटोत्तरी के साथ गिरावट दर्ज की $period_change$%.
+      - $company_name$ का स्टॉक पिछले सत्र में मामूली घटोत्तरी के साथ लुढका $period_change$%
+      - $company_name$ के स्टॉक ने पिछले सत्र में मामूली गिरावट  $period_change$% देखी. 
+      - $company_name$ शेयरों ने पिछले सत्र में मामूली गिरावट दर्ज की $period_change$%.
+      - $company_name$ का शेयर  पिछले सत्र में मामूली घटोत्तरी के साथ लुढका $period_change$%.
+      - $company_name$ के शेयरों में पिछले सत्र में  $period_change$% मामूली गिरावट देखी गई. 
+    fall_with_low:
+      - $company_name$ का स्टॉक $period_change$% पिछले सत्र में इंट्रा सेशन डिप के बाद $period_low$% गिर गया था.
+      - $company_name$ का स्टॉक $period_change$% पिछले सत्र में इंट्रा सेशन डिप के बाद $period_low$% लुढ़क गया था.
+      - पिछले सत्र में $period_low$% एक डुबकी के बाद $company_name$ के शेयर $period_change$% हानि के साथ बंद हुए. 
+      - अंतिम सत्र के दौरान $period_low$% एक डुबकी के बाद $company_name$ का शेयर एक नुकसान के साथ बंद हुआ $period_change$%.
+    fall_with_high:
+      - $company_name$ के स्टॉक पिछले सत्र में उतने ही गिर गए $period_change$% जितने $period_high$% सत्र के दौरान बढ़े.
+      - $company_name$ का स्टॉक सत्र के दौरान $period_high$% उतना ही लाभ पाने के बाद पिछले सत्र में गिरा. 
+  lower_line:
+    no_change:
+      - $company_name$ के स्टॉक ने पिछले सत्र में साइडवेज़ में कारोबार किया.  
+      - $company_name$ के स्टॉक पिछले सत्र में अपरिवर्तित रहे.  
+    major_gain:
+      - $company_name$ का स्टॉक पिछले सत्र में $period_change$% उत्सादित हुआ. 
+      - $company_name$ के स्टॉक पिछले सत्र में $period_change$% आसमान छू गए. 
+      - $company_name$ के शेयर पिछले सत्र में $period_change$% उत्सादित हुए.  
+      - $company_name$ के शेयर पिछले सत्र में $period_change$% आसमान छू गए. 
+    simple_gain:
+      - $company_name$ के स्टॉक में पिछले सत्र में $period_change$% का लाभ हुआ.  
+      - $company_name$ के स्टॉक में पिछले सत्र में $period_change$% की बढ़त हुई. 
+      - $company_name$ के शेयर में पिछले सत्र में $period_change$% का लाभ हुआ.  
+      - $company_name$ के शेयर में पिछले सत्र में $period_change$% की बढ़त हुई. 
+    minor_gain:
+      - $company_name$ के स्टॉक ने पिछले सत्र में $period_change$% की मामूली वृद्धि देखी. 
+      - $company_name$ के शेयर ने पिछले सत्र में $period_change$% की मामूली वृद्धि देखी. 
+    major_fall:
+      - $company_name$ के स्टॉक ने पिछले सत्र में $period_change$% की गिरावट देखी. 
+      - $company_name$ के स्टॉक ने पिछले सत्र में $period_change$% ने डुबकी लगाई. 
+      - $company_name$ के शेयर पिछले सत्र में $period_change$% पे ध्वस्त हो गए. 
+      - $company_name$ के शेयर ने पिछले सत्र में $period_change$% की गिरावट देखी
+    simple_fall:
+      - $company_name$ का स्टॉक पिछले सत्र में $period_change$% पर लुढ़क गया. 
+      - $company_name$ का स्टॉक पिछले सत्र में $period_change$% पर गिर गया. 
+      - पिछले सत्र ने $company_name$ का स्टॉक $period_change$% पर गिरते देखा. 
+      - पिछले सत्र ने $company_name$ का स्टॉक $period_change$% पर लुढ़कते देखा. 
+      - पिछले सत्र में $company_name$ के शेयर $period_change$% लुढ़क  गए. 
+      - पिछले सत्र में $company_name$ के शेयर $period_change$% गिर गए.
+      - पिछले सत्र ने $company_name$ के शेयर $period_change$% पर लुढ़कते देखे. 
+      - पिछले सत्र ने $company_name$ के शेयर $period_change$% पर गिरते देखे. 
+    minor_fall:
+      - $company_name$ के स्टॉक ने पिछले सत्र ने $period_change$% की मामूली गिरावट देखी. 
+      - $company_name$ के शेयर ने पिछले सत्र ने $period_change$% की मामूली घटोत्तरी  देखी.
+#--------------------------------------------------------------------------------------------------------------------------------------------#
+indicator_shells:
+  narration:
+    neutral_signal:
+      - $indicator$ एक तटस्थ संकेत दे रहा है।
+    simple_signal:
+      - $indicator$ एक $signal$ संकेत दे रहा है 
+      - $indicator$ $signal$ing एक संकेत की और इंगित कर रहा है. 
+    market_status: # $indicator$ is overbought or oversold
+      - $indicator$ $signal$ मार्किट की और इंगित करता है. 
+      - यथा $indicator$ हम एक $signal$ मार्केट हैं.
+    align_signal:
+      - $indicator$ का संकेत $signal$ समग्र तकनीकी विश्लेषण के अनुरूप है.
+      - $indicator$ एक संकेत दे रहा है $signal$ जो हमारे समग्र तकनीकी विश्लेषण से मेल खाता है. 
+    adverse_signal:
+      - $indicator$ का संकेत $signal$ हमारे समग्र तकनीकी विश्लेषण का खंडन करता है. 
+      - $indicator$ एक $signal$ संकेत दे रहा है हमारे समग्र तकनीकी विश्लेषण के खिलाफ जा रहा है.
+    align_market_status:
+      - $indicator$ एक बाजार को $signal$ इंगित करता है $overall_summary$ हमारे तकनीकी विश्लेषण से संकेत की पुष्टि करते हुए.
+      - यथा $indicator$ हम एक $signal$ मार्केट हैं और  $overall_summary$ तकनीकी विश्लेषण का समर्थन का संकेत कर रहे है.  
+  lower_line:
+    neutral_signal:
+      - $indicator$ एक तटस्थ संकेत दे रहा है. 
+      - $indicator$ अनिर्णायक है.
+      - $indicator$ अनिर्दिष्ट है.
+      - $indicaotr$ तटस्थ क्षेत्र में है
+    simple_signal:
+      - $indicator$ एक संकेत दे रहा है $signal$ को. 
+      - $indicator$ वर्तमान में $signal$ क्षेत्र में है. 
+      - $indicator$ वर्तमान में $signal$ जोन में है. 
+    market_status:
+      - $indicator$ एक  $signal$ मार्केट को दर्शाता है. 
+      - $indicator$ के अनुसार हम $signal$ मार्केट में हैं. 

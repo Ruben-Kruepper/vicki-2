@@ -1,0 +1,209 @@
+---
+forex_shells:
+  narration:
+    no_change:
+      - El par $pair_verbose$ cotizó lateralmente en la última sesión.
+      - El precio de $pair_verbose$ se mantuvo prácticamente sin cambios en la última sesión.
+    major_gain:
+      - El par $pair_verbose$ explotó $period_change$% en la última sesión.
+      - El $pair_verbose$ se disparó $period_change$% en la última sesión.            
+    simple_gain:
+      - El $pair_verbose$ ha ganado $period_change$% en la última sesión.
+      - El $pair_verbose$ rosa $period_change$% en la última sesión.
+      - La $base_verbose$ subió $period_change$% frente a la $quote_verbose$ en la última sesión bursátil.
+      - La $base_verbose$ ganó $period_change$% frente a la $quote_verbose$ en la última sesión.
+      - En la última sesión, la $base_verbose$ aumentó $period_change$% frente a la $quote_verbose$.
+      - En la última sesión, la $base_verbose$ ganó $period_change$% frente a la $quote_verbose$.
+    minor_gain:
+      - El par $pair_verbose$ realizó un pequeño impulso al alza en la última sesión, ganando $period_change$%.
+      - El par $pair_verbose$ realizó un pequeño impulso al alza en la última sesión, subiendo $period_change$%.
+      - La $base_verbose$ obtuvo un ligero aumento de $period_change$% frente a la $quote_verbose$ en la última sesión.
+      - El par $pair_verbose$ registró una pequeña subida de $period_change$% en la última sesión.
+    gain_with_low:
+      - El $par_verbose$ ganó $period_change$%  en la última sesión después de $period_low$%  descenso en el período de sesiones          
+      - El par $pair_verbose$ subió $period_change$% tras un descenso intrasesión de $period_low$%.
+      - Tras un descenso de $period_low$% durante la última sesión, el par $pair_verbose$ cerró con una ganancia de $period_change$%.
+      - Tras un descenso de $period_low$% durante la última sesión, el par $pair_verbose$ cerró $period_change$% en verde.
+    gain_with_high:
+      - El par $pair_verbose$ ganó $period_change$% en la última sesión después de subir al máximo $period_high$% durante la sesión.
+      - El par $pair_verbose$ subió $period_change$% en la última sesión después de ganar un máximo de $period_high$% durante la sesión.
+    major_fall:
+     - El par $pair_verbose$ se desplomó $period_change$% en la última sesión.
+     - El par $pair_verbose$ se sumergió $period_change$% en la última sesión.
+    simple_fall:
+      - El par $pair_verbose$ dejó $period_change$% en la última sesión.
+      - El par $pair_verbose$ cayó $period_change$% en la última sesión.
+      - La $base_verbose$ cayó $period_change$% frente a la $quote_verbose$ en la última sesión de transacciones.
+      - La $base_verbose$ cayó $period_change$% frente a la $quote_verbose$ en la última sesión.
+      - En la última sesión, la $base_verbose$ cayó $period_change$% frente a la $quote_verbose$.
+      - En la última sesión se ha visto que la $base_verbose$ ha caído $period_change$% frente a la $quote_verbose$.
+    minor_fall:
+      - El par $pair_verbose$ ha bajado en la última sesión, cayendo $period_change$%.
+      - El par $pair_verbose$ realizó un pequeño impulso a la baja en la última sesión, cayendo $period_change$%.
+      - La $base_verbose$ descendió un poco $period_change$% frente a la $quote_verbose$ en la última sesión.
+      - El par $pair_verbose$ vio un descenso menor de $period_change$% en la última sesión.
+    fall_with_low:
+      - El par $pair_verbose$ cayó $period_change$% en la última sesión después de una intrasesión de $period_low$%.
+      - El par $pair_verbose$ cayó $period_change$% tras una intrasesión de $period_low$%.
+      - Tras un descenso de $period_low$% durante la última sesión, el par $pair_verbose$ cerró con un descenso de $period_change$%.
+      - Tras un descenso de $period_low$% durante la última sesión, el par $pair_verbose$ cerró con un descenso de $period_change$%.
+    fall_with_high:
+     - El par $pair_verbose$ cayó $period_change$% en la última sesión después de retroceder hasta $period_high$% durante la sesión.
+     - El par $pair_verbose$ bajó $period_change$% en la última sesión después de caer tanto como $period_high$% durante la sesión.
+  lower_line: # Shorter sentences for the lower line
+    no_change:
+      - $base_symbol$/$quote_symbol$ ha negociado lateralmente en la última sesión.
+      - $base_symbol$/$quote_symbol$ se mantuvo prácticamente sin cambios en la última sesión.
+    major_gain:
+      - $base_symbol$/$quote_symbol$ explotó $period_change$% en la última sesión.
+      - $base_symbol$/$quote_symbol$ se disparó $period_change$% en la última sesión.
+    simple_gain:
+      - $base_symbol$/$quote_symbol$ ganó $period_change$% en la última sesión.
+      - $base_symbol$/$quote_symbol$ aumentó $period_change$% en la última sesión.
+    minor_gain:
+     - $base_symbol$/$quote_symbol$ ha experimentado una pequeña subida de $period_change$% en la última sesión.
+     - El $pair_verbose$ ganó un $period_change$% moderado en la última sesión.
+    major_fall:
+     - $base_symbol$/$quote_symbol$ se desplomó $period_change$% en la última sesión.
+     - $base_symbol$/$quote_symbol$ dove $period_change$% en la última sesión.
+    simple_fall:
+      - $base_symbol$/$quote_symbol$ cayó $period_change$% en la última sesión.
+      - $base_symbol$/$quote_symbol$ cayó $period_change$% en la última sesión.
+      - El $símbolo_de_base$ cayó $period_change$% frente al $símbolo_de_cotización$ en la última sesión bursátil.
+      - El $símbolo_base$ bajó $período_de_cambio$% frente al $símbolo_de_cotización$ en la última sesión.
+      - En la última sesión, el $símbolo_de_base$ cayó un $period_change$% frente al $símbolo_de_cotización$.
+      - En la última sesión, el $símbolo_de_base$ cayó un $período_de_cambio$% frente al $símbolo_de_cotización$.
+    minor_fall:
+      - $base_symbol$/$quote_symbol$ corrigió a la baja en la última sesión, cayendo $period_change$%.
+      - $base_symbol$/$quote_symbol$ hizo una pequeña corrección a la baja en la última sesión, eliminando $period_change$%.
+      - $base_symbol$/$quote_symbol$ ha experimentado un pequeño descenso de $period_change$% en la última sesión.
+#--------------------------------------------------------------------------------------------------------------------------------------------#
+stock_shells:
+  narration:
+    no_change:
+     - Las acciones de $company_name$ cotizaron lateralmente en la última sesión.
+     - El precio de las acciones de $company_name$ se mantuvo prácticamente sin cambios en la última sesión.
+    major_gain:
+      - Las acciones de $company_name$ han subido $period_change$% en la última sesión.
+      - Las acciones de $company_name$ se dispararon $period_change$% en la última sesión.
+      - Las acciones de $company_name$ explotaron $período_%_cambio$ en la última sesión.
+      - Las acciones de $company_name$ se dispararon $period% change$ en la última sesión.
+    simple_gain:
+      - Las acciones de $company_name$ ganaron $period_change$% en la última sesión.
+      - Las acciones de $company_name$ subieron $period_change$% en la última sesión.
+      - En la última sesión, las acciones de la $company_name$ subieron $period_change$%.
+      - En la última sesión, las acciones de la $company_name$ ganaron $period_change$%.
+      - Las acciones de $company_name$ ganaron $period_change$% en la última sesión.
+      - Las acciones de $company_name$ subieron $period_change$% en la última sesión.
+      - En la última sesión, las acciones de $company_name$ subieron $period_change$%.
+      - En la última sesión, las acciones de $company_name$ ganaron $period_change$%.
+    minor_gain:
+      - Las acciones de $company_name$ hicieron un pequeño impulso al alza en la última sesión, ganando $period_change$%.
+      - Las acciones de $company_name$ hicieron un pequeño impulso al alza en la última sesión, subiendo $period_change$%.
+      - Las acciones de $company_name$ experimentaron una pequeña subida de $period_change$% en la última sesión.
+      - Las acciones de $company_name$ han tenido un pequeño impulso al alza en la última sesión, ganando $period_change$%.
+      - Las acciones de $company_name$ han tenido un pequeño impulso al alza en la última sesión, subiendo $period_change$%.
+      - Las acciones de $company_name$ experimentaron una pequeña subida de $period_change$% en la última sesión.
+    gain_with_low:
+      - Las acciones de $company_name$ ganaron $period_change$% en la última sesión después de una caída en la intrasesión de $period_low$%.
+      - Las acciones de $company_name$ subieron $period_change$% tras una intrasesión de $period_low$%.
+      - Tras un descenso de $period_low$% durante la última sesión, las acciones de $company_name$ cerraron con una ganancia de $period_change$%.
+      - Tras un descenso de $period_low$% durante la última sesión, las acciones de $company_name$ cerraron $period_change$% en verde.
+    gain_with_high:
+      - Las acciones de $company_name$ ganaron $period_change$% en la última sesión después de haber aumentado hasta $period_high$% durante la sesión.
+      - Las acciones de $company_name$ subieron $period_change$% en la última sesión después de ganar hasta $period_high$% durante la sesión.
+    major_fall:
+      - Las acciones de $company_name$ se desplomaron $period_change$% en la última sesión.
+      - Las acciones de $company_name$ cayeron $period_change$% en la última sesión.
+      - Las acciones de $company_name$ cayeron $period_change$% en la última sesión.
+      - Las acciones de $company_name$ se desplomaron $period_change$% en la última sesión.
+    simple_fall:
+      - Las acciones de $company_name$ cayeron $period_change$% en la última sesión.
+      - Las acciones de $company_name$ cayeron $period_change$% en la última sesión.
+      - En la última sesión, las acciones de $company_name$ cayeron $period_change$%.
+      - En la última sesión, las acciones de $company_name$ descendieron $period_change$%.
+      - Las acciones de $company_name$ han bajado $period_change$% en la última sesión.
+      - Las acciones de $company_name$ cayeron $period_change$% en la última sesión.
+      - En la última sesión, las acciones de $company_name$ cayeron $period_change$%.
+    minor_fall:
+      - Las acciones de $company_name$ tuvieron un pequeño descenso en la última sesión, cayendo $period_change$%.
+      - Las acciones de $company_name$ han tenido un pequeño descenso en la última sesión, bajando $period_change$%.
+      - Las acciones de $company_name$ experimentaron una pequeña caída de $period_change$% en la última sesión.
+      - Las acciones de $company_name$ tuvieron un pequeño descenso en la última sesión, cayendo $period_change$%.
+      - Las acciones de $company_name$ han tenido un pequeño descenso en la última sesión, bajando $period_change$%.
+      - Las acciones de $company_name$ experimentaron una pequeña caída de $period_change$% en la última sesión.
+    fall_with_low:
+      - Las acciones de $company_name$ cayeron $period_change$% en la última sesión tras una intrasesión de $period_low$%.
+      - Las acciones de $company_name$ cayeron $period_change$% tras una intrasesión de $period_low$%.
+      - Tras un descenso de $period_low$% durante la última sesión, las acciones de $company_name$ cerraron con una pérdida de $period_change$%.
+      - Tras un descenso de $period_low$% durante la última sesión, las acciones de $company_name$ cerraron $period_change$% en rojo.
+    fall_with_high:
+      - Las acciones de $company_name$ cayeron $period_change$% en la última sesión después de haber subido hasta $period_high$% durante la sesión.
+      - Las acciones de $company_name$ cayeron $period_change$% en la última sesión después de haber ganado hasta $period_high$% durante la sesión.
+  lower_line:
+    no_change:
+      - Las acciones de $company_name$ cotizaron lateralmente en la última sesión.
+      - Las acciones de $company_name$ no han variado en la última sesión.
+    major_gain:
+      - Las acciones de $nombre_de_la_empresa$ han subido un $período_de_cambio$% en la última sesión.
+      - Las acciones de $nombre_de_la_empresa$ se han disparado un $period_change$% en la última sesión.
+      - Las acciones de $nombre_de_la_empresa$ han subido un $período_de_cambio$% en la última sesión.
+      - Las acciones de $nombre_de_la_empresa$ se han disparado un $period_change$% en la última sesión.
+    simple_gain:
+      - Las acciones de $company_name$ ganaron $period_change$% en la última sesión.
+      - Las acciones de $company_name$ subieron $period_change$% en la última sesión.
+      - Las acciones de $company_name$ ganaron $period_change$% en la última sesión.
+      - Las acciones de $company_name$ subieron $period_change$% en la última sesión.
+    minor_gain:
+      - Las acciones de $company_name$ experimentaron una pequeña subida de $period_change$% en la última sesión.
+      - Las acciones de $company_name$ experimentaron una pequeña subida de $period_change$% en la última sesión.
+    major_fall:
+      - Las acciones de $company_name$ se desplomaron $period_change$% en la última sesión.
+      - Las acciones de $company_name$ cayeron $period_change$% en la última sesión.
+      - Las acciones de $company_name$ cayeron $period_change$% en la última sesión.
+      - Las acciones de $company_name$ se desplomaron $period_change$% en la última sesión.
+    simple_fall:
+      - Las acciones de $company_name$ cayeron $period_change$% en la última sesión.
+      - Las acciones de $company_name$ cayeron $period_change$% en la última sesión.
+      - En la última sesión, las acciones de $company_name$ cayeron $period_change$%.
+      - En la última sesión, las acciones de $company_name$ cayeron $period_change$%.
+      - Las acciones de $company_name$ cayeron $period_change$% en la última sesión.
+      - Las acciones de $company_name$ cayeron $period_change$% en la última sesión.
+      - En la última sesión, las acciones de $company_name$ cayeron $period_change$%.
+      - En la última sesión, las acciones de $company_name$ cayeron $period_change$%.
+    minor_fall:
+      - Las acciones de $company_name$ sufrieron una pequeña caída de $period_change$% en la última sesión.
+      - Las acciones de $company_name$ experimentaron una pequeña caída de $period_change$% en la última sesión.
+#--------------------------------------------------------------------------------------------------------------------------------------------#
+indicator_shells:
+  narration:
+    neutral_signal:
+      - El $indicator$ está dando una señal neutral.
+    simple_signal:
+      - El $indicator$ está dando una $signal$.
+      - El $indicator$ indica una oportunidad de $signal$ing.
+    market_status: # $indicator$ is overbought or oversold
+      - El $indicator$ indica un mercado de $signal$.
+      - Según el $indicator$, estamos en un mercado $signal$.
+    align_signal:
+      - La señal del $indicator$ está en línea con el análisis técnico general.
+      - El $indicator$ está dando una señal de $signal$, que coincide con nuestro análisis técnico general.
+    adverse_signal:
+      - La señal del $indicator$ contradice nuestro análisis técnico general.
+      - El $indicator$ está dando una señal $signal$, que va en contra de nuestro análisis técnico general.
+    align_market_status:
+      - El $indicator$ indica un mercado $signal$, reafirmando la señal $overall_summary$ de nuestro análisis técnico.
+      - Según el $indicator$, estamos en un mercado $signal$, apoyando la señal $overall_summary$ del análisis técnico.
+  lower_line:
+    neutral_signal:
+      - El $indicator$ está dando una señal neutral.
+      - El $indicator$ es indeciso.
+      - El $indicator$ está inseguro.
+      - El $indicator$ está en la zona neutral.
+    simple_signal:
+      - El $indicator$ está dando una $signal$.
+      - El $indicator$ está actualmente en territorio de $signal$.
+      - El $indicator$ está actualmente en la zona de $signal$.
+    market_status:
+      - El $indicator$ indica un mercado $signal$.
+      - Según el $indicator$, estamos en un mercado $signal$.

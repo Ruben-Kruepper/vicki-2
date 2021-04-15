@@ -653,3 +653,176 @@ class GermanAuthor(ShellManager):
         elif str(row['currencyCode']) != 'nan' and str(row['countryCode']) != 'nan':
             return f'{row["currencyCode"]} {row["translated_name"]}'
         return ''
+
+class RomanianAuthor(ShellManager):
+    def __init__(self, workbook_name, **kwargs):
+        super().__init__(workbook_name, './data/shells/RO.yaml', **kwargs)
+        
+    def make_narration(self, event_list):
+        shell = "$country_possesive$ $name$ se publicará a las $time$ GMT, $country_possesive$ $name$ a las $time$ GMT, $country_possesive$ $name$ a las $time$ GMT."
+        for event in event_list:
+            country_possesive = self.countries_possessive[event['countryCode']]
+            previous = str(event['previous']) + (event['unit'] or "")
+            time = event['dateUtc'].strftime('%H:%M')
+            shell = shell.replace('$country_possesive$', country_possesive, 1)
+            shell = shell.replace('$name$', event['translated_name'], 1)
+            shell = shell.replace('$previous$', previous, 1)
+            shell = shell.replace('$time$', time, 1)
+        return shell[0].upper() + shell[1:]
+
+    def make_title(self, row):
+        if str(row['countryCode']) != 'nan':
+            return f"{self.countries_possessive[row['countryCode']]} {row['translated_name']}"
+        return ''
+    
+    def make_pair_verbose(self, base_verbose, quote_verbose):
+        return f'{base_verbose}-{quote_verbose}' 
+
+class ArabicAuthor(ShellManager):
+    def __init__(self, workbook_name, **kwargs):
+        super().__init__(workbook_name, './data/shells/AR.yaml', **kwargs)
+        
+
+    def make_narration(self, event_list):
+        shell = "سيصدر $country_possesive$ $name$ على الساعة $time$ بتوقيت جرينتش, و $country_possesive$ $name$ على الساعة $ time$ بتوقيت جرينتش, و $country_possesive$ $name$ على الساعة $ time$ بتوقيت جرينتش."
+        for event in event_list:
+            country_possesive = self.countries_possessive[event['countryCode']]
+            previous = str(event['previous']) + (event['unit'] or "")
+            time = event['dateUtc'].strftime('%H:%M')
+            shell = shell.replace('$country_possesive$', country_possesive, 1)
+            shell = shell.replace('$name$', event['translated_name'], 1)
+            shell = shell.replace('$previous$', previous, 1)
+            shell = shell.replace('$time$', time, 1)
+        return shell
+
+    def make_title(self, row):
+        if str(row['countryCode']) != 'nan':
+            return f'{row["translated_name"]}{self.countries_possessive[row["countryCode"]]}'
+        return ''
+    
+    def make_pair_verbose(self, base_verbose, quote_verbose):
+        return f'{base_verbose}/{quote_verbose}'
+
+class ItalianAuthor(ShellManager):
+    def __init__(self, workbook_name, **kwargs):
+        super().__init__(workbook_name, './data/shells/IT.yaml', **kwargs)
+        
+    def make_narration(self, event_list):
+        shell = " $name$ $country_possesive$ sarà rilasciato alle $time$ GMT, $name$  $country_possesive$ alle $time$ GMT, $name$ $country_possesive$ alle $time$ GMT."
+        for event in event_list:
+            country_possesive = self.countries_possessive[event['countryCode']]
+            previous = str(event['previous']) + (event['unit'] or "")
+            time = event['dateUtc'].strftime('%H:%M')
+            shell = shell.replace('$country_possesive$', country_possesive, 1)
+            shell = shell.replace('$name$', event['translated_name'], 1)
+            shell = shell.replace('$previous$', previous, 1)
+            shell = shell.replace('$time$', time, 1)
+        return shell[0].upper() + shell[1:]
+
+    def make_title(self, row):
+        if str(row['countryCode']) != 'nan':
+            return f'{self.countries_possessive[row["countryCode"]]} {row["translated_name"]}'
+        return ''
+    
+    def make_pair_verbose(self, base_verbose, quote_verbose):
+        return f'{base_verbose}-{quote_verbose}'
+
+class PortugueseAuthor(ShellManager):
+    def __init__(self, workbook_name, **kwargs):
+        super().__init__(workbook_name, './data/shells/PT.yaml', **kwargs)
+        
+
+    def make_narration(self, event_list):
+        shell = "$country_possesive$ $name$ será divulgado às $time$ GMT, $country_possesive$ $name$ às $time$ GMT, $country_possesive$ $name$ às $time$ GMT."
+        for event in event_list:
+            country_possesive = self.countries_possessive[event['countryCode']]
+            previous = str(event['previous']) + (event['unit'] or "")
+            time = event['dateUtc'].strftime('%H:%M')
+            shell = shell.replace('$country_possesive$', country_possesive, 1)
+            shell = shell.replace('$name$', event['translated_name'], 1)
+            shell = shell.replace('$previous$', previous, 1)
+            shell = shell.replace('$time$', time, 1)
+        return shell[0].upper() + shell[1:]
+
+    def make_title(self, row):
+        if str(row['countryCode']) != 'nan':
+            return f'{row["translated_name"]} {self.countries_possessive[row["countryCode"]]}'
+        return ''
+    
+    def make_pair_verbose(self, base_verbose, quote_verbose):
+        return f'{base_verbose}-{quote_verbose}'
+
+class SpanishAuthor(ShellManager):
+    def __init__(self, workbook_name, **kwargs):
+        super().__init__(workbook_name, './data/shells/SP.yaml', **kwargs)
+        
+
+    def make_narration(self, event_list):
+        shell = "$country_possesive$ $name$ se publicará a las $time$ GMT, $country_possesive$ $name$ a las $time$ GMT, $country_possesive$ $name$ a las $time$ GMT."
+        for event in event_list:
+            country_possesive = self.countries_possessive[event['countryCode']]
+            previous = str(event['previous']) + (event['unit'] or "")
+            time = event['dateUtc'].strftime('%H:%M')
+            shell = shell.replace('$country_possesive$', country_possesive, 1)
+            shell = shell.replace('$name$', event['translated_name'], 1)
+            shell = shell.replace('$previous$', previous, 1)
+            shell = shell.replace('$time$', time, 1)
+        return shell[0].upper() + shell[1:]
+
+    def make_title(self, row):
+        if str(row['countryCode']) != 'nan':
+            return f'{row["translated_name"]} {self.countries_possessive[row["countryCode"]]}'
+        return ''
+    
+    def make_pair_verbose(self, base_verbose, quote_verbose):
+        return f'{base_verbose}-{quote_verbose}'
+
+class CzechAuthor(ShellManager):
+    def __init__(self, workbook_name, **kwargs):
+        super().__init__(workbook_name, './data/shells/CZ.yaml', **kwargs)
+        
+
+    def make_narration(self, event_list):
+        shell = "$country_possesive$ $name$ bude vydáno v $time$ GMT, $country_possesive$ $name$ v $time$ GMT, $country_possesive$ $name$ v $time$ GMT."
+        for event in event_list:
+            country_possesive = self.countries_possessive[event['countryCode']]
+            previous = str(event['previous']) + (event['unit'] or "")
+            time = event['dateUtc'].strftime('%H:%M')
+            shell = shell.replace('$country_possesive$', country_possesive, 1)
+            shell = shell.replace('$name$', event['translated_name'], 1)
+            shell = shell.replace('$previous$', previous, 1)
+            shell = shell.replace('$time$', time, 1)
+        return shell[0].upper() + shell[1:]
+
+    def make_title(self, row):
+        if str(row['countryCode']) != 'nan':
+            return f'{self.countries_possessive[row["countryCode"]]} {row["translated_name"]}'
+        return ''
+    
+    def make_pair_verbose(self, base_verbose, quote_verbose):
+        return f'{base_verbose}-{quote_verbose}'
+
+class HindiAuthor(ShellManager):
+    def __init__(self, workbook_name, **kwargs):
+        super().__init__(workbook_name, './data/shells/HI.yaml', **kwargs)
+        
+
+    def make_narration(self, event_list):
+        shell = "$country_possesive$ $name$ जारी होगा $time$ GMT पर , $country_possesive$ $name$ $time$ GMT पर , $country_possesive$ $name$  $time$ GMT पर|"
+        for event in event_list:
+            country_possesive = self.countries_possessive[event['countryCode']]
+            previous = str(event['previous']) + (event['unit'] or "")
+            time = event['dateUtc'].strftime('%H:%M')
+            shell = shell.replace('$country_possesive$', country_possesive, 1)
+            shell = shell.replace('$name$', event['translated_name'], 1)
+            shell = shell.replace('$previous$', previous, 1)
+            shell = shell.replace('$time$', time, 1)
+        return shell[0].upper() + shell[1:]
+
+    def make_title(self, row):
+        if str(row['countryCode']) != 'nan':
+            return f'{row["countryCode"]} {row["translated_name"]}'
+        return ''
+    
+    def make_pair_verbose(self, base_verbose, quote_verbose):
+        return f'{base_verbose}-{quote_verbose}'

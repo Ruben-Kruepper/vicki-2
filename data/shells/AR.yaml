@@ -1,0 +1,211 @@
+---
+forex_shells:
+  narration:
+    no_change:
+      - تم تداول زوج $pair_verbose$ جانبيًا في الجلسة الماضية.
+      - ظل سعر $pair_verbose$ دون تغيير إلى حد كبير في الجلسة الماضية. 
+    major_gain:
+      - انفجر زوج $pair_verbose$ $period_change$% في الجلسة الماضية.
+      - قفز زوج $pair_verbose$ $period_change$% في الجلسة الماضية.
+    simple_gain:
+      - كسب زوج $pair_verbose$ خلال  $period_change$% في الجلسة الماضية.
+      - ارتفع زوج $pair_verbose$ خلال $period_change$% في الجلسة الماضية.
+      - ارتفع $base_verbose$ خلال $period_change$% مقابل $quote_verbose$ في جلسة التداول الأخيرة.
+      - كسب $base_verbose$ خلال $period_change$% مقابل $quote_verbose$ في الجلسة الماضية.
+      - شهدت الجلسة الأخيرة ارتفاع  $base_verbose$ خلال  $period_change$% مقابل $quote_verbose$.
+      - شهدت الجلسة الأخيرة ارتفاع $base_verbose$ خلال $period_change$% مقابل $quote_verbose$.
+    minor_gain:
+      - حقق زوج $pair_verbose$ اندفاعًا صاعدًا طفيفًا في الجلسة الأخيرة ، وكسب $period_change$%.
+      - حقق زوج $pair_verbose$ اندفاعًا صاعدًا طفيفًا في الجلسة الماضية ، حيث ارتفع $period_change$%.
+      - حصل $base_verbose$ على ارتفاع طفيف بمقدار $period_change$% مقابل $quote_verbose$ في الجلسة السابقة.
+      - شهد زوج $pair_verbose$ ارتفاعًا طفيفًا بمقدار $period_change$% في الجلسة السابقة.
+    gain_with_low:
+      - كسب زوج $pair_verbose$ ما يعادل  $period_change$% في الجلسة الأخيرة بعد انخفاض $period_low$% أثناء الجلسة.
+      - ارتفع زوج $pair_verbose$ خلال $period_change$% بعد انخفاض $period_low$% خلال الجلسة.
+      - بعد انخفاض $period_low$% خلال الجلسة الأخيرة ، أغلق زوج $pair_verbose$ على ارتفاع $period_change$%.
+      - بعد انخفاض $period_low$% خلال الجلسة الأخيرة ، أغلق زوج $pair_verbose$ الجلسة $period_change$% باللون الأخضر.
+    gain_with_high:
+      - كسب زوج $pair_verbose$ ما يعادل $period_change$% في الجلسة الأخيرة بعد ارتفاعه بقدر $period_high$% خلال الجلسة.
+      - زوج $pair_verbose$ ارتفع $period_change$% في الجلسة الماضية بعد أن كسب ما يصل إلى $period_high$% خلال الجلسة.
+    major_fall:
+      - انخفض $pair_verbose$ ما يعادل $period_change$%  في الجلسة الماضية.
+      - هبط $pair_verbose$ بمقدار $period_change$% في الجلسة الأخيرة.
+    simple_fall:
+      - انخفض زوج $pair_verbose$ بمقدار $period_change$% في الجلسة الماضية.
+      - هبط زوج $pair_verbose$ بمقدار $period_change$% في الجلسة الماضية.
+      - انخفض $base_verbose$ بمقدار $period_change$% مقابل $quote_verbose$ في جلسة التداول الأخيرة.
+      - انخفض $base_verbose$ بمقدار $period_change$% مقابل $quote_verbose$ في الجلسة الماضية.
+      - شهدت الجلسة الأخيرة انخفاض $base_verbose$بمقدار $period_change$% مقابل $quote_verbose$.
+      - شهدت الجلسة الأخيرة انخفاض $base_verbose$ بمقدار $period_change$% مقابل $quote_verbose$.
+    minor_fall:
+      - هبط الزوج $pair_verbose$ للأسفل في الجلسة الأخيرة ، حيث انخفض $period_change$%.
+      - قام زوج $pair_verbose$ بهبوط طفيف في الجلسة الأخيرة ، حيث انخفض فترة $period_change$%.
+      - انخفض $base_verbose$ بمقدار $period_change$% مقابل $quote_verbose$ في الجلسة الماضية.
+      - شهد الزوج $pair_verbose$ تراجعًا طفيفًا بمقدار $period_change$% في الجلسة السابقة.
+    fall_with_low:
+      - هبط الزوج $pair_verbose$ بمقدار $period_change$% في الجلسة الأخيرة بعد انخفاض $period_low$% أثناء الجلسة.
+      - انخفض زوج $pair_verbose$ بمقدار $period_change$% بعد انخفاض $period_low$% خلال الجلسة.
+      - بعد انخفاض $period_low$% خلال الجلسة الأخيرة ، أغلق زوج $pair_verbose$ على $period_change$%.
+      - بعد انخفاض $period_low$% خلال الجلسة الأخيرة ، أغلق زوج $pair_verbose$ على $period_change$% باللون الأحمر.
+    fall_with_high:
+      - انخفض زوج $pair_verbose$ بمقدار $period_change$% في الجلسة الأخيرة بعد انخفاضه بقدر $period_high$% خلال الجلسة.
+      - انخفض زوج $pair_verbose$ بمقدار $period_change$% في الجلسة الأخيرة بعد انخفاضه بمقدار $period_high$% خلال الجلسة.
+  lower_line: # Shorter sentences for the lower line
+    no_change:
+      - تم تداول $base_symbol$/$quote_symbol$ بشكل جانبي في الجلسة الماضية.
+      - بقي $base_symbol$/$quote_symbol$ دون تغيير إلى حد كبير في الجلسة الماضية.
+    major_gain:
+      - $base_symbol$/$quote_symbol$ انفجر بنسبة $period_change$% في الجلسة الماضية.
+      - ارتفع $base_symbol$/$quote_symbol$ بنسبة $period_change$% في الجلسة الماضية.
+    simple_gain:
+      - اكتسب $base_symbol$/$quote_symbol$ $period_change$% في الجلسة الماضية.
+      - ارتفع $base_symbol$/$quote_symbol$ $period_change$%  في الجلسة الماضية.
+    minor_gain:
+      - شهد $base_symbol$/$quote_symbol$ ارتفاع طفيفاً $period_change$% في الجلسة الماضية.
+      - ارتفع $pair_verbose$ بشكل طفيف $period_change$% في الجلسة الماضية.
+    major_fall:
+      - انخفض $base_symbol$/$quote_symbol$ بشكل كبير $period_change$% في الجلسة الماضية.
+      - هبط base_symbol$/$quote_symbol$ هبوطا حاداً $period_change$% في الجلسة الماضية.
+    simple_fall:
+      - انخفض $base_symbol$/$quote_symbol$ بنسبة $period_change$% في الجلسة الماضية.
+      - انخفض $base_symbol$/$quote_symbol$ بنسبة $period_change$% في الجلسة الماضية.
+      - انخفض $base_symbol$ بنسبة $period_change$% مقابل $quote_symbol$ في آخر جلسة تداول.
+      - انخفض $base_symbol$ بنسبة $period_change$% مقابل $quote_symbol$ في الجلسة الماضية.
+      - شهدت الجلسة الأخيرة انخفاض $base_symbol$ بنسبة $period_change$% مقابل $quote_symbol$.
+      - شهدت الجلسة الأخيرة انخفاض $base_symbol$ بنسبة $period_change$% مقابل $quote_symbol$.
+    minor_fall:
+      - تم تصحيح $base_symbol$/$quote_symbol$ هبوطيًا في الجلسة السابقة ، حيث انخفض $period_change$%.
+      - أجرى $base_symbol$/$quote_symbol$ تصحيحًا هبوطيًا بسيطًا في الجلسة السابقة ، مما أدى إلى انخفاض $period_change$%.
+      - شهد $base_symbol$/$quote_symbol$ انخفاضًا طفيفًا في $period_change$% في الجلسة السابقة.
+#--------------------------------------------------------------------------------------------------------------------------------------------#
+stock_shells:
+  narration:
+    no_change:
+      - تم تداول سهم $company_name$ بشكل جانبي في الجلسة الماضية.
+      - ظل سعر سهم $company_name$  دون تغيير إلى حد كبير في الجلسة الماضية.
+    major_gain:
+      - انفجر سهم $company_name$ بمقدار $period_change$% في الجلسة الماضية.
+      - قفز سهم $company_name$ بمقدار $period_change$% في الجلسة الماضية.
+      - أسهم $company_name$ انفجرت بمقدار $period_change$% في الجلسة الماضية.
+      - قفزت أسهم $company_name$ بمقدار $period_change$% في الجلسة الماضية.
+    simple_gain:
+      - كسب سهم $company_name$ ما يعادل $period_change$% في الجلسة الماضية.
+      - ارتفع سهم $company_name$ بمقدار $period_change$% في الجلسة الماضية.
+      - شهدت الجلسة الأخيرة ارتفاع سعر سهم $company_name$ بمقدار $period_change$%.
+      - شهدت الجلسة الأخيرة ارتفاعًا في سعر سهم $company_name$ بمقدار $period_change$%.
+      - كسب $company_name$ بمقدار $period_change$% في الجلسة الماضية.
+      - ارتفعت أسهم  $company_name$ بمقدار $period_change$% في الجلسة الماضية.
+      - شهدت الجلسة الماضية ارتفاع سعر سهم $company_name$ بمقدار $period_change$%
+      - شهدت الجلسة الأخيرة مكاسب $company_name$ بمقدار $period_change$%
+    minor_gain:
+      - حقق سهم $company_name$ ارتفاعًا طفيفًا في الجلسة الأخيرة ، حيث كسب $period_change$%.
+      - حقق سهم $company_name$ اندفاعًا صاعدًا طفيفًا في الجلسة الأخيرة ، حيث ارتفع $period_change$%.
+      - شهد سهم $company_name$ ارتفاعًا طفيفًا بمقدار $period_change$% في الجلسة الماضية.
+      - حققت أسهم $company_name$ اندفاعًا طفيفًا صعوديًا في الجلسة الماضية ، حيث كسبت $period_change$%.
+      - حققت أسهم $company_name$ اندفاعًا طفيفًا صعوديًا في الجلسة الماضية ، حيث ارتفعت $period_change$%.
+      - شهدت أسهم $company_name$ ارتفاعًا طفيفًا بمقدار $period_change$% في الجلسة الماضية.
+    gain_with_low:
+      - كسب سهم $company_name$ ما يعادل $period_change$% في الجلسة الأخيرة بعد انخفاض $period_low$% أثناء الجلسة.
+      - ارتفع سهم $company_name$ بمقدار $period_change$% بعد انخفاض $period_low$% خلال الجلسة.
+      - بعد انخفاض $period_low$% خلال الجلسة الماضية ، أغلقت أسهم $company_name$ بمكسب $period_change$%.
+      - بعد $period_low$% خلال الجلسة الماضية ، أغلقت أسهم $company_name$ بمقدار $period_change$% في المنطقة الخضراء.
+    gain_with_high:
+      - اكتسب سهم $company_name$ ما يعادل $period_change$% في الجلسة الماضية بعد ارتفاعه بمقدار $period_high$% خلال الجلسة.
+      - ارتفع سهم $company_name$ بمقدار $period_change$% في الجلسة الماضية بعد أن كسب ما يصل إلى $period_high$% خلال الجلسة.
+    major_fall:
+      - انخفض سهم $company_name$ بمقدار $period_change$% في الجلسة الماضية.
+      - انخفض سهم $company_name$ بمقدار $period_change$% في الجلسة السابقة.
+      - أسهم $company_name$ تحطمت بمقدار $period_change$% في الجلسة الماضية.
+      - تراجعت أسهم $company_name$ بمقدار $period_change$% في الجلسة الماضية.
+    simple_fall:
+      - انخفض سهم $company_name$ بمقدار $period_change$% في الجلسة السابقة.
+      - انخفض سهم $company_name$ بمقدار $period_change$% في الجلسة الماضية.
+      - شهدت الجلسة الأخيرة هبوط سهم $company_name$ ببمقدار $period_change$%.
+      - شهدت الجلسة الأخيرة انخفاض سعر $company_name$ بمقدار $period_change$%.
+      - انخفضت أسهم بمقدار $period_change$% في الجلسة الماضية.
+      - انخفضت أسهم $company_name$ بمقدار $period_change$% في الجلسة الماضية.
+      - شهدت الجلسة الأخيرة انخفاض أسهم $company_name$ بمقدار $period_change$%.
+      - شهدت الجلسة الأخيرة هبوط أسهم $company_name$ بمقدار $period_change$%.
+    minor_fall:
+      - سجل سهم $company_name$ تراجعًا طفيفًا في الجلسة الأخيرة ، حيث انخفض بمقدار $period_change$%.
+      - سجل سهم $company_name$ تراجعًا طفيفًا في الجلسة الماضية ، حيث انخفض بمقدار $period_change$%.
+      - شهد سهم شركة $company_name$ انخفاضًا طفيفًا بمقدار $period_change$% في الجلسة الماضية.
+      - سجلت أسهم $company_name$ انخفاضًا طفيفًا هبوطيًا في الجلسة الماضية ، حيث انخفضت $period_change$%.
+      - سجلت أسهم $company_name$ انخفاضًا طفيفًا هبوطيًا في الجلسة الماضية ، حيث انخفضت $period_change$%.
+      - شهدت أسهم ا $company_name$ انخفاضًا طفيفًا بمقدار $period_change$% في الجلسة الماضية.
+    fall_with_low:
+      - انخفض سهم $company_name$ بمقدار $period_change$% في الجلسة الأخيرة بعد انخفاض $period_low$% أثناء الجلسة.
+      - انخفض سهم $company_name$ بمقدار $period_change$% بعد انخفاض $period_low$% خلال الجلسة.
+      - بعد انخفاض $period_low$% خلال الجلسة الماضية ، أغلقت $company_name$ بخسارة بمقدار $period_change$%.
+      - بعد انخفاض $period_low$% خلال الجلسة الماضية ، أغلقت أسهم $company_name$ على $period_change$% في المنطقة الحمراء.
+    fall_with_high:
+      - انخفض سهم $company_name$ بمقدار $period_change$%  في الجلسة الماضية بعد أن ارتفع بمقدار  $period_high$% خلال الجلسة.
+      - انخفض سهم $company_name$ بمقدار $period_change$% في الجلسة الماضية بعد أن كسب ما يصل إلى $period_high$% خلال الجلسة.
+  lower_line:
+    no_change:
+      - تم تداول سهم $company_name$ بشكل جانبي في الجلسة الماضية.
+      - بقي سهم $company_name$ دون تغيير في الجلسة الماضية.
+    major_gain:
+      - انفجر سهم $company_name$  بمقدار $period_change$% في الجلسة السابقة.
+      - قفز سهم $company_name$  بمقدار $period_change$% في الجلسة الماضية.
+      - أسهم $company_name$ انفجرت بمقدار $period_change$% في الجلسة الماضية.
+      - ارتفعت أسهم $company_name$ بمقدار $period_change$% في الجلسة الماضية.
+    simple_gain:
+      - اكتسب سهم $company_name$ ما يعادل  $period_change$% في الجلسة السابقة.
+      - ارتفع سهم $company_name$ ما يعادل $period_change$% في الجلسة الماضية.
+      - كسبت أسهم $company_name$ ما يعادل $period_change$% في الجلسة الماضية.
+      - ارتفعت أسهم $company_name$ ما يعادل $period_change$% في الجلسة الماضية.
+    minor_gain:
+      - شهد سهم $company_name$ ارتفاعًا طفيفًا قدره $period_change$% في الجلسة السابقة.
+      - شهدت أسهم $company_name$ ارتفاعًا طفيفًا قدره $period_change$% في الجلسة السابقة.
+    major_fall:
+      - انخفض سهم $company_name$ بنسبة $period_change$% في الجلسة الماضية.
+      - هبط سهم $company_name$ بنسبة $period_change$% في الجلسة الماضية.
+      - تحطمت أسهم $company_name$ بنسبة $period_change$% في الجلسة الماضية.
+      - تراجعت أسهم $company_name$ بنسبة $period_change$% في الجلسة الماضية..
+    simple_fall:
+      - انخفض سهم $company_name$ بنسبة $period_change$%  في الجلسة السابقة.
+      - انخفض سهم $company_name$ بنسبة $period_change$%  في الجلسة الماضية.
+      - شهدت الجلسة الأخيرة هبوط سهم $company_name$ بنسبة $period_change$% .
+      - شهدت الجلسة الأخيرة انخفاض سهم $company_name$ بنسبة $period_change$%.
+      - انخفضت أسهم $company_name$ بنسبة $period_change$%  في الجلسة الماضية.
+      - انخفضت أسهم $company_name$ بنسبة $period_change$%  في الجلسة الماضية.
+      - شهدت الجلسة الأخيرة انخفاض أسهم $company_name$ بنسبة $period_change$% .
+      - شهدت الجلسة الأخيرة هبوط سهم $company_name$ بنسبة $period_change$% .
+    minor_fall:
+      - شهد سهم  $company_name$ انخفاضًا طفيفًا قدره $period_change$% في الجلسة السابقة.
+      - شهدت أسهم $company_name$ انخف
+      - اضًا طفيفًا قدره $period_change$% في الجلسة السابقة.
+#--------------------------------------------------------------------------------------------------------------------------------------------#
+indicator_shells:
+  narration:
+    neutral_signal:
+      - يعطي $indicator$ إشارة محايدة.
+    simple_signal:
+      - يعطي $indicator$ إشارة $signal$.
+      - يشير $indicator$ إلى وجود فرصة $signal$.
+    market_status: # $indicator$ is overbought or oversold
+      - يشير $indicator$ إلى سوق $signal$.
+      - وفقًا لمؤشر $indicator$ ، نحن في سوق $signal$.
+    align_signal:
+      - تتماشى  $indicator$ إشارة $signal$ مع التحليل الفني العام.
+      - يعطي $indicator$ إشارة $signal$، والتي تتطابق مع تحليلنا الفني العام.
+    adverse_signal:
+      - تتناقض $indicator$ إشارة $signal$ عن تحليلنا الفني بشكل عام.
+      - يعطي $indicator$ إشارة $signal$، عكس تحليلنا الفني العام.
+    align_market_status:
+      - يشير $indicator$ إلى  سوق $signal$ ، مما يعيد التأكيد على إشارة $overall_summary$ من تحليلنا الفني.
+      - وفقًا لمؤشر $indicator$ ، نحن في سوق $signal$ ، ندعم التحليل الفني لإشارة $overall_summary$.
+  lower_line:
+    neutral_signal:
+      - $indicator$ يعطي إشارة محايدة.
+      - $indicator$ غير حاسم.
+      - $indicator$ متردد.
+      - $indicaotr$ في المنطقة المحايدة
+    simple_signal:
+      - $indicator$ يعطي إشارة $signal$.
+      - $indicator$ حالياً في منطقة $signal$.
+      - $indicator$ حالياً في منطقة $signal$.
+    market_status:
+      - يشير $indicator$ إلى $signal$ سوق.
+      - وفقاً $indicator$, نحن في سوق $signal$.

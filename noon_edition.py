@@ -7,7 +7,6 @@ from lib.chart_grabber      import ChartGrabber
 import config as cfg
 
 import datetime as dt
-import shutil
 import time
 
 
@@ -28,7 +27,7 @@ if not dt.datetime.today().weekday() in (4,5):
     ]
 
 
-    EnglishAuthor('Vicki Master - EN - Noon Edition', **API_KWARGS).write_headline_news()
+    # EnglishAuthor('Vicki Master - EN - Noon Edition', **API_KWARGS).write_headline_news()
 
     def gen_authors(authors):
         for author, workbook in authors:

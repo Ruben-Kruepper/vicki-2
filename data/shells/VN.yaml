@@ -193,8 +193,8 @@ indicator_shells:
       - Chỉ báo $indicator$ $signal$ cho tín hiệu trái ngược với phân tích kỹ thuật tổng thể của chúng tôi.
       - Chỉ báo $indicator$ đang cho tín hiệu $signal$, trái ngược với phân tích kỹ thuật tổng thể của chúng tôi.
     align_market_status:
-      - Chỉ báo $indicator$ báo hiệu thị trường $signal$, khẳng định lại tín hiệu $total_summary$ từ phân tích kỹ thuật của chúng tôi.
-      - Theo chỉ báo $indicator$, chúng ta đang ở trong thị trường $signal$, khẳng định lại tín hiệu $total_summary$ của phân tích kỹ thuật.
+      - Chỉ báo $indicator$ báo hiệu thị trường $signal$, khẳng định lại tín hiệu $overall_summary$ từ phân tích kỹ thuật của chúng tôi.
+      - Theo chỉ báo $indicator$, chúng ta đang ở trong thị trường $signal$, khẳng định lại tín hiệu $overall_summary$ của phân tích kỹ thuật.
   lower_line:
     neutral_signal:
       - Chỉ báo $indicator$ đang cho tín hiệu trung lập.

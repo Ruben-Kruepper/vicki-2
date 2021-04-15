@@ -62,7 +62,7 @@ forex_shells:
       - $base_symbol$/$quote_symbol$ rose $period_change$% in the last session.
     minor_gain:
       - $base_symbol$/$quote_symbol$ saw a minor rise of $period_change$% in the last session.
-      - The $pair_verbose$ gained a moderate $period_change$% in the last session.
+      - The $pair_verbose$ pair gained a moderate $period_change$% in the last session.
     major_fall:
       - $base_symbol$/$quote_symbol$ plummeted $period_change$% in the last session.
       - $base_symbol$/$quote_symbol$ dove $period_change$% in the last session.

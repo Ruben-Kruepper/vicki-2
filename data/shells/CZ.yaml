@@ -2,54 +2,54 @@
 forex_shells:
   narration:
     no_change:
-     - Pár $pair_verbose$ se v poslední relaci obchodoval do strany.
-     - Cena $pair_verbose$ zůstala v poslední relaci téměř beze změny.
+      - Pár $pair_verbose$ se v poslední relaci obchodoval do strany.
+      - Cena $pair_verbose$ zůstala v poslední relaci téměř beze změny.
     major_gain:
-      - Pár $pair_verbose$ explodoval  $period_%_change$ v poslední relaci.
-      - Pár $pair_verbose$ vyletěl $period_%_change$ v poslední relaci.
+      - Pár $pair_verbose$ explodoval $period_change$% v poslední relaci.
+      - Pár $pair_verbose$ vyletěl $period_change$% v poslední relaci.
     simple_gain:
-      - Pár $pair_verbose$ získal $period_%_change$ v poslední relaci.
-      - Pár $pair_verbose$ zvýšil $period_%_change$ v poslední relaci.
-      - $base_verbose$ vzrostlo $period_%_change$ oproti $quote_verbose$ v poslední obchodní relaci.
-      - $base_verbose$ získal $period_%_change$ oproti $quote_verbose$ v poslední relaci.
-      - Pár $pair_verbose$ vyletěl $period_%_change$ v poslední relaci.
-      - Poslední relace zaznamenala $base_verbose$ zisk $period_%_change$ oproti $quote_verbose$.
+      - Pár $pair_verbose$ získal $period_change$% v poslední relaci.
+      - Pár $pair_verbose$ zvýšil $period_change$% v poslední relaci.
+      - $base_verbose$ vzrostlo $period_change$% oproti $quote_verbose$ v poslední obchodní relaci.
+      - $base_verbose$ získal $period_change$% oproti $quote_verbose$ v poslední relaci.
+      - Pár $pair_verbose$ vyletěl $period_change$% v poslední relaci.
+      - Poslední relace zaznamenala $base_verbose$ zisk $period_change$% oproti $quote_verbose$.
     minor_gain:
-      - Dvojice $pair_verbose$ způsobila v poslední relaci menší vzestupný tah a získala $period_%_change$.
-      - Dvojice $pair_verbose$ způsobila v poslední relaci menší vzestupný tah, což zvýšilo období $period_%_change$.
-      - $base_verbose$ dostal v poslední relaci mírný nárůst o $period_%_change$ oproti $quote_verbose$.
-      - U páru $pair_verbose$ došlo v poslední relaci k mírnému nárůstu $period_%_change$.
+      - Dvojice $pair_verbose$ způsobila v poslední relaci menší vzestupný tah a získala $period_change$%.
+      - Dvojice $pair_verbose$ způsobila v poslední relaci menší vzestupný tah, což zvýšilo období $period_change$%.
+      - $base_verbose$ dostal v poslední relaci mírný nárůst o $period_change$% oproti $quote_verbose$.
+      - U páru $pair_verbose$ došlo v poslední relaci k mírnému nárůstu $period_change$%.
     gain_with_low:
-      - Pár $pair_verbose$ získal $period_%_change$ v poslední relaci po $intra_period_%_low$ pokles běhěm relace.
-      - Pár $pair_verbose$ zvýšil období $period_%_change$ po $intra_period_%_low$ v relaci.
-      - Po $intra_period_%_low$ dipu během poslední relace se pár $pair_verbose$ uzavřel s $period_%_change$ zisk.
-      - Po $intra_period_%_low$ dipu během poslední relace $pair_verbose$ pár uzavřel $period_%_change$ zeleně.
+      - Pár $pair_verbose$ získal $period_change$% v poslední relaci po $period_low$% pokles běhěm relace.
+      - Pár $pair_verbose$ zvýšil období $period_change$% po $period_low$% v relaci.
+      - Po $period_low$% dipu během poslední relace se pár $pair_verbose$ uzavřel s $period_change$% zisk.
+      - Po $period_low$% dipu během poslední relace $pair_verbose$ pár uzavřel $period_change$% zeleně.
     gain_with_high:
-      - Pár $pair_verbose$ získal $period_%_change$ v poslední relaci poté, co během relace vzrostl až o $intra_period_%_high$.
-      - Pár $pair_verbose$ zvýšil $period_%_change$ v poslední relaci poté, co během relace získal až $intra_period_%_high$.
+      - Pár $pair_verbose$ získal $period_change$% v poslední relaci poté, co během relace vzrostl až o $period_high$%.
+      - Pár $pair_verbose$ zvýšil $period_change$% v poslední relaci poté, co během relace získal až $period_high$%.
     major_fall:
-      - Pár $pair_verbose$ se během poslední relace propadl o $period_%_change$.
-      - Pár $pair_verbose$ ponořil  $period_%_change$ v poslední relaci.
+      - Pár $pair_verbose$ se během poslední relace propadl o $period_change$%.
+      - Pár $pair_verbose$ ponořil  $period_change$% v poslední relaci.
     simple_fall:
-      - Pár $pair_verbose$ v poslední relaci zrušil období $period_%_change$.
-      - Pár $pair_verbose$ v poslední relaci klesl $period_%_change$.
-      - $base_verbose$ pokleslo $period_%_change$ oproti $quote_verbose$ v poslední obchodní relaci.
-      - $base_verbose$ kleslo $period_%_change$ oproti $quote_verbose$ v poslední relaci.
-      - Poslední relace zaznamenala pokles $base_verbose$ $period_%_change$ oproti $quote_verbose$.
-      - Poslední relace zaznamenala pokles $base_verbose$ $period_%_change$ oproti $quote_verbose$.
+      - Pár $pair_verbose$ v poslední relaci zrušil období $period_change$%.
+      - Pár $pair_verbose$ v poslední relaci klesl $period_change$%.
+      - $base_verbose$ pokleslo $period_change$% oproti $quote_verbose$ v poslední obchodní relaci.
+      - $base_verbose$ kleslo $period_change$% oproti $quote_verbose$ v poslední relaci.
+      - Poslední relace zaznamenala pokles $base_verbose$ $period_change$% oproti $quote_verbose$.
+      - Poslední relace zaznamenala pokles $base_verbose$ $period_change$% oproti $quote_verbose$.
     minor_fall:
-      - Pár $pair_verbose$ se v poslední relaci mírně snížil a klesl $period_%_change$.
-      - Pár $pair_verbose$ způsobil v poslední relaci menší tah dolů, čímž klesl $period_%_change$.
-      - $base_verbose$ v poslední relaci ponořilo mírné $period_%_change$ oproti $quote_verbose$.
-      - Pár $pair_verbose$ zaznamenal v poslední relaci menší pokles $period_%_change$.
+      - Pár $pair_verbose$ se v poslední relaci mírně snížil a klesl $period_change$%.
+      - Pár $pair_verbose$ způsobil v poslední relaci menší tah dolů, čímž klesl $period_change$%.
+      - $base_verbose$ v poslední relaci ponořilo mírné $period_change$% oproti $quote_verbose$.
+      - Pár $pair_verbose$ zaznamenal v poslední relaci menší pokles $period_change$%.
     fall_with_low:
-      - Pár $pair_verbose$ klesl $period_%_change$ v poslední relaci po $intra_period_%_low$ pokles během relace.
-      - Pár $pair_verbose$ klesl $period_%_change$ po $intra_period_%_low$ poklesl běhěm relace.
-      - Po $intra_period_%_low$ dipu během poslední relace se pár $pair_verbose$ uzavřel s $period_%_change$ pád.
-      - Po $intra_period_%_low$ dipu během poslední relace $pair_verbose$ pár uzavřel  $period_%_change$ červeně.
+      - Pár $pair_verbose$ klesl $period_change$% v poslední relaci po $period_low$% pokles během relace.
+      - Pár $pair_verbose$ klesl $period_change$% po $period_low$% poklesl běhěm relace.
+      - Po $period_low$% dipu během poslední relace se pár $pair_verbose$ uzavřel s $period_change$% pád.
+      - Po $period_low$% dipu během poslední relace $pair_verbose$ pár uzavřel  $period_change$% červeně.
     fall_with_high:
-      - Pár $pair_verbose$ klesl $period_%_change$ v poslední relaci poté, co během relace klesl až o $intra_period_%_high$.
-      - Pár $pair_verbose$ upustil v poslední relaci $period_%_change$ poté, co během relace klesl až o $intra_period_%_high$.
+      - Pár $pair_verbose$ klesl $period_change$% v poslední relaci poté, co během relace klesl až o $period_high$%.
+      - Pár $pair_verbose$ upustil v poslední relaci $period_change$% poté, co během relace klesl až o $period_high$%.
   
   lower_line: # Kratší věty pro spodní řádek
     no_change:
@@ -82,72 +82,72 @@ forex_shells:
 stock_shells:
   narration:
     no_change:
-      - $company$ akcie se v poslední relaci obchodovaly stranou.
-      - Cena $company$ se v poslední relaci téměř nezměnila.
+      - $company_name$ akcie se v poslední relaci obchodovaly stranou.
+      - Cena $company_name$ se v poslední relaci téměř nezměnila.
     major_gain:
-      - Akcie $company$ explodovaly $period_%_change$ v poslední relaci.
-      - Akcie $company$ vyletěly $period_%_change$ v poslední relaci.
-      - Akcie $company$ explodovaly $period_%_change$ v poslední relaci.
-      - Akcie $company$ vyletěly $period_%_change$ v poslední relaci.
+      - Akcie $company_name$ explodovaly $period_change$% v poslední relaci.
+      - Akcie $company_name$ vyletěly $period_change$% v poslední relaci.
+      - Akcie $company_name$ explodovaly $period_change$% v poslední relaci.
+      - Akcie $company_name$ vyletěly $period_change$% v poslední relaci.
     simple_gain:
-      - Akcie $company$ získaly $period_%_change$ v poslední relaci.
-      - Akcie $company$ vzrostly $period_%_change$ v poslední relaci.
-      - Na poslední relaci došlo k nárůstu akcií akcie $company$ stoupají $period_%_change$.
-      - Na poslední relaci došlo k nárůstu akcií akcie $company$ stoupají $period_%_change$.
-      - $company$ akcie získaly $period_%_change$ v poslední relaci.
-      - $company$ akcie vzrostly $period_%_change$ v poslední relaci.
-      - Na poslední relaci došlo k nárůstu akcií $period_%_change$.
-      - Na poslední relaci byly $company$ akcie získány $period_%_change$.
+      - Akcie $company_name$ získaly $period_change$% v poslední relaci.
+      - Akcie $company_name$ vzrostly $period_change$% v poslední relaci.
+      - Na poslední relaci došlo k nárůstu akcií akcie $company_name$ stoupají $period_change$%.
+      - Na poslední relaci došlo k nárůstu akcií akcie $company_name$ stoupají $period_change$%.
+      - $company_name$ akcie získaly $period_change$% v poslední relaci.
+      - $company_name$ akcie vzrostly $period_change$% v poslední relaci.
+      - Na poslední relaci došlo k nárůstu akcií $period_change$%.
+      - Na poslední relaci byly $company_name$ akcie získány $period_change$%.
     minor_gain:
-      - Akcie $company$ způsobily v poslední relaci mírný vzestupný tah a získaly období $period_%_change$.
-      - Akcie $company$ způsobily v poslední relaci mírný vzestupný tah, což zvýšilo období $period_%_change$.
-      - Akcie $company$ zaznamenaly v poslední relaci mírný nárůst období $period_%_change$.
-      - Akcie $company$ učinily v poslední relaci mírný vzestupný tah a získaly $period_%_change$.
+      - Akcie $company_name$ způsobily v poslední relaci mírný vzestupný tah a získaly období $period_change$%.
+      - Akcie $company_name$ způsobily v poslední relaci mírný vzestupný tah, což zvýšilo období $period_change$%.
+      - Akcie $company_name$ zaznamenaly v poslední relaci mírný nárůst období $period_change$%.
+      - Akcie $company_name$ učinily v poslední relaci mírný vzestupný tah a získaly $period_change$%.
       - $company_name$ akcie explodovaly $period_change$% v poslední relaci.
-      - Akcie $company$ zaznamenaly v poslední relaci mírný nárůst $period_%_change$.
+      - Akcie $company_name$ zaznamenaly v poslední relaci mírný nárůst $period_change$%.
     gain_with_low:
-      - Akcie $company$ získaly období $period_%_change$ v poslední relaci po $intra_period_%_low$ během relace.
-      - Akcie $company$ vzrostly $period_%_change$ po $intra_period_%_low$ v rámci relace.
-      - Po $intra_period_%_low$ dipu během poslední relace se akcie uzavřely s $period_%_change$ zisk.
-      - Po $intra_period_%_low$ dipu během poslední relace, akcie uzavřely $period_%_change$ zeleně.
+      - Akcie $company_name$ získaly období $period_change$% v poslední relaci po $period_low$% během relace.
+      - Akcie $company_name$ vzrostly $period_change$% po $period_low$% v rámci relace.
+      - Po $period_low$% dipu během poslední relace se akcie uzavřely s $period_change$% zisk.
+      - Po $period_low$% dipu během poslední relace, akcie uzavřely $period_change$% zeleně.
     zisk_s_vysokou:
-      - Akcie $company$ získaly období $period_%_change$ v poslední relaci poté, co během relace vzrostly až o $intra_period_%_high$.
-      - Akcie $company$ vzrostly $period_%_change$ v poslední relaci poté, co během relace získaly až $intra_period_%_high$.
+      - Akcie $company_name$ získaly období $period_change$% v poslední relaci poté, co během relace vzrostly až o $period_high$%.
+      - Akcie $company_name$ vzrostly $period_change$% v poslední relaci poté, co během relace získaly až $period_high$%.
     major_fall:
-      - Akcie $company$ klesly $period_%_change$ v poslední relaci.
-      - Akcie $company$ ponořily $period_%_change$ v poslední relaci.
-      - Akcie $company$ havarovaly $period_%_change$ v poslední relaci.
-      - Akcie společnosti $company$ klesly v období $period_%_change$ v poslední relaci.
+      - Akcie $company_name$ klesly $period_change$% v poslední relaci.
+      - Akcie $company_name$ ponořily $period_change$% v poslední relaci.
+      - Akcie $company_name$ havarovaly $period_change$% v poslední relaci.
+      - Akcie společnosti $company_name$ klesly v období $period_change$% v poslední relaci.
     simple_fall:
-      - Akcie $company$ poklesly $period_%_change$ v poslední relaci.
-      - Akcie $company$ poklesly $period_%_change$ v poslední relaci.
-      - Na poslední relaci došlo k poklesu akcií $company$ $period_%_change$.
-      - Na poslední relaci došlo k poklesu akcií $company$ stoupají $period_%_change$.
-      - $company$ akcie klesly $period_%_change$ v poslední relaci.
-      - $company$ akcie klesly $period_%_change$ v poslední relaci.
-      - Na poslední relaci došlo k poklesu akcií $period_%_change$.
-      - Na poslední relaci došlo k poklesu akcií $period_%_change$.
+      - Akcie $company_name$ poklesly $period_change$% v poslední relaci.
+      - Akcie $company_name$ poklesly $period_change$% v poslední relaci.
+      - Na poslední relaci došlo k poklesu akcií $company_name$ $period_change$%.
+      - Na poslední relaci došlo k poklesu akcií $company_name$ stoupají $period_change$%.
+      - $company_name$ akcie klesly $period_change$% v poslední relaci.
+      - $company_name$ akcie klesly $period_change$% v poslední relaci.
+      - Na poslední relaci došlo k poklesu akcií $period_change$%.
+      - Na poslední relaci došlo k poklesu akcií $period_change$%.
     minor_fall:
-      - Akcie $company$ učinily v poslední relaci mírný pokles směrem dolů a klesly $period_%_change$.
-      - Akcie $company$ učinily v poslední relaci mírný pokles směrem dolů, čímž poklesly období $period_%_change$.
-      - Akcie $company$ zaznamenaly v poslední relaci menší pokles období $period_%_change$.
-      - Akcie $company$ v poslední relaci zaznamenaly mírný pokles směrem dolů a poklesly období $period_%_change$.
-      - Akcie $company$ v poslední relaci zaznamenaly mírný pokles směrem dolů a propadly období $period_%_change$.
-      - Akcie $company$ zaznamenaly v poslední relaci mírný pokles $period_%_change$.
+      - Akcie $company_name$ učinily v poslední relaci mírný pokles směrem dolů a klesly $period_change$%.
+      - Akcie $company_name$ učinily v poslední relaci mírný pokles směrem dolů, čímž poklesly období $period_change$%.
+      - Akcie $company_name$ zaznamenaly v poslední relaci menší pokles období $period_change$%.
+      - Akcie $company_name$ v poslední relaci zaznamenaly mírný pokles směrem dolů a poklesly období $period_change$%.
+      - Akcie $company_name$ v poslední relaci zaznamenaly mírný pokles směrem dolů a propadly období $period_change$%.
+      - Akcie $company_name$ zaznamenaly v poslední relaci mírný pokles $period_change$%.
     fall_with_low:
-      - Akcie $company$ poklesly $period_%_change$ v poslední relaci po $intra_period_%_low$ v rámci relace.
-      - Akcie $company$ klesly $period_%_change$ po $intra_period_%_low$ v rámci relace.
-      - Po $intra_period_%_low$ dipu během poslední relace se akcie uzavřely s $period_%_change$ ztráty.
-      - Po $intra_period_%_low$ dipu během poslední relace, akcie uzavřely $period_%_change$ červeně.
+      - Akcie $company_name$ poklesly $period_change$% v poslední relaci po $period_low$% v rámci relace.
+      - Akcie $company_name$ klesly $period_change$% po $period_low$% v rámci relace.
+      - Po $period_low$% dipu během poslední relace se akcie uzavřely s $period_change$% ztráty.
+      - Po $period_low$% dipu během poslední relace, akcie uzavřely $period_change$% červeně.
     fall_with_high:
-      - Akcie $company$ poklesly $period_%_change$ v poslední relaci poté, co během relace vzrostla až o $intra_period_%_high$.
-      - Akcie $company$ poklesly $period_%_change$ v poslední relaci poté, co během relace získal až $intra_period_%_high$.
+      - Akcie $company_name$ poklesly $period_change$% v poslední relaci poté, co během relace vzrostla až o $period_high$%.
+      - Akcie $company_name$ poklesly $period_change$% v poslední relaci poté, co během relace získal až $period_high$%.
   lower_line:
     no_change:
       - $company_name$ s akciemi obchodovanými stranou v poslední relaci.
       - $company_name$ zásoby zůstaly v poslední relaci beze změny.
     major_gain:
-      - $company_name$ 's akcie explodovaly $period_change$% v poslední relaci.
+      - $company_name$ akcie explodovaly $period_change$% v poslední relaci.
       - $company_name$ akcie vyletěly $period_change$% v poslední relaci.
       - Akcie $company_name$ explodovaly $period_change$% v poslední relaci.
       - Akcie $company_name$ vyletěly $period_change$% v poslední relaci.
