@@ -23,7 +23,8 @@ if not dt.datetime.today().weekday() in (4,5):
         (ThaiAuthor, 'Vicki Master - TH - Noon Edition'),
         (ChineseAuthor, 'Vicki Master - CN - Noon Edition'),
         (MalaysianAuthor, 'Vicki Master - MY - Noon Edition'),
-        (VietnameseAuthor, 'Vicki Master - VN - Noon Edition')
+        (VietnameseAuthor, 'Vicki Master - VN - Noon Edition'),
+        (HindiAuthor, 'Vicki Master - HI - Noon Edition')
     ]
 
 
