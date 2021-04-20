@@ -51,18 +51,4 @@ for author in gen_authors(AUTHORS):
     author.write_stock_sentences()
     author.write_forex_sentences()
 
-CG = API_KWARGS['cg']
-
-for symbol, name in [
-    ('mcd', 'mcdonalds.png'),
-    ('eurusd', 'eurusd.png'),
-    ('gbpusd', 'gbpusd.png'),
-    ('audusd', 'audusd.png'),
-    ('usdjpy', 'usdjpy.png'),
-    ('btcusd', 'btcusd.png'),
-    ('gold', 'gold.png'),
-    ('usoil', 'crudeoil.png'),
-    ]:
-    CG.make_chart(symbol, name)
-
 API_KWARGS['cg'].driver.close()
