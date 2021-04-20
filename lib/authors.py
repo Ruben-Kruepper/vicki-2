@@ -204,15 +204,15 @@ class ShellManager(Operator):
                 possible += ['fall_with_high']
             elif abs(period_change) <= 0.1:
                 pass # TODO Write corresponding shells
-            else:
+            elif period_change >= 0.1 and abs(period_high - period_change) >= 0.3:
                 possible += ['gain_with_high']
         # Low combo shells
         if period_low <= -1:
-            if period_change <= -0.1:
+            if period_change <= -0.1 and abs(period_change - period_low) >= 0.3:
                 possible += ['fall_with_low']
             elif abs(period_change) <= 0.1:
                 pass # TODO Write corresponding shells
-            else:
+            elif period_change >= 0.1:
                 possible += ['gain_with_low']
 
         narration_selected_category = random.choice(possible)
@@ -294,7 +294,7 @@ class ShellManager(Operator):
     ################################################################
     # Calendar Section
     ################################################################
-    def write_economic_calendar(self, date=dt.datetime.today() + dt.timedelta(days=1), sheet='Economic Calendar', db_sheet_name='Economic Calendar Definitions'):
+    def write_economic_calendar(self, date=dt.datetime.today().date() + dt.timedelta(days=1), sheet='Economic Calendar', db_sheet_name='Economic Calendar Definitions'):
         currencies_list = list(self.workbook.sheet_to_df(sheet=sheet)['currencies_list'])
         l1_currencies = currencies_list[currencies_list.index('Level 1')+1:currencies_list.index('Level 2')]
         l2_currencies = currencies_list[currencies_list.index('Level 2')+1:currencies_list.index('Level 3')]
@@ -313,11 +313,30 @@ class ShellManager(Operator):
         # If necessary fill up with l3 events
         l3_events = self.select_events(known_coming, l3_currencies, number_of_events)
         out_df = pd.concat([l1_events, l2_events, l3_events], ignore_index=True)
+        
+        
+        # Tomorrow while necessary
+        date = date + (dt.timedelta(days=7-date.weekday()) if date.weekday() in [3, 4] else dt.timedelta(days=1))
+        events_df = self.fxsc.get_calendar_df(from_=date, to_=date)
+        all_known = self.workbook.sheet_to_df(sheet=db_sheet_name)
+        known_coming = events_df.merge(all_known, on='name')
+
+        number_of_events = 6
+        l1_events = self.select_events(known_coming, l1_currencies, number_of_events)
+        number_of_events -= len(l1_events)
+        # Try to fill up with l2 events
+        l2_events = self.select_events(known_coming, l2_currencies, number_of_events)
+        number_of_events -= len(l2_events)
+        # If necessary fill up with l3 events
+        l3_events = self.select_events(known_coming, l3_currencies, number_of_events)
+        out_df = pd.concat([out_df, l1_events, l2_events, l3_events], ignore_index=True)
         # Make titles 
         out_df['title'] = out_df.apply(self.make_title, axis=1)
         event_list = out_df.to_dict('records')
         out_df.at[0, 'narration'] = self.make_narration(event_list[:3])
-        out_df.at[3, 'narration'] = self.make_narration(event_list[3:])
+        out_df.at[3, 'narration'] = self.make_narration(event_list[3:6])
+        out_df.at[6, 'narration'] = self.make_narration(event_list[6:9])
+        out_df.at[9, 'narration'] = self.make_narration(event_list[9:])
         # Fix up for push
         out_df = pd.concat([pd.DataFrame({'currencies_list': currencies_list}), out_df], axis=1)
         out_df = out_df[['currencies_list', 'title', 'definition', 'dateUtc', 'previous', 'countryCode', 'narration']]
@@ -648,10 +667,8 @@ class GermanAuthor(ShellManager):
         return shell[0].upper() + shell[1:]
 
     def make_title(self, row):
-        if row['currencyCode'] == 'EUR' and row['countryCode'] != 'EMU':
-            return f'{row["currencyCode"]} {row["countryCode"]} {row["translated_name"]}'
-        elif str(row['currencyCode']) != 'nan' and str(row['countryCode']) != 'nan':
-            return f'{row["currencyCode"]} {row["translated_name"]}'
+        if str(row['countryCode']) != 'nan':
+            return f'{row["countryCode"]} {row["translated_name"]}'
         return ''
 
 class RomanianAuthor(ShellManager):
@@ -659,7 +676,7 @@ class RomanianAuthor(ShellManager):
         super().__init__(workbook_name, './data/shells/RO.yaml', **kwargs)
         
     def make_narration(self, event_list):
-        shell = "$country_possesive$ $name$ se publicará a las $time$ GMT, $country_possesive$ $name$ a las $time$ GMT, $country_possesive$ $name$ a las $time$ GMT."
+        shell = "$name$ $country_possesive$ se va publica la $time$ GMT, $name$ $country_possesive$ la $time$ GMT, $name$ $country_possesive$ la $time$ GMT."
         for event in event_list:
             country_possesive = self.countries_possessive[event['countryCode']]
             previous = str(event['previous']) + (event['unit'] or "")
@@ -672,7 +689,8 @@ class RomanianAuthor(ShellManager):
 
     def make_title(self, row):
         if str(row['countryCode']) != 'nan':
-            return f"{self.countries_possessive[row['countryCode']]} {row['translated_name']}"
+            result = f"{row['translated_name']} {self.countries_possessive[row['countryCode']]}"
+            return result[0].upper() + result[1:]
         return ''
     
     def make_pair_verbose(self, base_verbose, quote_verbose):

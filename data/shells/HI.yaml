@@ -10,14 +10,14 @@ forex_shells:
     simple_gain:
       - $pair_verbose$ की जोड़ी ने पिछले सत्र में $period_change$% परिवर्तन प्राप्त किया.
       - $pair_verbose$ पिछले सत्र में $period_change$% यह जोड़ी बढ़ी.
-      - $base_verbose $ बढ़ा  $period_change$%  पिछले कारोबारी सत्र में बढ़त दर्ज की गई.
+      - $base_verbose$ बढ़ा  $period_change$%  पिछले कारोबारी सत्र में बढ़त दर्ज की गई.
       - $base_verbose$ प्राप्त किया $period_change$% पिछले सत्र  $quote_verbose$ के मुकाबले में.
       - पिछले सत्र में $base_verbose$ बढ़ा $period_change$% $quote_verbose$ के मुकाबले में. 
       - पिछले सत्र में $base_verbose$ $period_change$% लाभ के  $quote_verbose$ मुकाबले देखा गया.
     minor_gain:
       - $pair_verbose$ जोड़ी ने पिछले सत्र में एक मामूली बढ़त हासिल की $period_change$%.
       - $pair_verbose$ जोड़ी ने पिछले सत्र में एक मामूली ऊपर की ओर जोर दिया, जिससे $period_change$% बदल गया
-      - $base_verbose$ को पिछले सत्र में $quot_verbose$ के मुकाबले $period_change$% की मामूली टक्कर मिली.
+      - $base_verbose$ को पिछले सत्र में $quote_verbose$ के मुकाबले $period_change$% की मामूली टक्कर मिली.
       - $pair_verbose$ इस जोड़ी ने पिछले सत्र में  $period_change$% में मामूली वृद्धि देखी
     gain_with_low:
       - $pair_verbose$ पिछले सत्र में $period_change$% इंट्रा सेशन डुबकी के बाद $period_low$% प्राप्त की.

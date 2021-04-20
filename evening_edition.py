@@ -17,22 +17,22 @@ API_KWARGS = {
     'cg'        : ChartGrabber(cfg.TRADINGVIEW_URL, cfg.TRADINGVIEW_USERNAME, cfg.TRADINGVIEW_PASSWORD, cfg.EVENING_EDITION_CHART_PATH)
 }
 
-# en_author = EnglishAuthor('Vicki Master - EN - Evening Edition', **API_KWARGS)
-# en_author.write_headline_news()
-# en_author.write_economic_calendar(date=dt.datetime.today() + dt.timedelta(days=2))
-# en_author.write_stock_sentences()
-# en_author.write_forex_sentences()
+en_author = EnglishAuthor('Vicki Master - EN - Evening Edition', **API_KWARGS)
+en_author.write_headline_news()
+en_author.write_economic_calendar(date=dt.datetime.today() + dt.timedelta(days=2))
+en_author.write_stock_sentences()
+en_author.write_forex_sentences()
 
-# ### Begin Crypto ###
-# author = EnglishAuthor('Vicki Master - EN - Crypto Edition', **API_KWARGS)
-# author.write_headline_news()
-# author.write_forex_sentences()
+### Begin Crypto ###
+author = EnglishAuthor('Vicki Master - EN - Crypto Edition', **API_KWARGS)
+author.write_headline_news()
+author.write_forex_sentences()
 
 AUTHORS = [
-    # (GermanAuthor, 'Vicki Master - DE - Evening Edition'),
-    # (HebrewAuthor, 'Vicki Master - HE - Evening Edition'),
-    # (HungarianAuthor, 'Vicki Master - HU - Evening Edition'),
-    # (RussianAuthor, 'Vicki Master - RU - Evening Edition'),
+    (GermanAuthor, 'Vicki Master - DE - Evening Edition'),
+    (HebrewAuthor, 'Vicki Master - HE - Evening Edition'),
+    (HungarianAuthor, 'Vicki Master - HU - Evening Edition'),
+    (RussianAuthor, 'Vicki Master - RU - Evening Edition'),
     (ArabicAuthor, 'Vicki Master - AR - Evening Edition'),
     (ItalianAuthor, 'Vicki Master - IT - Evening Edition'),
     (PortugueseAuthor, 'Vicki Master - PT - Evening Edition'),
@@ -43,7 +43,7 @@ AUTHORS = [
 def gen_authors(authors):
     for author, workbook in authors:
         print(workbook)
-        time.sleep(30)
+        time.sleep(20)
         yield author(workbook, **API_KWARGS)
 
 for author in gen_authors(AUTHORS):
@@ -54,7 +54,7 @@ for author in gen_authors(AUTHORS):
 CG = API_KWARGS['cg']
 
 for symbol, name in [
-    ('vwagy', 'volkswagen.png'),
+    ('mcd', 'mcdonalds.png'),
     ('eurusd', 'eurusd.png'),
     ('gbpusd', 'gbpusd.png'),
     ('audusd', 'audusd.png'),
