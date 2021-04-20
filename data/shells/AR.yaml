@@ -65,7 +65,7 @@ forex_shells:
       - ارتفع $pair_verbose$ بشكل طفيف $period_change$% في الجلسة الماضية.
     major_fall:
       - انخفض $base_symbol$/$quote_symbol$ بشكل كبير $period_change$% في الجلسة الماضية.
-      - هبط base_symbol$/$quote_symbol$ هبوطا حاداً $period_change$% في الجلسة الماضية.
+      - هبط $base_symbol$/$quote_symbol$ هبوطا حاداً $period_change$% في الجلسة الماضية.
     simple_fall:
       - انخفض $base_symbol$/$quote_symbol$ بنسبة $period_change$% في الجلسة الماضية.
       - انخفض $base_symbol$/$quote_symbol$ بنسبة $period_change$% في الجلسة الماضية.
