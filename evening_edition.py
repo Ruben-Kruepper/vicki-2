@@ -19,7 +19,7 @@ if not dt.datetime.today().weekday() in (4,5):
 
     en_author = EnglishAuthor('Vicki Master - EN - Evening Edition', **API_KWARGS)
     en_author.write_headline_news()
-    en_author.write_economic_calendar(date=dt.datetime.today() + dt.timedelta(days=2))
+    en_author.write_economic_calendar()
     en_author.write_stock_sentences()
     en_author.write_forex_sentences()
 
