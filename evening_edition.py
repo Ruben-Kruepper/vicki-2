@@ -47,8 +47,11 @@ if not dt.datetime.today().weekday() in (4,5):
             yield author(workbook, **API_KWARGS)
 
     for author in gen_authors(AUTHORS):
-        author.write_economic_calendar()
-        author.write_stock_sentences()
-        author.write_forex_sentences()
+        try:
+            author.write_economic_calendar()
+            author.write_stock_sentences()
+            author.write_forex_sentences()
+        except:
+            continue
 
     API_KWARGS['cg'].driver.close()
