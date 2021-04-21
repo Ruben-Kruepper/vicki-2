@@ -316,7 +316,7 @@ class ShellManager(Operator):
         
         
         # Tomorrow while necessary
-        date = date + (dt.timedelta(days=7-date.weekday()) if date.weekday() in [3, 4] else dt.timedelta(days=1))
+        date = date + (dt.timedelta(days=4) if date.weekday() == 4 else dt.timedelta(days=1))
         events_df = self.fxsc.get_calendar_df(from_=date, to_=date)
         all_known = self.workbook.sheet_to_df(sheet=db_sheet_name)
         known_coming = events_df.merge(all_known, on='name')
