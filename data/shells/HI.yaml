@@ -74,8 +74,8 @@ forex_shells:
       - पिछले सत्र में  $base_symbol$ गिरावट देखी गई $period_change$% के मुकाबले में.
       - पिछले सत्र में $base_symbol$ घटोत्तरी $period_change$% देखी गयी $quote_symbol$ के मुकाबले में. 
     minor_fall:
-      - $base_symbol$/$quote_symbol पिछले सत्र में नीचे की ओर गिरते हुए $period_change$%.
-      - $base_symbol$/$quote_symbol$ पिछले सत्र में एक छोटे से नीचे की ओर सुधार किया गया, जिसे छोड़ दिया गया $period_change$%.
+      - $base_symbol$/$quote_symbol$ पिछले सत्र में नीचे की ओर गिरते हुए $period_change$%.
+      - $base_symbol$/$quote_symbol$ पिछले सत्र में एक छोटे से नीचे की ओर सुधार किया गया, जिसे $period_change$% पर छोड़ दिया गया.
       - $base_symbol$/$quote_symbol$ अंतिम सत्र में $period_change$% का मामूली डिप देखा. 
 #--------------------------------------------------------------------------------------------------------------------------------------------#
 stock_shells:
@@ -180,7 +180,7 @@ indicator_shells:
       - $indicator$ एक तटस्थ संकेत दे रहा है।
     simple_signal:
       - $indicator$ एक $signal$ संकेत दे रहा है 
-      - $indicator$ $signal$ing एक संकेत की और इंगित कर रहा है. 
+      - $indicator$ $signal$ एक संकेत की और इंगित कर रहा है. 
     market_status: # $indicator$ is overbought or oversold
       - $indicator$ $signal$ मार्किट की और इंगित करता है. 
       - यथा $indicator$ हम एक $signal$ मार्केट हैं.

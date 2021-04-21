@@ -19,7 +19,7 @@ API_KWARGS = {
 }
 
 AUTHORS = [
-    (RomanianAuthor, 'Vicki Master - RO - Evening Edition')
+    (HindiAuthor, 'Vicki Master - HI - Noon Edition')
 ]
 
 def gen_authors(authors):
@@ -29,7 +29,7 @@ def gen_authors(authors):
 
 for author in gen_authors(AUTHORS):
     author.write_economic_calendar()
-    # author.write_stock_sentences()
-    # author.write_forex_sentences()
+    author.write_stock_sentences()
+    author.write_forex_sentences()
 
 # API_KWARGS['cg'].driver.close()

@@ -751,7 +751,7 @@ class PortugueseAuthor(ShellManager):
         
 
     def make_narration(self, event_list):
-        shell = "$country_possesive$ $name$ será divulgado às $time$ GMT, $country_possesive$ $name$ às $time$ GMT, $country_possesive$ $name$ às $time$ GMT."
+        shell = "$name$ $country_possesive$ será divulgado às $time$ GMT, $name$ $country_possesive$ às $time$ GMT, $name$ $country_possesive$ às $time$ GMT."
         for event in event_list:
             country_possesive = self.countries_possessive[event['countryCode']]
             previous = str(event['previous']) + (event['unit'] or "")
