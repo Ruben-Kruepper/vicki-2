@@ -187,11 +187,11 @@ indicator_shells:
       - $indicator$は$signal$を示しています。
       - $indicator$は、現在$signal$相場を示しています。
     align_signal:
-      - $indicator$の$signal$シグナルはテクニカル分析と概ね一致しています。
-      - $indicator$は$signal$シグナルを示し、テクニカル分析と概ね一致しています。
+      - $indicator$の$signal$シグナルはレートの動きと概ね一致しています。
+      - $indicator$は$signal$シグナルを示し、レートの動きと概ね一致しています。
     adverse_signal:
-      - $indicator$の$signal$シグナルはテクニカル分析と反対方向を示しています。
-      - $indicator$の$signal$シグナルはテクニカル分析と反対方向を示しています。
+      - $indicator$の$signal$シグナルはレートの動きと反対方向を示しています。
+      - $indicator$の$signal$シグナルはレートの動きと反対方向を示しています。
     align_market_status:
       - $indicator$は$signal$相場を示し、テクニカル分析の$overall_summary$シグナルと一致しています。
       - $indicator$は$signal$相場にあり、テクニカル分析の$overall_summary$シグナルをサポートしています。
