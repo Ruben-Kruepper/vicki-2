@@ -9,6 +9,9 @@ import config as cfg
 import datetime as dt
 import shutil
 
+pseudo_cg = type('', (), {})()
+pseudo_cg.make_chart = lambda x: None
+
 if not dt.datetime.today().weekday() in (4,5):
     API_KWARGS = {
         'fcsapi'    : fcsapi(cfg.FSCAPI_TOKEN),
@@ -49,7 +52,7 @@ if not dt.datetime.today().weekday() in (4,5):
 
     for author in gen_authors(AUTHORS):
         try:
-            author.write_economic_calendar()
+            # author.write_economic_calendar()
             author.write_stock_sentences()
             author.write_forex_sentences()
         except:

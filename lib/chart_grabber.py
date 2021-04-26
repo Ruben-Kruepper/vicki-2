@@ -27,7 +27,7 @@ class ChartGrabber:
         self.driver = webdriver.Edge(executable_path=join(ROOT, 'data', 'drivers', 'msedgedriver.exe'))
         self.driver.set_window_size(1920, 1080)
 
-        self.driver.get(url)
+        self.driver.get('https://www.tradingview.com/#signin')
         self.driver.find_element_by_xpath('//span[text()="Email"]').click()
         time.sleep(1)
         username_input = self.driver.find_element_by_name('username')
@@ -35,6 +35,8 @@ class ChartGrabber:
         password_input = self.driver.find_element_by_name('password')
         password_input.send_keys(password)
         password_input.send_keys(Keys.ENTER)
+        time.sleep(3)
+        self.driver.get(url)
         WebDriverWait(self.driver, 30).until(EC.presence_of_element_located((By.CLASS_NAME, 'chart-markup-table')))
         try:
             WebDriverWait(self.driver, 10).until(EC.presence_of_element_located((By.XPATH, '//span[text()="Accept"]'))).find_element_by_xpath('./..').click()

@@ -702,7 +702,7 @@ class ArabicAuthor(ShellManager):
         
 
     def make_narration(self, event_list):
-        shell = "سيصدر $country_possesive$ $name$ على الساعة $time$ بتوقيت جرينتش, و $country_possesive$ $name$ على الساعة $ time$ بتوقيت جرينتش, و $country_possesive$ $name$ على الساعة $ time$ بتوقيت جرينتش."
+        shell = "سيصدر $name$ $country_possesive$ على الساعة $time$ بتوقيت جرينتش, و $name$ $country_possesive$ على الساعة $time$ بتوقيت جرينتش, و  $name$ $country_possesive$ على الساعة $time$ بتوقيت جرينتش."
         for event in event_list:
             country_possesive = self.countries_possessive[event['countryCode']]
             previous = str(event['previous']) + (event['unit'] or "")

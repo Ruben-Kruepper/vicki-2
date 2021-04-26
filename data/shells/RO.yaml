@@ -6,7 +6,7 @@ forex_shells:
       - Prețul $pair_verbose$ a rămas în mare parte neschimbat în timpul ultimei sesiuni.
     major_gain:
       - Perechea  $pair_verbose$ a explodat cu $period_change$% în timpul ultimei sesiuni.
-      - Perechea $pair_verbose$ a înregistrat o creștere majoră de $period_change$% în timpul ultimei sesiuni..
+      - Perechea $pair_verbose$ a înregistrat o creștere majoră de $period_change$% în timpul ultimei sesiuni.
     simple_gain:
       - Perechea $pair_verbose$ a dobândit $period_change$% în timpul ultimei sesiuni.
       - Perechea $pair_verbose$ a crescut cu $period_change$% în timpul ultimei sesiuni.
@@ -190,11 +190,11 @@ indicator_shells:
       - Semnalul $signal$ al indicatorului $indicator$ este aliniat la analiza tehnică generală.
       - Indicatorul $indicator$ emite un semnal de tip $signal$, compatibil cu analiza noastră tehnică generală.
     adverse_signal:
-      - Semnalul $signal$ al indicatorului $indicator$ contrazice analiza noastră tehnică generală, ceea ce indică o oportunitate de a $overall_summary$.
-      - Indicatorul $indicator$ emite un semnal de tipul $signal$, fapt ce contrazice analiza noastră tehnică generală, indicând o oportunitate de a $overall_summary$.
+      - Semnalul $signal$ al indicatorului $indicator$ contrazice analiza noastră tehnică generală, ceea ce indică o oportunitate de a $oa_signal$.
+      - Indicatorul $indicator$ emite un semnal de tipul $signal$, fapt ce contrazice analiza noastră tehnică generală, indicând o oportunitate de a $oa_signal$.
     align_market_status:
-      - $indicator$ indică o piață de tipul $signal$, fapt ce confirmă semnalul $overall_summary$ din analiza noastră tehnică.
-      - Conform indicatorului $indicator$, ne aflăm într-o piață de tipul $signal$, fapt ce susține semnalul $overall_summary$, depistat de analiza tehnică.
+      - $indicator$ indică o piață de tipul $signal$, fapt ce confirmă semnalul $oa_signal$ din analiza noastră tehnică.
+      - Conform indicatorului $indicator$, ne aflăm într-o piață de tipul $signal$, fapt ce susține semnalul $oa_signal$, depistat de analiza tehnică.
   lower_line:
     neutral_signal:
       - Indicatorul $indicator$ trimite semnale neutre.
@@ -207,4 +207,4 @@ indicator_shells:
       - Indicatorul $indicator$ semnalează momentan un semnal din zona $signal$.
     market_status:
       - Indicatorul $indicator$ semnalează o piață $signal$.
-      - După indicatorul $indicator$, ne aflăm într-o piață $signal$.
+      - După indicatorul $indicator$, ne aflăm într-o piață $signal$.   
