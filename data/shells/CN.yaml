@@ -2,54 +2,54 @@
 forex_shells:
   narration:
     no_change:
-      - $pair_verbose$在上个交易时段横盘。
-      - $pair_verbose$价格在上个交易时段大体持平。
+      - $pair_verbose$上日横盘。
+      - $pair_verbose$价格上日大体持平。
     major_gain:
-      - $pair_verbose$在上个交易时段暴涨$period_change$%。
-      - $pair_verbose$在上个交易时段飙升$period_change$%。
+      - $pair_verbose$上日大涨$period_%_change$。
+      - $pair_verbose$上日飙升$period_%_change$。
     simple_gain:
-      - $pair_verbose$在上个交易时段上涨$period_change$%。
-      - $pair_verbose$在上个交易时段上升$period_change$%。
-      - $base_verbose$在上个交易时段对$quote_verbose$相比上升$period_change$%。
-      - $base_verbose$在上个交易时段对$quote_verbose$相比上涨$period_change$%。
-      - 在上个交易时段$base_verbose$对$quote_verbose$相比上升$period_change$%。
-      - 在上个交易时段$base_verbose$对$quote_verbose$相比上涨$period_change$%。
+      - $pair_verbose$上日涨$period_%_change$。
+      - $pair_verbose$上日升$period_%_change$。
+      - $base_verbose$上日对$quote_verbose$升$period_%_change$。
+      - $base_verbose$上日对$quote_verbose$涨$period_%_change$。
+      - 上日$base_verbose$对$quote_verbose$升$period_%_change$。
+      - 上日$base_verbose$对$quote_verbose$涨$period_%_change$。
     minor_gain:
-      - $pair_verbose$在上个交易时段调整小涨$period_change$%。
-      - $pair_verbose$在上个交易时段调整小升$period_change$%。
-      - $base_verbose$在上个交易时段对$quote_verbose$相比微涨$period_change$%。
-      - $pair_verbose$在上个交易时段小涨$period_change$%。
+      - $pair_verbose$上日调整小涨$period_%_change$。
+      - $pair_verbose$上日调整小升$period_%_change$。
+      - $base_verbose$上日对$quote_verbose$微涨$period_%_change$。
+      - $pair_verbose$上日小涨$period_%_change$。
     gain_with_low:
-      - $pair_verbose$在上个交易时段盘中跌$period_low$%后涨$period_change$%。
-      - $pair_verbose$盘中跌$period_low$%后升$period_change$%。
-      - $pair_verbose$在上个交易时段盘中跌$period_low$%后，收高$period_change$%。
-      - $pair_verbose$在上个交易时段盘中跌$period_low$%后， 收高$period_change$%。
+      - $pair_verbose$上日盘中跌$period_low$%后涨$period_%_change$。
+      - $pair_verbose$盘中跌$period_low$%后升$period_%_change$。
+      - $pair_verbose$上日盘中跌$period_low$%后，收高$period_%_change$。
+      - $pair_verbose$上日盘中跌$period_low$%后， 收高$period_%_change$。
     gain_with_high:
-      - $pair_verbose$在上个交易时段冲高$period_high$%后，收涨$period_change$%。
-      - $pair_verbose$在上个交易时段冲高$period_high$%后，收涨$period_change$%。
+      - $pair_verbose$上日冲高$period_high$%后，收涨$period_%_change$。
+      - $pair_verbose$上日冲高$period_high$%后，收涨$period_%_change$。
     major_fall:
-      - $pair_verbose$在上个交易时段大跌$period_change$%。
-      - $pair_verbose$在上个交易时段跳水$period_change$%。
+      - $pair_verbose$上日大跌$period_%_change$。
+      - $pair_verbose$上日跳水$period_%_change$。
     simple_fall:
-      - $pair_verbose$在上个交易时段下跌$period_change$%。
-      - $pair_verbose$在上个交易时段下跌$period_change$%。
-      - $base_verbose$在上个交易时段对$quote_verbose$相比跌$period_change$%。
-      - $base_verbose$在上个交易时段对$quote_verbose$相比跌$period_change$%。
-      - 在上个交易时段$base_verbose$对$quote_verbose$相比跌$period_change$%。
-      - 在上个交易时段$base_verbose$对$quote_verbose$相比跌$period_change$%。
+      - $pair_verbose$上日下跌$period_%_change$。
+      - $pair_verbose$上日下滑$period_%_change$。
+      - $base_verbose$上日对$quote_verbose$跌$period_%_change$。
+      - $base_verbose$上日对$quote_verbose$跌$period_%_change$。
+      - 上日$base_verbose$对$quote_verbose$跌$period_%_change$。
+      - 上日$base_verbose$对$quote_verbose$跌$period_%_change$。
     minor_fall:
-      - $pair_verbose$在上个交易时段调整小跌$period_change$%。
-      - $pair_verbose$在上个交易时段调整小跌$period_change$%。
-      - $base_verbose$在上个交易时段对$quote_verbose$相比微跌$period_change$%。
-      - $pair_verbose$在上个交易时段小跌$period_change$%。
+      - $pair_verbose$上日调整小跌$period_%_change$。
+      - $pair_verbose$上日调整小降$period_%_change$。
+      - $base_verbose$上日对$quote_verbose$微跌$period_%_change$。
+      - $pair_verbose$上日小跌$period_%_change$。
     fall_with_low:
-      - $pair_verbose$在上个交易时段盘中下探$period_low$%后，收跌$period_change$%。
-      - $pair_verbose$盘中下探$period_low$%，收跌$period_change$%。
-      - $pair_verbose$在上个交易时段一度下探$period_low$%, 收跌$period_change$%。
-      - $pair_verbose$在上个交易时段一度下探$period_low$%, 收跌$period_change$%。
+      - $pair_verbose$上日盘中下探$period_low$%后，收跌$period_%_change$。
+      - $pair_verbose$盘中下探$period_low$%后，收跌$period_%_change$。
+      - $pair_verbose$上日一度下探$period_low$%, 收跌$period_%_change$。
+      - $pair_verbose$上日一度下探$period_low$%, 收跌$period_%_change$。
     fall_with_high:
-      - $pair_verbose$在上个交易时段下探$period_high$%后，收跌$period_change$%。
-      - $pair_verbose$在上个交易时段下探$period_high$%后，收跌$period_change$%。
+      - $pair_verbose$上日下探$period_high$%后，收跌$period_%_change$。
+      - $pair_verbose$上日下探$period_high$%后，收跌$period_%_change$。
   lower_line: # Shorter sentences for the lower line
     no_change:
       - $base_symbol$/$quote_symbol$上日横盘。
@@ -81,66 +81,66 @@ forex_shells:
 stock_shells:
   narration:
     no_change:
-      - $company_name$股价在上个交易时段横盘。
-      - $company_name$股价在上个交易时段大体持平。
+      - $base_symbol$/$quote_symbol$上日横盘。
+      - $base_symbol$/$quote_symbol$上日大体持平。
     major_gain:
-      - $company_name$股票在上个交易时段暴涨$period_change$%。
-      - $company_name$股票在上个交易时段飙升$period_change$%。
-      - $company_name$股价在上个交易时段暴涨$period_change$%。
-      - $company_name$股价在上个交易时段飙升$period_change$%。
+      - $company_name$股票上日大涨$period_%_change$。
+      - $company_name$股票上日飙升$period_%_change$。
+      - $company_name$股价上日大涨$period_%_change$。
+      - $company_name$股价上日飙升$period_%_change$。
     simple_gain:
-      - $company_name$股票在上个交易时段上涨$period_change$%。
-      - $company_name$股票在上个交易时段上升$period_change$%。
-      - 在上个交易时段$company_name$股票上升$period_change$%。
-      - 在上个交易时段$company_name$股票上涨$period_change$%。
-      - $company_name$股票在上个交易时段上涨$period_change$%。
-      - $company_name$股票在上个交易时段上升$period_change$%。
-      - 在上个交易时段$company_name$股票上升$period_change$%。
-      - 在上个交易时段$company_name$股票上涨$period_change$%。
+      - $company_name$股票上日涨$period_%_change$。
+      - $company_name$股票上日升$period_%_change$。
+      - 上日$company_name$股票涨$period_%_change$。
+      - 上日$company_name$股票升$period_%_change$。
+      - $company_name$股价上日升$period_%_change$。
+      - $company_name$股价上日涨$period_%_change$。
+      - 上日$company_name$股价涨$period_%_change$。
+      - 上日$company_name$股价升$period_%_change$。
     minor_gain:
-      - $company_name$股价在上个交易时段调整小涨$period_change$%。
-      - $company_name$股价在上个交易时段调整小升$period_change$%。
-      - $company_name$股价在上个交易时段调整小升$period_change$%。
-      - $company_name$股票在上个交易时段调整小涨$period_change$%。
-      - $company_name$股票在上个交易时段调整小升$period_change$%。
-      - $company_name$股票在上个交易时段小涨$period_change$%。
+      - $company_name$股票上日小涨$period_%_change$。
+      - $company_name$股票上日小升$period_%_change$。
+      - $company_name$股票上日小涨$period_%_change$。
+      - $company_name$股价上日小涨$period_%_change$。
+      - $company_name$股价上日小升$period_%_change$。
+      - $company_name$股价上日小涨$period_%_change$。   
     gain_with_low:
-      - $company_name$股价在上个交易时段下探$period_low$%后，收高$period_change$%。
-      - $company_name$股价盘中下探$period_low$%后，收高$period_change$%。
-      - $company_name$股票在上个交易时段下探$period_low$%后，收高$period_change$%。
-      - $company_name$股票在上个交易时段下探$period_low$%后，收高$period_change$%。
+      - $company_name$股价上日下探$period_low$%后，收高$period_%_change$。
+      - $company_name$股价盘中下探$period_low$%后，收高$period_%_change$。
+      - $company_name$股票上日下探$period_low$%后，收高$period_%_change$。
+      - $company_name$股票上日下探$period_low$%后，收高$period_%_change$。
     gain_with_high:
-      - $company_name$股价在上个交易时段冲高$period_high$%后，收涨$period_change$%。
-      - $company_name$股价在上个交易时段冲高$period_high$%后，收高$period_change$%。
+      - $company_name$股价上日冲高$period_high$%后，收涨$period_%_change$。
+      - $company_name$股价上日冲高$period_high$%后，收高$period_%_change$。
     major_fall:
-      - $company_name$股价在上个交易时段大跌$period_change$%。
-      - $company_name$股价在上个交易时段跳水$period_change$%。
-      - $company_name$股票在上个交易时段重挫$period_change$%。
-      - $company_name$股票在上个交易时段大跌$period_change$%。
+      - $company_name$股价上日大跌$period_%_change$。
+      - $company_name$股价上日跳水$period_%_change$。
+      - $company_name$股票上日重挫$period_%_change$。
+      - $company_name$股票上日大跌$period_%_change$。
     simple_fall:
-      - $company_name$股价在上个交易时段下跌$period_change$%。
-      - $company_name$股价在上个交易时段下跌$period_change$%。
-      - 在上个交易时段$company_name$股价下跌$period_change$%。
-      - 在上个交易时段$company_name$股价下跌$period_change$%。
-      - $company_name$股票在上个交易时段下跌$period_change$%。
-      - $company_name$股票在上个交易时段下跌$period_change$%。
-      - 在上个交易时段$company_name$股票下跌$period_change$%。
-      - 在上个交易时段$company_name$股票下跌$period_change$%。
+      - $company_name$股价上日下跌$period_%_change$。
+      - $company_name$股价上日下滑$period_%_change$。
+      - 上日$company_name$股价下跌$period_%_change$。
+      - 上日$company_name$股价下滑$period_%_change$。
+      - $company_name$股票上日下跌$period_%_change$。
+      - $company_name$股票上日下滑$period_%_change$。
+      - 上日$company_name$股票下跌$period_%_change$。
+      - 上日$company_name$股票下滑$period_%_change$。
     minor_fall:
-      - $company_name$股价在上个交易时段调整小跌$period_change$%。
-      - $company_name$股价在上个交易时段调整小跌$period_change$%。
-      - $company_name$股价在上个交易时段小跌$period_change$%。
-      - $company_name$股票在上个交易时段调整小跌$period_change$%。
-      - $company_name$股票在上个交易时段调整小跌$period_change$%。
-      - $company_name$股票在上个交易时段小跌$period_change$%。
+      - $company_name$股价上日调整小跌$period_%_change$。
+      - $company_name$股价上日调整小降$period_%_change$。
+      - $company_name$股价上日小跌$period_%_change$。
+      - $company_name$股票上日调整小跌$period_%_change$。
+      - $company_name$股票上日调整小降$period_%_change$。
+      - $company_name$股票上日小跌$period_%_change$。
     fall_with_low:
-      - $company_name$股价在上个交易时段下探$period_low$%后，收跌$period_change$%。
-      - $company_name$股价盘中下探$period_low$%，收跌$period_change$%。
-      - $company_name$股价在上个交易时段下探$period_low$%后，收跌$period_change$%。
-      - $company_name$股价在上个交易时段下探$period_low$%后，收跌$period_change$%。
+      - $company_name$股价上日下探$period_low$%后，收跌$period_%_change$。
+      - $company_name$股价盘中下探$period_low$%后，收跌$period_%_change$。
+      - $company_name$股价上日下探$period_low$%后，收跌$period_%_change$。
+      - $company_name$股价上日下探$period_low$%后，收跌$period_%_change$。
     fall_with_high:
-      - $company_name$股价在上个交易时段冲高$period_high$%后，收低$period_change$%。
-      - $company_name$股价在上个交易时段冲高$period_high$%后，收低$period_change$%。
+      - $company_name$股价上日冲高$period_high$%后，收低$period_%_change$。
+      - $company_name$股价上日冲高$period_high$%后，收低$period_%_change$。
   lower_line:
     no_change:
       - $company_name$股票上日横盘。
@@ -179,22 +179,22 @@ stock_shells:
 indicator_shells:
   narration:
     neutral_signal:
-      - $indicator$发出中性信号。
+      - $indicator$中性。
     simple_signal:
-      - $indicator$发出$signal$信号。
-      - $indicator$表示$signal$机会。
+      - $indicator$$signal$。
+      - $indicator$呈$signal$时机。
     market_status: # $indicator$ is overbought or oversold
-      - $indicator$表示$signal$市场。
-      - $indicator$表示，我们正在$signal$市场。
+      - $indicator$$signal$。
+      - $indicator$市况$signal$。
     align_signal:
-      - $indicator$的$signal$信号合符总体技术分析。
-      - $indicator$给出$signal$信号, 与总体技术分析相符。
+      - $indicator$$signal$合符总体技术分析。
+      - $indicator$$signal$与总体技术分析相符。
     adverse_signal:
-      -  $indicator$为$signal$与总体技术分析不符。
-      - $indicator$为$signal$违背总体技术分析。
+      - $indicator$$signal$与总体技术分析不符。
+      - $indicator$$signal$违背总体技术分析。
     align_market_status:
-      - $indicator$表明$signal$市场, 确认$overall_summary$技术分析判断。
-      - 据$indicator$现为$signal$市场, 符合$overall_summary$技术分析判断。
+      - $indicator$$signal$, 确认$overall_summary$技术分析判断。
+      - $indicator$$signal$, 符合$overall_summary$技术分析判断。
   lower_line:
     neutral_signal:
       - $indicator$中性。
@@ -202,9 +202,9 @@ indicator_shells:
       - $indicator$方向不明。
       - $indicaotr$在中性区。
     simple_signal:
-      - $indicator$为$signal$信号。
+      - $indicator$$signal$。
       - $indicator$在$signal$区。
       - $indicator$在$signal$区。
     market_status:
-      - $indicator$表明$signal$市场。
-      - 据$indicator$现为$signal$市场。
+      - $indicator$$signal$。
+      - $indicator$市况$signal$。
