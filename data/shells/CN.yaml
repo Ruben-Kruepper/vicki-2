@@ -5,51 +5,51 @@ forex_shells:
       - $pair_verbose$上日横盘。
       - $pair_verbose$价格上日大体持平。
     major_gain:
-      - $pair_verbose$上日大涨$period_%_change$。
-      - $pair_verbose$上日飙升$period_%_change$。
+      - $pair_verbose$上日大涨$period_change$%。
+      - $pair_verbose$上日飙升$period_change$%。
     simple_gain:
-      - $pair_verbose$上日涨$period_%_change$。
-      - $pair_verbose$上日升$period_%_change$。
-      - $base_verbose$上日对$quote_verbose$升$period_%_change$。
-      - $base_verbose$上日对$quote_verbose$涨$period_%_change$。
-      - 上日$base_verbose$对$quote_verbose$升$period_%_change$。
-      - 上日$base_verbose$对$quote_verbose$涨$period_%_change$。
+      - $pair_verbose$上日涨$period_change$%。
+      - $pair_verbose$上日升$period_change$%。
+      - $base_verbose$上日对$quote_verbose$升$period_change$%。
+      - $base_verbose$上日对$quote_verbose$涨$period_change$%。
+      - 上日$base_verbose$对$quote_verbose$升$period_change$%。
+      - 上日$base_verbose$对$quote_verbose$涨$period_change$%。
     minor_gain:
-      - $pair_verbose$上日调整小涨$period_%_change$。
-      - $pair_verbose$上日调整小升$period_%_change$。
-      - $base_verbose$上日对$quote_verbose$微涨$period_%_change$。
-      - $pair_verbose$上日小涨$period_%_change$。
+      - $pair_verbose$上日调整小涨$period_change$%。
+      - $pair_verbose$上日调整小升$period_change$%。
+      - $base_verbose$上日对$quote_verbose$微涨$period_change$%。
+      - $pair_verbose$上日小涨$period_change$%。
     gain_with_low:
-      - $pair_verbose$上日盘中跌$period_low$%后涨$period_%_change$。
-      - $pair_verbose$盘中跌$period_low$%后升$period_%_change$。
-      - $pair_verbose$上日盘中跌$period_low$%后，收高$period_%_change$。
-      - $pair_verbose$上日盘中跌$period_low$%后， 收高$period_%_change$。
+      - $pair_verbose$上日盘中跌$period_low$%后涨$period_change$%。
+      - $pair_verbose$盘中跌$period_low$%后升$period_change$%。
+      - $pair_verbose$上日盘中跌$period_low$%后，收高$period_change$%。
+      - $pair_verbose$上日盘中跌$period_low$%后， 收高$period_change$%。
     gain_with_high:
-      - $pair_verbose$上日冲高$period_high$%后，收涨$period_%_change$。
-      - $pair_verbose$上日冲高$period_high$%后，收涨$period_%_change$。
+      - $pair_verbose$上日冲高$period_high$%后，收涨$period_change$%。
+      - $pair_verbose$上日冲高$period_high$%后，收涨$period_change$%。
     major_fall:
-      - $pair_verbose$上日大跌$period_%_change$。
-      - $pair_verbose$上日跳水$period_%_change$。
+      - $pair_verbose$上日大跌$period_change$%。
+      - $pair_verbose$上日跳水$period_change$%。
     simple_fall:
-      - $pair_verbose$上日下跌$period_%_change$。
-      - $pair_verbose$上日下滑$period_%_change$。
-      - $base_verbose$上日对$quote_verbose$跌$period_%_change$。
-      - $base_verbose$上日对$quote_verbose$跌$period_%_change$。
-      - 上日$base_verbose$对$quote_verbose$跌$period_%_change$。
-      - 上日$base_verbose$对$quote_verbose$跌$period_%_change$。
+      - $pair_verbose$上日下跌$period_change$%。
+      - $pair_verbose$上日下滑$period_change$%。
+      - $base_verbose$上日对$quote_verbose$跌$period_change$%。
+      - $base_verbose$上日对$quote_verbose$跌$period_change$%。
+      - 上日$base_verbose$对$quote_verbose$跌$period_change$%。
+      - 上日$base_verbose$对$quote_verbose$跌$period_change$%。
     minor_fall:
-      - $pair_verbose$上日调整小跌$period_%_change$。
-      - $pair_verbose$上日调整小降$period_%_change$。
-      - $base_verbose$上日对$quote_verbose$微跌$period_%_change$。
-      - $pair_verbose$上日小跌$period_%_change$。
+      - $pair_verbose$上日调整小跌$period_change$%。
+      - $pair_verbose$上日调整小降$period_change$%。
+      - $base_verbose$上日对$quote_verbose$微跌$period_change$%。
+      - $pair_verbose$上日小跌$period_change$%。
     fall_with_low:
-      - $pair_verbose$上日盘中下探$period_low$%后，收跌$period_%_change$。
-      - $pair_verbose$盘中下探$period_low$%后，收跌$period_%_change$。
-      - $pair_verbose$上日一度下探$period_low$%, 收跌$period_%_change$。
-      - $pair_verbose$上日一度下探$period_low$%, 收跌$period_%_change$。
+      - $pair_verbose$上日盘中下探$period_low$%后，收跌$period_change$%。
+      - $pair_verbose$盘中下探$period_low$%后，收跌$period_change$%。
+      - $pair_verbose$上日一度下探$period_low$%, 收跌$period_change$%。
+      - $pair_verbose$上日一度下探$period_low$%, 收跌$period_change$%。
     fall_with_high:
-      - $pair_verbose$上日下探$period_high$%后，收跌$period_%_change$。
-      - $pair_verbose$上日下探$period_high$%后，收跌$period_%_change$。
+      - $pair_verbose$上日下探$period_high$%后，收跌$period_change$%。
+      - $pair_verbose$上日下探$period_high$%后，收跌$period_change$%。
   lower_line: # Shorter sentences for the lower line
     no_change:
       - $base_symbol$/$quote_symbol$上日横盘。
@@ -84,63 +84,63 @@ stock_shells:
       - $base_symbol$/$quote_symbol$上日横盘。
       - $base_symbol$/$quote_symbol$上日大体持平。
     major_gain:
-      - $company_name$股票上日大涨$period_%_change$。
-      - $company_name$股票上日飙升$period_%_change$。
-      - $company_name$股价上日大涨$period_%_change$。
-      - $company_name$股价上日飙升$period_%_change$。
+      - $company_name$股票上日大涨$period_change$%。
+      - $company_name$股票上日飙升$period_change$%。
+      - $company_name$股价上日大涨$period_change$%。
+      - $company_name$股价上日飙升$period_change$%。
     simple_gain:
-      - $company_name$股票上日涨$period_%_change$。
-      - $company_name$股票上日升$period_%_change$。
-      - 上日$company_name$股票涨$period_%_change$。
-      - 上日$company_name$股票升$period_%_change$。
-      - $company_name$股价上日升$period_%_change$。
-      - $company_name$股价上日涨$period_%_change$。
-      - 上日$company_name$股价涨$period_%_change$。
-      - 上日$company_name$股价升$period_%_change$。
+      - $company_name$股票上日涨$period_change$%。
+      - $company_name$股票上日升$period_change$%。
+      - 上日$company_name$股票涨$period_change$%。
+      - 上日$company_name$股票升$period_change$%。
+      - $company_name$股价上日升$period_change$%。
+      - $company_name$股价上日涨$period_change$%。
+      - 上日$company_name$股价涨$period_change$%。
+      - 上日$company_name$股价升$period_change$%。
     minor_gain:
-      - $company_name$股票上日小涨$period_%_change$。
-      - $company_name$股票上日小升$period_%_change$。
-      - $company_name$股票上日小涨$period_%_change$。
-      - $company_name$股价上日小涨$period_%_change$。
-      - $company_name$股价上日小升$period_%_change$。
-      - $company_name$股价上日小涨$period_%_change$。   
+      - $company_name$股票上日小涨$period_change$%。
+      - $company_name$股票上日小升$period_change$%。
+      - $company_name$股票上日小涨$period_change$%。
+      - $company_name$股价上日小涨$period_change$%。
+      - $company_name$股价上日小升$period_change$%。
+      - $company_name$股价上日小涨$period_change$%。   
     gain_with_low:
-      - $company_name$股价上日下探$period_low$%后，收高$period_%_change$。
-      - $company_name$股价盘中下探$period_low$%后，收高$period_%_change$。
-      - $company_name$股票上日下探$period_low$%后，收高$period_%_change$。
-      - $company_name$股票上日下探$period_low$%后，收高$period_%_change$。
+      - $company_name$股价上日下探$period_low$%后，收高$period_change$%。
+      - $company_name$股价盘中下探$period_low$%后，收高$period_change$%。
+      - $company_name$股票上日下探$period_low$%后，收高$period_change$%。
+      - $company_name$股票上日下探$period_low$%后，收高$period_change$%。
     gain_with_high:
-      - $company_name$股价上日冲高$period_high$%后，收涨$period_%_change$。
-      - $company_name$股价上日冲高$period_high$%后，收高$period_%_change$。
+      - $company_name$股价上日冲高$period_high$%后，收涨$period_change$%。
+      - $company_name$股价上日冲高$period_high$%后，收高$period_change$%。
     major_fall:
-      - $company_name$股价上日大跌$period_%_change$。
-      - $company_name$股价上日跳水$period_%_change$。
-      - $company_name$股票上日重挫$period_%_change$。
-      - $company_name$股票上日大跌$period_%_change$。
+      - $company_name$股价上日大跌$period_change$%。
+      - $company_name$股价上日跳水$period_change$%。
+      - $company_name$股票上日重挫$period_change$%。
+      - $company_name$股票上日大跌$period_change$%。
     simple_fall:
-      - $company_name$股价上日下跌$period_%_change$。
-      - $company_name$股价上日下滑$period_%_change$。
-      - 上日$company_name$股价下跌$period_%_change$。
-      - 上日$company_name$股价下滑$period_%_change$。
-      - $company_name$股票上日下跌$period_%_change$。
-      - $company_name$股票上日下滑$period_%_change$。
-      - 上日$company_name$股票下跌$period_%_change$。
-      - 上日$company_name$股票下滑$period_%_change$。
+      - $company_name$股价上日下跌$period_change$%。
+      - $company_name$股价上日下滑$period_change$%。
+      - 上日$company_name$股价下跌$period_change$%。
+      - 上日$company_name$股价下滑$period_change$%。
+      - $company_name$股票上日下跌$period_change$%。
+      - $company_name$股票上日下滑$period_change$%。
+      - 上日$company_name$股票下跌$period_change$%。
+      - 上日$company_name$股票下滑$period_change$%。
     minor_fall:
-      - $company_name$股价上日调整小跌$period_%_change$。
-      - $company_name$股价上日调整小降$period_%_change$。
-      - $company_name$股价上日小跌$period_%_change$。
-      - $company_name$股票上日调整小跌$period_%_change$。
-      - $company_name$股票上日调整小降$period_%_change$。
-      - $company_name$股票上日小跌$period_%_change$。
+      - $company_name$股价上日调整小跌$period_change$%。
+      - $company_name$股价上日调整小降$period_change$%。
+      - $company_name$股价上日小跌$period_change$%。
+      - $company_name$股票上日调整小跌$period_change$%。
+      - $company_name$股票上日调整小降$period_change$%。
+      - $company_name$股票上日小跌$period_change$%。
     fall_with_low:
-      - $company_name$股价上日下探$period_low$%后，收跌$period_%_change$。
-      - $company_name$股价盘中下探$period_low$%后，收跌$period_%_change$。
-      - $company_name$股价上日下探$period_low$%后，收跌$period_%_change$。
-      - $company_name$股价上日下探$period_low$%后，收跌$period_%_change$。
+      - $company_name$股价上日下探$period_low$%后，收跌$period_change$%。
+      - $company_name$股价盘中下探$period_low$%后，收跌$period_change$%。
+      - $company_name$股价上日下探$period_low$%后，收跌$period_change$%。
+      - $company_name$股价上日下探$period_low$%后，收跌$period_change$%。
     fall_with_high:
-      - $company_name$股价上日冲高$period_high$%后，收低$period_%_change$。
-      - $company_name$股价上日冲高$period_high$%后，收低$period_%_change$。
+      - $company_name$股价上日冲高$period_high$%后，收低$period_change$%。
+      - $company_name$股价上日冲高$period_high$%后，收低$period_change$%。
   lower_line:
     no_change:
       - $company_name$股票上日横盘。

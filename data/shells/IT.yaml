@@ -6,9 +6,9 @@ forex_shells:
       - Il prezzo di $pair_verbose$ è rimasto sostanzialmente invariato nell'ultima sessione.
     major_gain:
       - La coppia $pair_verbose$ è esplosa del $period_change$% nell'ultima sessione.
-      - La coppia $pair_verbose$ è salita alle stelle del $period_%_change$ nell'ultima sessione.
+      - La coppia $pair_verbose$ è salita alle stelle del $period_change$% nell'ultima sessione.
     simple_gain:
-      - La coppia $pair_verbose$ ha guadagnato il $period_%_change$ nell'ultima sessione.
+      - La coppia $pair_verbose$ ha guadagnato il $period_change$% nell'ultima sessione.
       - La coppia $pair_verbose$ è aumentata di $period_change$% nell'ultima sessione.
       - Il $base_verbose$ è aumentato di $period_change$% rispetto al $quote_verbose$ nell'ultima sessione di trading.
       - Il $base_verbose$ ha guadagnato il $period_change$% contro il $quote_verbose$ nell'ultima sessione.
@@ -113,14 +113,14 @@ stock_shells:
       - Le azioni di $company_name$ hanno guadagnato il $period_change$% nell'ultima sessione dopo essere salite fino a $period_high$% durante la sessione.
       - Le azioni di $company_name$ sono salite di $period_change$% nell'ultima sessione dopo aver guadagnato fino a $period_high$% durante la sessione.
     major_fall:
-      - Le azioni di $company_name$ sono crollate del $period_%_change$ nell'ultima sessione. 
+      - Le azioni di $company_name$ sono crollate del $period_change$% nell'ultima sessione. 
       - Le azioni di $company_name$ hanno ceduto del $period_change$% nell'ultima sessione.
       - Le azioni di $company_name$ sono andate in crash del $period_change$% nell'ultima sessione.
       - Le azioni di $company_name$ sono crollate del $period_change$% nell'ultima sessione.
     simple_fall:
       - Il titolo di $company_name$ è sceso di $period_change$% nell'ultima sessione.
       - Il titolo di $company_name$ è crollato di $period_change$% nell'ultima sessione.
-      - L'ultima sessione ha visto il titolo di  di $company_name$ cadere del $period_%_change$.
+      - L'ultima sessione ha visto il titolo di  di $company_name$ cadere del $period_change$%.
       - L'ultima sessione ha visto il titolo di di $company_name$ scendere del $period_change$%.
       - Le azioni di $company_name$ sono scese del $period_change$% nell'ultima sessione.
       - Le azioni di $company_name$ sono crollate del $period_change$% nell'ultima sessione.
