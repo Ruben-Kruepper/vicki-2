@@ -5,6 +5,7 @@ from lib.fxstreet_calendar  import FxstreetCalendar
 from lib.chart_grabber      import ChartGrabber
 
 import config as cfg
+import time
 
 import datetime as dt
 
@@ -27,9 +28,12 @@ def gen_authors(authors):
         print(workbook)
         yield author(workbook, **API_KWARGS)
 
-for author in gen_authors(AUTHORS):
-    author.write_economic_calendar()
-    author.write_stock_sentences()
-    author.write_forex_sentences()
+for i in range(500):
+    for author in gen_authors(AUTHORS):
+        author.write_economic_calendar()
+        author.write_stock_sentences()
+        author.write_forex_sentences()
+    time.sleep(10)
+    break
 
 # API_KWARGS['cg'].driver.close()

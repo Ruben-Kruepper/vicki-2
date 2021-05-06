@@ -2,144 +2,145 @@
 forex_shells:
   narration:
     no_change:
-      - Perechea $pair_verbose$ a avut o evoluție laterală în ultima sesiune.
-      - Prețul $pair_verbose$ a rămas în mare parte neschimbat în ultima sesiune.
+      - Perechea $pair_verbose$ a fost tranzacționată lateral în timpul ultimei sesiuni.
+      - Prețul $pair_verbose$ a rămas în mare parte neschimbat în timpul ultimei sesiuni.
     major_gain:
-      - Perechea  $pair_verbose$ a crescut exponențial cu $period_change$% în ultima sesiune.      
+      - Perechea  $pair_verbose$ a explodat cu $period_change$% în timpul ultimei sesiuni.
       - Perechea $pair_verbose$ a înregistrat o creștere majoră de $period_change$% în timpul ultimei sesiuni.
     simple_gain:
-      - Perechea $pair_verbose$ a obținut $period_change$% în ultima sesiune.
+      - Perechea $pair_verbose$ a dobândit $period_change$% în timpul ultimei sesiuni.
       - Perechea $pair_verbose$ a crescut cu $period_change$% în timpul ultimei sesiuni.
       - $base_verbose$ a crescut cu $period_change$% în raport cu $quote_verbose$, în timpul ultimei sesiuni de tranzacționare.
-      - Perechea $base_verbose$ a obținut $period_change$% în raport cu $quote_verbose$, în ultima sesiune.
-      - În ultima sesiune s-a înregistrat o creștere de $period_change$% a perechii $base_verbose$ în raport cu $quote_verbose$.
-      - În cadrul ultimei sesiuni, $base_verbose$ a obținut $period_change$% în raport cu $quote_verbose$.
+      - $base_verbose$ a dobândit $period_change$% în raport cu $quote_verbose$, în timpul ultimei sesiuni.
+      - Ultima sesiune a înregistrat o creștere de $period_change$% a  $base_verbose$ în raport cu $quote_verbose$.
+      - În cadrul ultimei sesiuni, $base_verbose$ a dobândit $period_change$% în raport cu $quote_verbose$.
     minor_gain:
-      - Perechea $pair_verbose$  a suferit o corecție minoră în ultima sesiune, crescând $period_change$%.      
-      - Perechea $pair_verbose$  a suferit o corecție minoră în ultima sesiune, crescând cu $period_change$%.
-      - Perechea $base_verbose$ a suferit o ușoară creștere de $period_change$% în raport cu $quote_verbose$, în timpul ultimei sesiuni.
-      - Perechea $pair_verbose$ a înregistrat o ușoară creștere de $period_change$%, în timpul ultimei sesiuni.
+      - Perechea $pair_verbose$ a realizat o corecție ascendentă minoră, în ultima sesiune, căștigând $period_change$%.
+      - Perechea $pair_verbose$ a realizat o corecție ascendentă minoră, în ultima sesiune, crescând cu $period_change$%.
+      - $base_verbose$ a realizat o ușoară creștere de $period_change$% în raport cu $quote_verbose$, în timpul ultimei sesiuni.
+      - $pair_verbose$ a înregistrat o creștere ușoară de $period_change$%, în timpul ultimei sesiuni.
     gain_with_low:
-      - Perechea $pair_verbose$ a obținut $period_change$% în decursul ultimei sesiuni, după o scădere de $period_low$% în sesiunile anterioare.
-      - Perechea $pair_verbose$ a crescut cu $period_change$% în urma unei scăderi din timpul sesiunii de $period_low$%.
-      - După o scădere de $period_low$% în timpul ultimei sesiuni, perechea $pair_verbose$  a încheiat cu un câștig de $period_change$%.
-      - După o scădere de $period_low$%, înregistrată în timpul ultimei sesiuni, perechea $pair_verbose$  a încheiat cu o crește de $period_change$%.
+      - Perechea $pair_verbose$ a dobândit $period_change$%, în decursul ultimei sesiuni, după o scădere intra-sesiune de $period_low$%.
+      - Perechea $pair_verbose$ a crescut cu $period_change$% în urma unei scăderi intra-sesiune de $period_low$%.
+      - După o scădere de $period_low$% în timpul ultimei sesiuni, perechea $pair_verbose$  s-a încheiat cu un câștig de $period_change$%.
+      - După o scădere de $period_low$%, înregistrată în timpul ultimei sesiuni, perechea $pair_verbose$  s-a încheiat cu $period_change$% în câștig.
     gain_with_high:
-      - Perechea $pair_verbose$ a obținut $period_change$% în timpul ultimei sesiuni, după o creștere în sesiunea anterioară de $period_high$%.
-      - Perechea $pair_verbose$ a crescut $period_change$% în timpul ultimei sesiuni, după câștigul procentual atins de până la $period_high$% acumulat în decursul sesiunii.
+      - Perechea $pair_verbose$ a dobândit $period_change$%, în timpul ultimei sesiuni, după ce a crescut până la $period_high$% în decursul acesteia .
+      - Perechea $pair_verbose$ a crescut cu $period_change$%, în timpul ultimei sesiuni, după ce a câștigat până la $period_high$% în decursul acesteia.
     major_fall:
-      - Perechea $pair_verbose$ a suferit o scădere abruptă de $period_change$% în timpul ultimei sesiuni.
-      - Perechea $pair_verbose$ a scăzut exponențial cu $period_change$% în timpul ultimei sesiuni.
+      - Perechea $pair_verbose$ a înregistrat o scădere abruptă de $period_change$% în timpul ultimei sesiuni.
+      - Perechea $pair_verbose$ a plonjat la $period_change$% în timpul ultimei sesiuni.
     simple_fall:
       - Perechea $pair_verbose$ a pierdut $period_change$% în timpul ultimei sesiuni.
-      - Perechea $pair_verbose$ a scăzut cu $period_change$% în ultima sesiune.
-      - Perechea $base_verbose$ a scăzut $period_change$% în raport cu $quote_verbose$ în timpul ultimei sesiuni de tranzacționare.
-      - Perechea $base_verbose$ s-a depreciat $period_change$% în raport cu $quote_verbose$ în timpul ultimei sesiuni.
-      - În ultima sesiune s-a înregistrat o scădere a perechii $base_verbose$ cu $period_change$% în raport cu $quote_verbose$.
-      - În decursul ultimei sesiuni, perechea $base_verbose$ a înregistrat o pierdere de $period_change$% în raport cu $quote_verbose$.
+      - Perechea $pair_verbose$ scăzut la $period_change$% în timpul ultimei sesiuni.
+      - $base_verbose$ a scăzut cu $period_change$% față de $quote_verbose$ în timpul ultimei sesiuni de tranzacționare.
+      - $base_verbose$ a pierdut $period_change$% față de $quote_verbose$ în timpul ultimei sesiuni.
+      - Ultima sesiune a înregistrat o scădere a $base_verbose$ cu $period_change$% în raport cu $quote_verbose$.
+      - În decursul ultimei sesiuni, $base_verbose$ a înregistrat o pierdere de $period_change$% în raport cu $quote_verbose$.
     minor_fall:
-      - Perechea $pair_verbose$ a suferit o corecție în decursul ultimei sesiuni, scăzând cu $period_change$%.
-      - Perechea $pair_verbose$ a suferit o corecție descendentă minoră în ultima sesiune, depreciindu-se $period_change$%.
-      - Perechea $base_verbose$ a suferit o ușoară scădere cu $period_change$% în raport cu $quote_verbose$ în ultima sesiune.
+      - Perechea $pair_verbose$ a realizat o corecție descendentă în decursul ultima sesiune, scăzând la $period_change$%.
+      - Perechea $pair_verbose$ a efectuat o corecție descendentă minoră, în ultima sesiune, pierzând $period_change$%.
+      - $base_verbose$ a scăzut ușor la $period_change$% în raport cu $quote_verbose$, în ultima sesiune.
       - Perechea $pair_verbose$ a înregistrat o scădere minoră de $period_change$%, în ultima sesiune.
     fall_with_low:
-      - Perechea $pair_verbose$ a scăzut $period_change$% în cadrul ultimei sesiuni, după deprecierea suferită în timpul sesiunii de $period_low$%.
-      - Perechea $pair_verbose$ a scăzut $period_change$%, depreciere urmată de o altă scădere survenită în timpul sesiunii de $period_low$%.
-      - În urma unei scăderi de $period_low$% înregistrată în timpul ultimei sesiuni, perechea $pair_verbose$ a încheiat cu o depreciere de $period_change$%.
-      - După o scădere de $period_low$% în timpul ultimei sesiuni, perechea $pair_verbose$ a încheiat cu $period_change$% în pierdere.
+      - Perechea $pair_verbose$ a scăzut la $period_change$% în cadrul ultimei sesiuni, după o altă scădere intra-sesiune, de $period_low$%.
+      - Perechea $pair_verbose$ a scăzut la $period_change$% în urma unei scăderi anterioare intra-sesiune, de $period_low$%.
+      - În urma unei scăderi de $period_low$% înregistrată în timpul ultimei sesiuni, perechea $pair_verbose$ s-a încheiat cu o pierdere de $period_change$%.
+      - După o scădere de $period_low$% în timpul ultimei sesiuni, perechea $pair_verbose$ s-a încheiat cu $period_change$% în pierdere.
     fall_with_high:
-      - Perechea $pair_verbose$ a scăzut cu $period_change$%în timpul ultimei sesiuni după o altă depreciere de $period_high$% suferită în decursul acesteia.
-      - Perechea $pair_verbose$ a pierdut $period_change$% în timpul ultimei sesiuni, după o scădere de până la $period_high$% în decursul acesteia.
+      - Perechea $pair_verbose$ a scăzut cu $period_change$%, în timpul ultimei sesiuni, pierzând până la $period_high$% în decursul acesteia.
+      - Perechea $pair_verbose$ a pierdut $period_change$%, în timpul ultimei sesiuni, după o scădere de până la $period_high$% în decursul acesteia.
   lower_line: # Shorter sentences for the lower line
     no_change:
-      - Stocurile $company_name$ au avut o evoluție laterală în ultima sesiune.
-      - Prețul stocurilor $company_name$ a rămas în mare parte neschimbat în ultima sesiune.
+      - $base_symbol$/$quote_symbol$ a avut o evoluție laterală în ultima sesiune.
+      - $base_symbol$/$quote_symbol$ a rămas în mare parte neschimbat în ultima sesiune.
     major_gain:
-      - Stocurile $company_name$ a înregistrat o creștere fulminantă de $period_change$% în ultima sesiune.
-      - Stocurile $company_name$ au înregistrat o creștere majoră de $period_change$% în ultima sesiune.
+      - $base_symbol$/$quote_symbol$ a explodat $period_change$ în ultima sesiune.
+      - $base_symbol$/$quote_symbol$ a crescut exponențial $period_change$% în ultima sesiune.
     simple_gain:
-      - Stocurile $company_name$ au câștigat $period_change$% în ultima sesiune.
-      - Stocurile $company_name$ au crescut cu $period_change$% în ultima sesiune.
+      - $base_symbol$/$quote_symbol$ gained $period_change$% în ultima sesiune.
+      - $base_symbol$/$quote_symbol$ rose $period_change$% în ultima sesiune.
     minor_gain:
-      - Stocurile $company_name$ au înregistrat o corecție ascendentă minoră în timpul ultimei sesiuni, obținând $period_change$%.
-      - Stocurile $company_name$ au înregistrat o corecție ascendentă minoră în timpul ultimei sesiuni, crescând cu $period_change$%.
+      - $base_symbol$/$quote_symbol$ a suferit o creștere moderată cu $period_change$% în ultima sesiune.
+      - The $pair_verbose$ a crescut moderat cu $period_change$% în ultima sesiune.
     major_fall:
-      - Stocurile $company_name$ au înregistrat o scădere abruptă de $period_change$% în ultima sesiune.
-      - Stocurile $company_name$ au scăzut $period_change$% în ultima sesiune.
+      - $base_symbol$/$quote_symbol$ s-a prăbușit $period_change$% în ultima sesiune.
+      - $base_symbol$/$quote_symbol$ dove $period_change$% în ultima sesiune.
     simple_fall:
-      - Stocurile $company_name$ au pierdut $period_change$% în ultima sesiune.
-      - Valoarea stocurilor $company_name$ au scăzut cu $period_change$% în ultima sesiune.
-      - În decursul ultimei sesiuni acțiunile $company_name$ au scăzut cu $period_change$%.
-      - Stocurile $company_name$ au înregistrat o pierdere de $period_change$% în ultima sesiune.
-      - Acțiunile $company_name$ s-au depreciat cu $period_change$% în ultima sesiune.
-      - În decursul ultimei sesiuni, acțiunile $company_name$ au înregistrat o scădere de $period_change$%.
+      - $base_symbol$/$quote_symbol$ dropped $period_change$% în ultima sesiune.
+      - $base_symbol$/$quote_symbol$ fell $period_change$% în ultima sesiune.
+      - $base_symbol$ se depreciază $period_change$% în raport cu $quote_symbol$ în ultima sesiune.
+      - $base_symbol$ scade $period_change$% în raport cu $quote_symbol$ în ultima sesiune.
+      - În ultima sesiune $base_symbol$ s-a depreciat $period_change$% în raport cu $quote_symbol$.
+      - În ultima sesiune $base_symbol$ a scăzut $period_change$% în raport cu $quote_symbol$.
     minor_fall:
-      -  Stocurile $company_name$ au suferit o corecție descendentă minoră în decursul ultimei sesiuni, scăzând cu $period_change$%.
-      - Stocurile $company_name$ au înregistrat o corecție descendentă minoră în decursul ultimei sesiuni, depreciindu-se  $period_change$%.
-      - Stocurile $company_name$ au înregistrat o corecție descendentă minoră de $period_change$% în decursul ultimei sesiuni.
+      - $base_symbol$/$quote_symbol$ a suferit o corecție descrescătoare, scăzând $period_change$%.
+      - $base_symbol$/$quote_symbol$ a suferit o corecție descrescătoare minoră, scăzând $period_change$%.
+      - $base_symbol$/$quote_symbol$ a suferit un ușor declin cu $period_change$% în ultima sesiune.
 #--------------------------------------------------------------------------------------------------------------------------------------------#
 stock_shells:
   narration:
     no_change:
       - Stocurile $company_name$ au avut o evoluție laterală în ultima sesiune.
-      - Prețul stocurilor $company_name$ a rămas în mare parte neschimbat în ultima sesiune.
+      - Prețul stocurilor $company_name$ a rămas în mare parte static în ultima sesiune.
     major_gain:
-      - Stocurile $company_name$ a înregistrat o creștere fulminantă de $period_change$% în ultima sesiune.
-      - Stocurile $company_name$ au înregistrat o creștere majoră de $period_change$% în ultima sesiune.
-      - Acțiunile $company_name$ au înregistrat o creștere exponențială de $period_change$% în ultima sesiune.
-      - Acțiunile $company_name$ au înregistrat o creștere majoră de $period_change$% în ultima sesiune.
+      - Stocurile $company_name$ au explodat $period_change$% în ultima sesiune.
+      - Stocurile $company_name$ au crescut exponențial cu $period_change$% în ultima sesiune.
+      - Acțiunile $company_name$ au explodat $period_change$% în ultima sesiune.
+      - Acțiunile $company_name$ au crescut exponențial cu $period_change$% în ultima sesiune.
     simple_gain:
-      - Stocurile $company_name$ au câștigat $period_change$% în ultima sesiune.
+      - Stocurile $company_name$'s au urcat $period_change$% în ultima sesiune.
       - Stocurile $company_name$ au crescut cu $period_change$% în ultima sesiune.
-      - În ultima sesiune s-a înregistrat creșterea a stocurilor $company_name$ cu $period_change$%.
-      - În ultima sesiune, stocurile $company_name$ au înregistrat un câștig de $period_change$%.
-      - Acțiunile $company_name$ au obținut o creștere de $period_change$% în ultima sesiune.
-      - Acțiunile $company_name$ au crescut cu $period_change$% în ultima sesiune.
-      - În ultima sesiune s-a înregistrat o creștere a acțiunilor $company_name$ cu $period_change$%.
-      - În ultima sesiune, s-a înregistrat o apreciere a acțiunilor $company_name$ cu $period_change$%.
+      - În ultima sesiune stocurile $company_name$ au crescut $period_change$%.
+      - În ultima sesiune stocurile $company_name$ au crescut $period_change$%.
+      - Acțiunile $company_name$ au crescut $period_change$% în ultima sesiune.
+      - Acțiunile $company_name$ s-au apreciat $period_change$% în ultima sesiune.
+      - În ultima sesiune acțiunile $company_name$ au crescut cu $period_change$%.
+      - În ultima sesiune acțiunile $company_name$ au suferit o creștere de $period_change$%.
     minor_gain:
-      - Stocurile $company_name$ au înregistrat o corecție ascendentă minoră în timpul ultimei sesiuni, obținând $period_change$%.
-      - Stocurile $company_name$ au înregistrat o corecție ascendentă minoră în timpul ultimei sesiuni, crescând cu $period_change$%.
-      - Stocurile $company_name$ au înregistrat o creștere minoră de $period_change$% în timpul ultimei sesiuni.
-      - Acțiunile $company_name$ au înregistrat o corecție ascendentă minoră în timpul ultimei sesiuni, obținând $period_change$%.
-      - Acțiunile $company_name$ au înregistrat o corecție ascendentă minoră în timpul ultimei sesiuni, crescând cu $period_change$%.
-      - Acțiunile $company_name$  au înregistrat o creștere minoră de $period_change$% în timpul ultimei sesiuni.
-      - În timpul ultimei sesiuni, acțiunile $company_name$ a obținut $period_change$%, după o scădere de $period_low$% în timpul sesiunii.
-      - Acțiunile $company_name$ au crescut cu $period_change$% în urma unei scăderi de $period_low$% suferite în timpul sesiunii.
-      - După o scădere de $period_low$% înregistrată în timpul ultimei sesiuni, acțiunile $company_name$ au încheiat cu o creștere de $period_change$%.
-      -  După o scădere de $period_low$% înregistrată în decursul ultmei sesiuni, acțiunile $company_name$ au încheiat cu $period_change$% în câștig.
+      - Stocurile $company_name$ au suferit o ușoară apreciere în ultima sesiune, crescând $period_change$%.
+      - Stocurile $company_name$ au suferit o ușoară creștere în ultima sesiune, apreciindu-se cu $period_change$%.
+      - Stocurile $company_name$'s au suferit o ușoară creștere cu $period_change$% în ultima sesiune.
+      - Acțiunile $company_name$ au avut o creștere minoră în ultima sesiune, apreciindu-se cu $period_change$%.
+      - Acțiunile $company_name$ au suferit o ușoară apreciere în ultima sesiune, crescând $period_change$%.
+      - Acțiunile $company_name$ au crescut ușor cu $period_change$% în ultima sesiune.
+    gain_with_low:
+      - În timpul ultimei sesiuni, acțiunea $company_name$ a dobândit $period_change$%, după o scădere intra-sesiune de $period_low$%.
+      - Acțiunea $company_name$ a crescut cu $period_change$% în urma unei scăderi intra-sesiune de $period_low$%.
+      - După o scădere de $period_low$% înregistrată în timpul ultimei sesiuni, acțiunile $company_name$ s-au încheiat cu o creștere de $period_change$%.
+      -  După o scădere de $period_low$%, înregistrată în decursul ultmei sesiuni, acțiunile $company_name$ s-au încheiat cu $period_change$% în câștig.
     gain_with_high:
-      - Stocurile $company_name$ a obținut $period_change$% în ultima sesiune după o creștere anterioară de până la $period_high$% obținută în decursul sesiunii.
-      - Stocurile $company_name$ au obținut $period_change$% în ultima sesiune, după o creștere anterioară de până la $period_high$%, în decursul sesiunii.
+      - În decursul ultimei sesiuni, acțiunea $company_name$ a dobândit $period_change$%, după o creștere anterioară de până la $period_high$%, în timpul sesiunii.
+      - În decursul ultimei sesiuni, acțiunea $company_name$ a crescut cu $period_change$%, după o creștere anterioară de până la $period_high$%, în timpul sesiunii.
     major_fall:
-      - Stocurile $company_name$ au înregistrat o scădere abruptă de $period_change$% în ultima sesiune.
-      - Stocurile $company_name$ au scăzut $period_change$% în ultima sesiune.
-      - Acțiunile $company_name$ s-au prăbușit cu $period_change$% în ultima sesiune.
+      - Acțiunea $company_name$ a înregistrat o scădere abruptă de $period_change$% în ultima sesiune.
+      - Acțiunea $company_name$ a plonjat la $period_change$% în ultima sesiune.
+      - Acțiunile $company_name$ s-au prăbușit la $period_change$% în ultima sesiune.
       - Acțiunile $company_name$ au înregistrat o scădere abruptă de $period_change$% în ultima sesiune.
     simple_fall:
-      - Stocurile $company_name$ au scăzut $period_change$% în ultima sesiune.
-      - Valoarea stocurilor $company_name$ au scăzut cu $period_change$% în ultima sesiune.
-      - În decursul ultimei sesiuni acțiunile $company_name$ au scăzut cu $period_change$%.
-      - Stocurile $company_name$ au înregistrat o pierdere de $period_change$% în ultima sesiune.
+      - Acțiunea $company_name$ a pierdut $period_change$% în ultima sesiune.
+      - Valoarea acțiunii $company_name$ a coborât la $period_change$% în ultima sesiune.
+      - În decursul ultimei sesiuni, s-a înregistrat căderea acțiunii $company_name$ la valoarea de $period_change$%.
+      - În decursul ultimei sesiuni, acțiunea $company_name$ a înregistrat o pierdere de $period_change$%.
       - Acțiunile $company_name$ au pierdut $period_change$% în ultima sesiune.
-      - Acțiunile $company_name$ s-au depreciat cu $period_change$% în ultima sesiune.
-      - În decursul ultimei sesiuni, acțiunile $company_name$ au înregistrat o scădere de $period_change$%.
-      - În decursul ultimei sesiuni, s-a înregistrat o scădere a acțiunilor $company_name$ cu $period_change$%.
+      - Acțiunile $company_name$ au căzut la valoarea de $period_change$% în ultima sesiune.
+      - În decursul ultimei sesiuni, acțiunile $company_name$ au înregistrat o pierdere de $period_change$%.
+      - În decursul ultimei sesiuni, s-a înregistrat scăderea acțiunilor $company_name$ cu $period_change$%.
     minor_fall:
-      -  Stocurile $company_name$ au suferit o corecție descendentă minoră în decursul ultimei sesiuni, scăzând cu $period_change$%.
-      - Stocurile $company_name$ au înregistrat o corecție descendentă minoră în decursul ultimei sesiuni, depreciindu-se  $period_change$%.
-      - Stocurile $company_name$ au înregistrat o corecție descendentă minoră de $period_change$% în decursul ultimei sesiuni.
+      - Acțiunea $company_name$ a înregistrat o corecție descendentă minoră, în decursul ultimei sesiuni, căzând cu $period_change$%.
+      - Acțiunea $company_name$ a înregistrat o corecție descendentă minoră, în decursul ultimei sesiuni, pierzând  $period_change$%.
+      - Acțiunea $company_name$ a înregistrat o corecție descendentă minoră de $period_change$%, în decursul ultimei sesiuni.
       - Acțiunile $company_name$ au înregistrat o corecție descendentă minoră, în decursul ultimei sesiuni, căzând la  $period_change$%.
       - Acțiunile $company_name$ au înregistrat o corecție descendentă minoră, în decursul ultimei sesiuni, pierzând $period_change$%.
-      - Acțiunile $company_name$ au înregistrat o pierdere minoră de $period_change$% în decursul ultimei sesiuni.
+      - Acțiunile $company_name$ au înregistrat o pierdere minoră de $period_change$%, în decursul ultimei sesiuni.
     fall_with_low:
-      - Stocurile $company_name$ au scăzut cu $period_change$% în decursul ultimei sesiuni, după o altă depreciere de $period_low$% în prealabil din timpul sesiunii.
-      - Stocurile $company_name$ au pierdut $period_change$% în ultima sesiune, depreciindu-se în prealabil cu alte $period_low$% în timpul sesiunii.
-      - În urma unei scăderi de $period_low$%, înregistrate în decursul ultimei sesiuni, acțiunile $company_name$ au încheiat cu o pierdere de $period_change$%.
-      - În urma unei scăderi de $period_low$%, înregistrate în decursul ultimei sesiuni, acțiunile $company_name$ au încheiat cu $period_change$% în pierdere.
+      - Acțiunea $company_name$ a căzut cu $period_change$%, în decursul ultimei sesiuni, după o scădere intra-sesiune de $period_low$%.
+      - Acțiunea $company_name$ a pierdut $period_change$% în urma unei scăderi intra-sesiune de $period_low$%.
+      - În urma unei scăderi de $period_low$%, înregistrate în decursul ultimei sesiuni, acțiunile $company_name$ s-au încheiat cu o pierdere de $period_change$%.
+      - În urma unei scăderi de $period_low$%, înregistrate în decursul ultimei sesiuni, acțiunile $company_name$ s-au încheiat cu $period_change$% în pierdere.
     fall_with_high:
-      - Stocurile $company_name$ a scăzut cu $period_change$% în decursul ultimei sesiuni, în urma unei creșteri anterioare de până la $period_high$% înregistrată în timpul sesiunii.
-      - Stocurile $company_name$ au pierdut $period_change$% în decursul ultimei sesiuni în urma unei creșteri anterioare de până la $period_high$% înregistrate în timpul sesiunii.
+      - Acțiunea $company_name$ a căzut cu $period_change$%, în decursul ultimei sesiuni, în urma unei creșteri anterioare de până la $period_high$%, înregistrată în timpul sesiunii.
+      - Acțiunea $company_name$ a pierdut $period_change$%, în decursul ultimei sesiuni, în urma unei creșteri anterioare de până la $period_high$%, înregistrată în timpul sesiunii.
   lower_line:
     no_change:
       - Stocurile $company_name$ au avut o evoluție laterală în ultima sesiune.
@@ -180,30 +181,30 @@ indicator_shells:
     neutral_signal:
       - Indicatorul $indicator$ transmite un semnal neutru.
     simple_signal:
-      - Indicatorul $indicator$ ajunge pe teritoriu $signal$.
-      - Indicele $indicator$ ajunge pe teritoriu $signal$.
+      - Indicatorul $indicator$ transmite un semnal de tipul $signal$.
+      - $indicator$ indică o oportunitate de a $signal$.
     market_status: # $indicator$ is overbought or oversold
-      - Indicele $indicator$ indică un nivel al pieței $signal$.
-      - Conform indicatorului $indicator$, piața trimite semnale $signal$.
+      - $indicator$ indică o piață de tip $signal$.
+      - Conform indicatorului $indicator$, ne aflăm într-o piață de tip $signal$.
     align_signal:
-      - Impulsul $signal$ trimis de indicatorul $indicator$ este conform cu analiza tehnică generală.
-      - Indicatorul $indicator$ trimte un semnal $signal$ în conform cu analiza tehnică generală.
+      - Semnalul $signal$ al indicatorului $indicator$ este aliniat la analiza tehnică generală.
+      - Indicatorul $indicator$ emite un semnal de tip $signal$, compatibil cu analiza noastră tehnică generală.
     adverse_signal:
-      - Semnalul $signal$ al indicatorului $indicator$ contrazice analiza tehnică generală, ceea ce indică o oportunitate de a $oa_signal$.
-      - Indicatorul $indicator$ emite un semnal $signal$, fapt ce contrazice analiza noastră tehnică generală, indicând o oportunitate de a $overall_summary$.
+      - Semnalul $signal$ al indicatorului $indicator$ contrazice analiza noastră tehnică generală, ceea ce indică o oportunitate de a $overall_summary$.
+      - Indicatorul $indicator$ emite un semnal de tipul $signal$, fapt ce contrazice analiza noastră tehnică generală, indicând o oportunitate de a $overall_summary$.
     align_market_status:
-      - Indicele $indicator$ trimite un semnal $signal$, fapt ce confirmă semnalul $oa_signal$ din analiza tehnică.
-      - Conform indicatorului $indicator$, semnalul de astăzi al pieței este $signal$, fapt ce confirmă evoluția semnalului $oa_signal$  din analiza tehnică.
+      - $indicator$ indică o piață de tipul $signal$, fapt ce confirmă semnalul $overall_summary$ din analiza noastră tehnică.
+      - Conform indicatorului $indicator$, ne aflăm într-o piață de tipul $signal$, fapt ce susține semnalul $overall_summary$, depistat de analiza tehnică.
   lower_line:
     neutral_signal:
       - Indicatorul $indicator$ trimite semnale neutre.
-      - Indicatorul $indicator$ prezintă o evoluție variabilă.
-      - Indicatorul $indicator$ menține o direcție variabilă.
+      - Indicatorul $indicator$ este indecis.
+      - Indicatorul $indicator$ menține o direcție indecisă.
       - Indicatorul $indicaotr$ intră în zona neutră.
     simple_signal:
-      - Indicatorul $indicator$ trimite un semnal $signal$.
+      - Indicatorul $indicator$ trimite semnal $signal$.
       - Indicatorul $indicator$ este momentan pe teritoriu $signal$.
-      - Indicatorul $indicator$ trimite un semnal $signal$.
+      - Indicatorul $indicator$ semnalează momentan un semnal din zona $signal$.
     market_status:
-      - Indicatorul $indicator$ tribute un semnal $signal$ pe piață.
-      - După indicatorul $indicator$, piața trimite un semnal $signal$.   
+      - Indicatorul $indicator$ semnalează o piață $signal$.
+      - După indicatorul $indicator$, ne aflăm într-o piață $signal$.

@@ -69,8 +69,8 @@ forex_shells:
     simple_fall:
       - $base_symbol$/$ quote_symbol$ cayó $period_change$% en la última sesión.
       - $base_symbol$/$ quote_symbol$ cayó $period_change$% en la última sesión.
-      - El  $base_symbol$ cayó $period_change$% frente al  $quote_symbol$ en la última sesión bursátil.
-      - El $símbolo_base$ bajó $period_change$% frente al $quote_symbol$ en la última sesión.
+      - El $base_symbol$ cayó $period_change$% frente al  $quote_symbol$ en la última sesión bursátil.
+      - El $base_symbol$ bajó $period_change$% frente al $quote_symbol$ en la última sesión.
       - En la última sesión, el $base_symbol$ cayó un $period_change$% frente al $quote_symbol$.
       - En la última sesión, el $base_symbol$ cayó un$period_change$% frente al $quote_symbol$.
     minor_fall:
