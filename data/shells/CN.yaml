@@ -81,8 +81,8 @@ forex_shells:
 stock_shells:
   narration:
     no_change:
-      - $base_symbol$/$quote_symbol$上日横盘。
-      - $base_symbol$/$quote_symbol$上日大体持平。
+      - $company_name$股票上日横盘。
+      - $company_name$股票上日大体持平。
     major_gain:
       - $company_name$股票上日大涨$period_change$%。
       - $company_name$股票上日飙升$period_change$%。

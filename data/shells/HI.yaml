@@ -55,7 +55,7 @@ forex_shells:
       - $base_symbol$/$quote_symbol$ पिछले सत्र में साईडवेस में कारोबार किया.
       - $base_symbol$/$quote_symbol$ पिछले सत्र में काफी हद तक अपरिवर्तित रहा.
     major_gain:
-      - $base_ symbol$/$quote_symbol$ अंतिम सत्र में  $period_change$% उत्सादित हुआ . 
+      - $base_symbol$/$quote_symbol$ अंतिम सत्र में  $period_change$% उत्सादित हुआ . 
       - $base_symbol$/$quote_symbol$ अंतिम सत्र में  $period_change$% आसमान छू रही थी. 
     simple_gain:
       - $base_symbol$/$quote_symbol$ अंतिम सत्र में $period_change$% लाभ प्राप्त किया.
